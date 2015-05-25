@@ -6,6 +6,18 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+	this.resource('products', function() {
+	    this.route('boards');
+	    this.route('sensors');
+	    this.route('robotics');
+		this.resource('product', { path: '/:product_slug' });
+  	});
+	this.route('blogs', function(){
+		this.resource('blog', { path: '/:blog_slug' });
+	});
+	this.route('about');
+	this.route('contact');
+	this.route('checkout');
 });
 
 export default Router;

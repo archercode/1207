@@ -1,0 +1,30 @@
+<div class='row'>
+   <div class='col-sm-3'>
+    <div class="list-group">
+    <h3>Filter</h3>
+      <ul id="filters">
+          <li>
+             {{#link-to 'products' activeClass='selected'}} All
+            {{/link-to}}        
+          </li>
+          <li>
+            {{#link-to 'products.boards' activeClass='selected'}} Boards
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'products.sensors' activeClass='selected'}} Sensors
+            {{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'products.robotics' activeClass='selected'}} Robotics
+            {{/link-to}}
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class='col-sm-8'>
+    {{outlet}}
+    {{md-modal-container}}
+
+  </div>
+</div>

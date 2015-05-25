@@ -1,3 +1,37 @@
-<h2 id="title">Welcome to Ember.js</h2>
 
-{{outlet}}
+      {{#md-navbar}}
+        <li>{{#link-to 'products'}}Products{{/link-to}}</li>
+        <li>{{#link-to 'blogs'}}Blogs{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'checkout'}}{{count}}{{/link-to}}</li>
+        <li><button {{action "showCartSummary" this}}>summary</button></li>
+       {{/md-navbar}}
+
+  <div class="checkout_summary" style="display:none;">
+
+    {{#if count}}
+      <div>
+        has item
+      </div>
+    {{else}}
+      <div>
+        no item
+      </div>
+    {{/if}}
+
+  </div>
+
+  <div class="container">
+ {{md-modal-container}}
+        {{ember-notify messageStyle='bootstrap'}}
+    {{outlet}}
+  </div>
+
+  <footer class='container'>
+    <hr />
+    <p class='pull-right'>Credits</p>
+    {{#md-copyright text='Copyright Text' startYear=2014}}
+                <a class="grey-text text-lighten-1 right" href="#!">More Links</a>
+    {{/md-copyright}}
+  </footer>

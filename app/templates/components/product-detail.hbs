@@ -1,0 +1,13 @@
+<!-- 	<p>{{product.description}}</p>
+    <h2>{{product.quantity}}</h2>
+    {{md-btn text='add To Cart' icon='mdi-action-favorite' iconPosition='right' action='addItem'}}
+ -->
+
+ {{#md-card title=product.title image=product.image activator=true}}
+	  {{#md-card-content}}
+	    {{#link-to 'product' product.slug}}Info{{/link-to}}
+	  {{/md-card-content}}
+	  {{#md-card-reveal}}
+	      {{product.description}}
+	  {{/md-card-reveal}}
+{{/md-card}}

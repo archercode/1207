@@ -2,7 +2,7 @@
 @import 'components/variables';
  
 // Custom color settings go here 
-$primary-color: color("blue", "lighten-4");
+$primary-color: color("blue", "lighten-5");
 @import 'materialize';
 
 /* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
@@ -10,4 +10,16 @@ $primary-color: color("blue", "lighten-4");
   .#{$mdi-prefix}#{$mdi-icon-name}:before {
     content: "\""+ $mdi-icon-value +"\"";
   }
+}
+
+span.card-title.activator.black-text {
+  line-height: 30px;
+}
+
+.float_right{
+	float:right;
+}
+
+.float_left{
+	float:left;
 }

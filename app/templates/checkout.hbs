@@ -64,7 +64,7 @@
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
         </div>
-        <button type="submit" class="btn btn-primary" {{bind-attr disabled='isInvalid'}}{{action ''}}>PLACE ORDER</button>
+        <button type="submit" class="btn btn-primary" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
 
         <ul>
         {{#each item in model}}

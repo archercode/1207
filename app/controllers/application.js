@@ -1,11 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({	
-	  sum: Ember.computed.mapBy('model', 'quantity'),
-  	count: Ember.computed.sum('sum'), 
-    //way: Ember.computed.oneWay('items.length'), 	
-   
-  	actions: {
+	  q: Ember.computed.mapBy('model', 'quantity'),
+  	count: Ember.computed.sum('q'),
+    itemCounter: function() {
+   // console.log(this);
+    return this.get('length');
+  }.property('length'),
+     
+    actions: {
   		// showCartSummary: function(){
   		// 	//TODO: jquery show
   		// 	var view = $('.checkout_summary');
@@ -14,9 +17,10 @@ export default Ember.ObjectController.extend({
   		// },
   		removeItem: function(){
         var item = this.get('model');
-        //item.save();
-  			item.deleteRecord();
-  			item.save();
+        item.set('quantity', 0);
+  			//item.deleteRecord();
+  			//item.save();
+        item.destroyRecord();
       },
       acceptChanges:function(){
         //this.set('isEditing', false);

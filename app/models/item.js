@@ -32,7 +32,6 @@ Item.reopenClass({
 		{
 			id: 3,
 			title: 'Profit!',
-			title: 'Learn Ember.js',
 			image: 'link3',
   			price: 900,
   			quantity: 1,

@@ -1,29 +1,33 @@
 <div class='row'>
-   <div class='col-sm-3'>
-    <div class="list-group">
-    <h3>Filter</h3>
-      <ul id="filters">
-          <li>
+   <div class='col s12'> 
+      <ul class="tabs" >
+          <li class="tab col s3">
              {{#link-to 'products' activeClass='selected'}} All
             {{/link-to}}        
           </li>
-          <li>
+          <li class="tab col s3">
             {{#link-to 'products.boards' activeClass='selected'}} Boards
             {{/link-to}}
           </li>
-          <li>
+          <li class="tab col s3">
             {{#link-to 'products.sensors' activeClass='selected'}} Sensors
             {{/link-to}}
           </li>
-          <li>
+          <li class="tab col s3" >
             {{#link-to 'products.robotics' activeClass='selected'}} Robotics
             {{/link-to}}
           </li>
-      </ul>
-    </div>
+          <div class="indicator"></div>
+      </ul> 
   </div>
-  <div class='col-sm-8'>
+</div>
+<div class='row'>
+<div>
+
+  <div class='col s12'>
     {{outlet}}
     {{md-modal-container}}
   </div>
+
+</div>
 </div>

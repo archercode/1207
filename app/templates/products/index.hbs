@@ -2,25 +2,34 @@
   <li class="active">Products</li>
 </ol> -->
 {{#each product in model itemController='product'}}
-	<div class='col-sm-7'>
+	<div class='col s4'>
 		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
+
+
 		{{product-detail product=product addItem='addItem'}}	
 
+	  <div class="prod_cart_buttons">
 		{{#if product.itemsCount}}
 		{{md-btn text='' icon='mdi-content-remove' action='minusItem' 
 			isDisabled = false
 		iconPosition='center'}}
+			<span class="prod_cart_button_text">
 			{{product.itemsCount}}
 			{{sample}}
+				
+				</span>
 		{{else}}
 		{{md-btn text='' icon='mdi-content-remove' action='minusItem' 
 			isDisabled = true
 		iconPosition='center'}}
+			<span class="prod_cart_button_text">
 				BUY
+				</span>
 		{{/if}}
 
-		{{md-btn text='' icon='mdi-content-add' action='addItem' iconPosition='center'}}
+		{{md-btn text='' icon='mdi-content-add' action='addItem' class='float_right' iconPosition='center'}}
 
+	 </div>
 	</div>
 {{/each}}
  {{md-modal-container}}

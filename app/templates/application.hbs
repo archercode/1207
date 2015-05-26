@@ -6,13 +6,24 @@
         <li>{{#link-to 'about'}}About{{/link-to}}</li>
         <li>{{#link-to 'checkout'}}{{count}}{{/link-to}}</li>
         <li><button {{action "showCartSummary" this}}>summary</button></li>
+
        {{/md-navbar}}
 
-  <div class="checkout_summary" style="display:none;">
+  <!-- <div class="checkout_summary" style="display:none;"> -->
 
     {{#if count}}
       <div>
-        has item
+        <ul>
+        {{#each item in model itemController='application'}}
+          <li> 
+            {{item.title}}
+            {{item.quantity}}
+            {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
+               isDisabled = false
+        iconPosition='center'}}
+          </li>
+        {{/each}}
+        </ul>
       </div>
     {{else}}
       <div>
@@ -20,18 +31,18 @@
       </div>
     {{/if}}
 
-  </div>
+  <!-- </div> -->
 
   <div class="container">
- {{md-modal-container}}
-        {{ember-notify messageStyle='bootstrap'}}
+    {{md-modal-container}}
+    {{ember-notify messageStyle='bootstrap'}}
     {{outlet}}
   </div>
 
-  <footer class='container'>
+<footer class='container'>
     <hr />
     <p class='pull-right'>Credits</p>
     {{#md-copyright text='Copyright Text' startYear=2014}}
                 <a class="grey-text text-lighten-1 right" href="#!">More Links</a>
     {{/md-copyright}}
-  </footer>
+</footer>

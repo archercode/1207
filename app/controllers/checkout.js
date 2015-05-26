@@ -65,13 +65,13 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
           zip:{
             //format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  }
             numericality: true,
-            length: { minimum: 5}
+            length: { minimum: 7}
           },
           city: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field lastname.'  }
+            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field city.'  }
           },
           state: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field lastname.'  }
+            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field state.'  }
           },
         },
     sub: Ember.computed.mapBy('model','subtotal'),

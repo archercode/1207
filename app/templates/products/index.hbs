@@ -5,9 +5,22 @@
 	<div class='col-sm-7'>
 		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
 		{{product-detail product=product addItem='addItem'}}	
-		{{md-btn text='' icon='mdi-action-add-shopping-cart' action='addItem' iconPosition='center'}}
-		<!-- {{product.quantity}} -->
-		{{product.itemsCount}}
+
+		{{#if product.itemsCount}}
+		{{md-btn text='' icon='mdi-content-remove' action='minusItem' 
+			isDisabled = false
+		iconPosition='center'}}
+			{{product.itemsCount}}
+			{{sample}}
+		{{else}}
+		{{md-btn text='' icon='mdi-content-remove' action='minusItem' 
+			isDisabled = true
+		iconPosition='center'}}
+				BUY
+		{{/if}}
+
+		{{md-btn text='' icon='mdi-content-add' action='addItem' iconPosition='center'}}
+
 	</div>
 {{/each}}
  {{md-modal-container}}

@@ -1,9 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-	itemCount: 0,//Ember.computed.oneWay('items.length'),
 	actions:{
-		addItem: function(product){
+		addItem: function(){
 			console.log('index');
 			//this.notify.warning(product.get('title') + ' was added to cart');
 		},

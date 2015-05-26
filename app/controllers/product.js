@@ -1,10 +1,6 @@
 //import Ember from 'ember';
 export default Ember.ObjectController.extend({
 	//itemCount: Ember.computed.oneWay('title.length'),
-	activeButton: true,
-  sample: function(){
-    return this.get('itemCount').get('length');
-  }.property('itemCount','length'),
 	actions:{
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));

@@ -17,7 +17,8 @@
         {{#each item in model itemController='application'}}
           <li> 
             {{item.title}}
-            {{item.quantity}}
+            <!-- {{item.quantity}} -->
+            {{edit-quantity value=item.quantity focus-out='acceptChanges' insert-newline = 'acceptChanges' type="number" min="2"}}
             {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
                isDisabled = false
         iconPosition='center'}}

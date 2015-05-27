@@ -5,22 +5,32 @@
         <li>{{#link-to 'contact'}} Contact {{/link-to}}</li>
         <li>{{#link-to 'about'}} About {{/link-to}}</li>
         <li>{{#link-to 'checkout'}} {{count}} {{/link-to}}</li>
-        <li><button {{action "showCartSummary" this}}>summary</button></li>
+        <li><button {{action "showCartSummary" this}}>Summary</button></li>
 
       {{/md-navbar}}
         <!-- <div class="checkout_summary" style="display:none;"> -->
 
+
+<div class="hover checkout_summary" >
     {{#if count}}
       <div>
         <ul>
         {{#each item in model itemController='application'}}
-          <li> 
+          <li class="row"> 
+            <div class="col s7">
             {{item.title}}
-            <!-- {{item.quantity}} -->
+            </div>
+
+            <div class="col s3">
             {{edit-quantity value=item.quantity focus-out='acceptChanges' insert-newline = 'acceptChanges' type="number" min="2"}}
+            </div>
+
+            <div class="col s2">
             {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
-               isDisabled = false
+               isDisabled = false class="close"
         iconPosition='center'}}
+
+            </div>
           </li>
         {{/each}}
         </ul>
@@ -30,6 +40,7 @@
         no item
       </div>
     {{/if}}
+</div>
 
   <!-- </div> -->
 

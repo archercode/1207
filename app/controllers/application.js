@@ -1,26 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({	
-	  q: Ember.computed.mapBy('model','qq'),
+	  q: Ember.computed.mapBy('model','quantity'),
   	count: Ember.computed.sum('q'),
-    /*function(){
-
-      var a = "1,2,3,4";
-
-var b = a.split(',').map(function(item) {
-    return parseInt(item, 10);
-});
-      var data = this.get('q');
-      var total = 0
-      for(var i = 0; i < data.length; i++){
-        total += parseInt(data[i],10);
-      }
-      return total;
-    }.property('q'),*/
-    itemCounter: function() {
-   // console.log(this);
-    return this.get('length');
-  }.property('length'),
      
     actions: {
   		// showCartSummary: function(){
@@ -30,14 +12,15 @@ var b = a.split(',').map(function(item) {
   		// 	view.toggle();
   		// },
   		removeItem: function(){
+        //console.log(item.get('title'));
+        // this.set('quantity',0);
         var item = this.get('model');
-        item.set('quantity', 0);
-  			//item.deleteRecord();
-  			//item.save();
-        item.destroyRecord();
+        item.deleteRecord();
+        item.save();
       },
       acceptChanges:function(){
         //this.set('isEditing', false);
+
         if (this.get('model.quantity') < 1){
            this.send('removeItem');
         } 

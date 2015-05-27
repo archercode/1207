@@ -18,21 +18,18 @@ export default Ember.ObjectController.extend({
 		        });
 		    }).then(function(item){
         		if (item){
-	          		item.incrementProperty('qq', 1);
-
-                //item.save();
+	          		item.incrementProperty('quantity');
+                item.save();
         		} else {
         			console.log('first iteration');
            			var item = store.createRecord('item', {
 		                title: product.get('title'),
 						        image: product.get('image'),
 						        price: product.get('price'),
-  						      qq : 1 ,
                     quantity: 1,
   						      item: product.get('title'),
                 });
            			product.get('items').addObject(item);
-                //newItem.save();
                 
             }
              item.save();

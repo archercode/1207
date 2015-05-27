@@ -4,7 +4,6 @@ var Product = DS.Model.extend({
   	title: DS.attr('string'),
   	price: DS.attr('number'),
   	model: DS.attr('string'),
-  	
   	description: DS.attr('string'),
   	type: DS.attr('string'),
   	image: DS.attr('string'),
@@ -15,8 +14,8 @@ var Product = DS.Model.extend({
        	if (firstItem === undefined){
        		return 0;
        	}
-        return firstItem.get('qq');
-	}.property('items.firstObject.qq'),
+        return firstItem.get('quantity');
+	}.property('items.firstObject.quantity'),
 
   	slug: function() {
     	return this.get('title').replace(/\s+/g, '-').concat('-philippines').toLowerCase();

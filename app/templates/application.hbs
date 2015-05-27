@@ -22,13 +22,15 @@
             </div>
 
             <div class="col s3">
-            {{edit-quantity value=item.quantity focus-out='acceptChanges' insert-newline = 'acceptChanges' type="number" min="2"}}
+            {{item.quantity}}
             </div>
 
             <div class="col s2">
-            {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
+            <!-- {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
                isDisabled = false class="close"
-        iconPosition='center'}}
+        iconPosition='center'}} -->
+
+        <button {{action 'removeItem'}}></button>
 
             </div>
           </li>

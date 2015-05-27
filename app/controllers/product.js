@@ -1,10 +1,10 @@
 import Ember from 'ember';
 export default Ember.ObjectController.extend({
 	//itemCount: Ember.computed.oneWay('title.length'),
-	activeButton: true,
-  sample: function(){
-    return this.get('itemCount').get('length');
-  }.property('itemCount','length'),
+	// activeButton: true,
+ //  sample: function(){
+ //    return this.get('itemCount').get('length');
+ //  }.property('itemCount','length'),
 	actions:{
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));
@@ -19,10 +19,10 @@ export default Ember.ObjectController.extend({
 		    }).then(function(item){
         		if (item){
 	          		item.incrementProperty('quantity');
-                item.save();
+                //item.save();
         		} else {
         			console.log('first iteration');
-           			store.createRecord('item', {
+           			var item = store.createRecord('item', {
 		                title: product.get('title'),
 						        image: product.get('image'),
 						        price: product.get('price'),
@@ -30,9 +30,9 @@ export default Ember.ObjectController.extend({
   						      item: product.get('title'),
                 });
            			product.get('items').addObject(item);
-            		item.save();
                 
             }
+            		item.save();
       		});
 		},
 		minusItem: function(product){

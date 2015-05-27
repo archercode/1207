@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({	
-	  q: Ember.computed.mapBy('model', 'quantity'),
+	  q: Ember.computed.mapBy('model','quantity'),
   	count: Ember.computed.sum('q'),
     itemCounter: function() {
    // console.log(this);

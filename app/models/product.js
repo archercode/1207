@@ -7,7 +7,7 @@ var Product = DS.Model.extend({
   	description: DS.attr('string'),
   	type: DS.attr('string'),
   	image: DS.attr('string'),
-  	items: DS.hasMany('item',{async:true}),
+  	items: DS.hasMany('item', { async:true } ),
   	
 	itemsCount: function() {
         var firstItem = this.get('items.firstObject');
@@ -16,7 +16,7 @@ var Product = DS.Model.extend({
        	}
         return firstItem.get('quantity');
 	}.property('items.firstObject.quantity'),
-
+	
   	slug: function() {
     	return this.get('title').replace(/\s+/g, '-').concat('-philippines').toLowerCase();
   	}.property('title'),
@@ -32,7 +32,8 @@ Product.reopenClass({
 			model: '10xx10',
 			description: 'This module help you to detect the light density and reflect the analog voltage signal back to Arduino controller. You can set the threshold of voltage level to trig other unit on Arduino project',
 			type: 'boards',
-			image: '/DFR0009.jpg'
+			image: '/DFR0009.jpg',
+			//items: [1]
 		},
 		{
 			id: 2,
@@ -41,7 +42,8 @@ Product.reopenClass({
 			model: '20xx10',
 			description: 'This module help you to detect the light density and reflect the analog voltage signal back to Arduino controller. You can set the threshold of voltage level to trig other unit on Arduino project',
 			type:'sensors',
-			image: '/DFR0017.jpg'
+			image: '/DFR0017.jpg',
+			//items: [1]
 		},
 		{
 			id: 3,
@@ -50,7 +52,8 @@ Product.reopenClass({
 			model: '30xx10',
 			description: 'This module help you to detect the light density and reflect the analog voltage signal back to Arduino controller. You can set the threshold of voltage level to trig other unit on Arduino project',
 			type: 'robotics',
-			image: '/DFR0024.jpg'
+			image: '/DFR0024.jpg',
+			//items: [1]
 		},
 	]
 });

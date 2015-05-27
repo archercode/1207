@@ -22,18 +22,21 @@ export default Ember.ObjectController.extend({
                 item.save();
         		} else {
         			console.log('first iteration');
-           			var item = store.createRecord('item', {
+           			var newitem = store.createRecord('item', {
 		                title: product.get('title'),
-						        image: product.get('image'),
+						        // image: product.get('image'),
 						        price: product.get('price'),
                     quantity: 1,
   						      item: product.get('title'),
                 });
-           			product.get('items').addObject(item);
+           			product.get('items').addObject(newitem);
                 
+                    newitem.save();
             }
-             item.save();
       		});
+
+
+
 		},
 		minusItem: function(product){
 			//var store = this.store;

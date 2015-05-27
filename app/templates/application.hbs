@@ -9,10 +9,14 @@
 
       {{/md-navbar}}
         <!-- <div class="checkout_summary" style="display:none;"> -->
-
-
+<!-- catching a bug dont erase -->
+<!-- {{#each item in model itemController='application'}}
+  {{item.title}}
+  <button {{action 'removeItem'}}></button>
+{{/each}} -->
+<!-- catching a bug dont erase -->
 <div class="hover checkout_summary" >
-    {{#if count}}
+    {{#if q}}
       <div>
         <ul>
         {{#each item in model itemController='application'}}
@@ -22,7 +26,7 @@
             </div>
 
             <div class="col s3">
-            {{item.quantity}}
+           <!--  {{item.quantity}} -->
             </div>
 
             <div class="col s2">

@@ -13,7 +13,7 @@ export default Ember.ObjectController.extend({
   		// },
   		removeItem: function(){
         //console.log(item.get('title'));
-        // this.set('quantity',0);
+        this.set('quantity',0);
         var item = this.get('model');
         item.deleteRecord();
         item.save();

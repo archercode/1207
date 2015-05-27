@@ -11,11 +11,21 @@
 	  <div class="prod_cart_buttons row">
 
 		{{#if product.itemsCount}}
+<<<<<<< HEAD
 			{{md-btn text='' icon='mdi-content-remove' action='minusItem' class='col s4'
 				isDisabled = false iconPosition='center'}}
 			<div class="prod_cart_button_text col s4 center-align" >
 				{{product.itemsCount}}
 			</div>
+=======
+		{{md-btn text='' icon='mdi-content-remove' action='minusItem'
+			isDisabled = false
+		iconPosition='center'}}
+			<span class="prod_cart_button_text">
+			{{product.itemsCount}}
+				
+				</span>
+>>>>>>> origin/master
 		{{else}}
 			{{md-btn text='' icon='mdi-content-remove' action='minusItem' class='col s4'
 				isDisabled = true iconPosition='center'}}

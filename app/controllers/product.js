@@ -18,7 +18,7 @@ export default Ember.ObjectController.extend({
 		        });
 		    }).then(function(item){
         		if (item){
-	          		item.incrementProperty('quantity');
+	          		item.incrementProperty('qq', 1);
 
                 //item.save();
         		} else {
@@ -27,13 +27,15 @@ export default Ember.ObjectController.extend({
 		                title: product.get('title'),
 						        image: product.get('image'),
 						        price: product.get('price'),
-  						      quantity: 1,
+  						      qq : 1 ,
+                    quantity: 1,
   						      item: product.get('title'),
                 });
            			product.get('items').addObject(item);
                 //newItem.save();
+                
             }
-            item.save();
+             item.save();
       		});
 		},
 		minusItem: function(product){

@@ -1,16 +1,17 @@
 import DS from 'ember-data';
 
-var Item = DS.Model.extend({
+export default DS.Model.extend({
   title: DS.attr('string'),
   image: DS.attr('string'),
   price: DS.attr('number'),
+  qq: DS.attr('number'),
   quantity: DS.attr('number'),
   product:DS.belongsTo('product'),
   subtotal: function(){
-    return this.get('quantity') * this.get('price');
-  }.property('quantity', 'currentprice'),
+    return this.get('qq') * this.get('price');
+  }.property('qq', 'currentprice'),
 });
-
+/*
 Item.reopenClass({
 	FIXTURES:[
 		{
@@ -41,3 +42,4 @@ Item.reopenClass({
 });
 
 export default Item;
+*/

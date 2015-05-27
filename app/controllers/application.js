@@ -1,9 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({	
-	  q: Ember.computed.mapBy('model','quantity'),
+	  q: Ember.computed.mapBy('model','qq'),
   	count: Ember.computed.sum('q'),
     /*function(){
+
+      var a = "1,2,3,4";
+
+var b = a.split(',').map(function(item) {
+    return parseInt(item, 10);
+});
       var data = this.get('q');
       var total = 0
       for(var i = 0; i < data.length; i++){

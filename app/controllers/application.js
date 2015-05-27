@@ -11,6 +11,9 @@ export default Ember.ObjectController.extend({
   		// 	//if(view.get(''))	
   		// 	view.toggle();
   		// },
+      turnItUp: function(){
+        console.log('dummy called');
+      },
   		removeItem: function(){
         //console.log(item.get('title'));
         this.set('quantity',0);

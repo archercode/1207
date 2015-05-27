@@ -6,7 +6,7 @@
         <li>{{#link-to 'about'}} About {{/link-to}}</li>
         <li>{{#link-to 'checkout'}} {{count}} {{/link-to}}</li>
         <li><button {{action "showCartSummary" this}}>Summary</button></li>
-
+<button {{action "cl" target=view}}>✓</button>
       {{/md-navbar}}
         <!-- <div class="checkout_summary" style="display:none;"> -->
 <!-- catching a bug dont erase -->
@@ -16,6 +16,7 @@
 {{/each}} -->
 <!-- catching a bug dont erase -->
 <div class="hover checkout_summary" >
+  
     {{#if q}}
       <div>
         <ul>

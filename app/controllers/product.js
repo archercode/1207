@@ -19,7 +19,6 @@ export default Ember.ObjectController.extend({
 		    }).then(function(item){
         		if (item){
 	          		item.incrementProperty('quantity');
-                //item.save();
         		} else {
         			console.log('first iteration');
            			var item = store.createRecord('item', {

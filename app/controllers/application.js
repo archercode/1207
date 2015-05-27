@@ -3,6 +3,14 @@ import Ember from 'ember';
 export default Ember.ObjectController.extend({	
 	  q: Ember.computed.mapBy('model','quantity'),
   	count: Ember.computed.sum('q'),
+    /*function(){
+      var data = this.get('q');
+      var total = 0
+      for(var i = 0; i < data.length; i++){
+        total += parseInt(data[i],10);
+      }
+      return total;
+    }.property('q'),*/
     itemCounter: function() {
    // console.log(this);
     return this.get('length');

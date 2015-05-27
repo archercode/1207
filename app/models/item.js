@@ -27,7 +27,7 @@ Item.reopenClass({
 			image: 'link2',
   			price: 900,
   			quantity: 1,
-  			product:2,
+  			product:1,
 		},
 		{
 			id: 3,
@@ -35,7 +35,7 @@ Item.reopenClass({
 			image: 'link3',
   			price: 900,
   			quantity: 1,
-  			product:3,
+  			product:1,
 		}
 	]
 });

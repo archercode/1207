@@ -1,19 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
-  didInsertElement: function() {
-    var view = this;
-    console.log('products elements'); 
-  },
+  didInsertElement: function() {},
 
   actions:{
-    click: function(){
-    console.log('products click'); 
-    }
-  },
+    itemAnimation: function(product){
+     
+      // animate product to cart here
+      //
 
- click: function(event) {
-    console.log(event);
-    return false;
+
+
+
+
+
+      //
+      // 
+
+      this.get('controller').send('saveToStorage', product);
+    },
   },
 });

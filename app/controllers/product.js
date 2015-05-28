@@ -34,9 +34,6 @@ export default Ember.ObjectController.extend({
                     newitem.save();
             }
       		});
-
-
-
 		},
 		minusItem: function(product){
 			//var store = this.store;

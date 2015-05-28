@@ -8,7 +8,7 @@ export default Ember.View.extend({
   actions:{
 	  cl: function(){
 	 	 console.log('did click'); 
-      this.get('controller').send('turnItUp');
+      //this.get('controller').send('turnItUp');
 	  }
 	},
 
@@ -16,6 +16,5 @@ export default Ember.View.extend({
     // console.log(event);
     // console.log(event);
     // console.log(event);
-    return false;
   },
 });

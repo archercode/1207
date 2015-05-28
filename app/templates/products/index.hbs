@@ -5,14 +5,12 @@
 	<div class='col s4'>
 		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
 
-
 		{{product-detail product=product addItem='addItem'}}	
-
+			<!-- <button>{{action "select" post target=view}}</button> -->
 	  <div class="prod_cart_buttons row">
 
 		{{#if product.itemsCount}}
-		
-			{{md-btn text='' icon='mdi-content-remove' action='minusItem' class='col s4'
+			{{md-btn text='' icon='mdi-content-remove' action='minusItem'  class='col s4'
 				isDisabled = false iconPosition='center'}}
 			<div class="prod_cart_button_text col s4 center-align" >
 				{{product.itemsCount}}
@@ -25,8 +23,10 @@
 				BUY
 			</div>
 		{{/if}}
-
-		{{md-btn text='' icon='mdi-content-add' action='addItem' iconPosition='center' class='col s4'}}
+		
+		<div {{action 'itemAnimation' product target=view.parentView}}>
+			{{md-btn text='' icon='mdi-content-add' iconPosition='center' class='col s4'}}
+		</div>
 
 	 </div>
 	</div>

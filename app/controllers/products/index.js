@@ -2,10 +2,6 @@ import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
 	actions:{
-		addItem: function(){
-			console.log('index');
-			//this.notify.warning(product.get('title') + ' was added to cart');
-		},
 		/*
 		editTodo: function(){
 			this.set('isEditing', true);

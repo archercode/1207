@@ -2,7 +2,7 @@
   <li class="active">Products</li>
 </ol> -->
 {{#each product in model itemController='product'}}
-	<div class='col s4'>
+	<div class='col l4'>
 		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
 
 		{{product-detail product=product addItem='addItem'}}	
@@ -12,14 +12,16 @@
 		{{#if product.itemsCount}}
 			{{md-btn text='-' action='minusItem'  class='col s4'
 				isDisabled = false iconPosition='center'}}
-			<div class="prod_cart_button_text col s4 center-align" >
+
+			<div class=" prod_cart_button_text col s4 center-align" >
 				{{product.itemsCount}}
 			</div>
 
 		{{else}}
 			{{md-btn text='-'  action='minusItem' class='col s4'
 				isDisabled = true iconPosition='center'}}
-			<div class="prod_cart_button_text col s4 center-align">
+
+			<div class=" prod_cart_button_text col s4 center-align">
 				BUY
 			</div>
 		{{/if}}

@@ -2,7 +2,7 @@
 @import 'components/variables';
  
 // Custom color settings go here 
-$primary-color: color("blue", "lighten-5");
+$primary-color: color("green", "lighten-1");
 $gray-bg-color: color("gray", "lighten-5");
 @import 'materialize';
 
@@ -148,4 +148,13 @@ span.card-title.activator.black-text {
 
 .checkout_payment_method{
   padding: 0px 20px;
+}
+
+.product_title{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.description > strong{
+  color: #ffffff;
 }

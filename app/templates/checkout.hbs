@@ -132,12 +132,12 @@
                Order Summary
             </div>
 
-            <ul class=" checkout_order_list checkout_input col s12 row">
+            <ul class=" checkout_order_list checkout_input row">
 
 
 
 
-                <li>
+                <li class="row">
 
                 <div class="col s6"><label>Item</label></div>
                 <div class="col s2"><label>Price</label></div>
@@ -148,7 +148,7 @@
 
             {{#each item in model}}
 
-                <li>
+                <li class="row">
 
                 <div class="col s6">{{item.title}}</div>
                 <div class="col s2">{{item.price}}</div>

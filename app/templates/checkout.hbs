@@ -3,15 +3,8 @@
 
 
 {{#link-to 'success'}}link to success{{/link-to}}
-
-
-
 <div class="row checkout">
-
-
 <div class="col m6">
-
-
 <div class="thumbnail checkout_info">
 
             <div class="row checkout_title checkout_input">
@@ -146,7 +139,7 @@
 
                 </li> 
 
-            {{#each item in model}}
+            {{#each item in model itemController = 'checkout'}}
 
                 <li class="row">
 
@@ -154,7 +147,7 @@
                 <div class="col s2">{{item.price}}</div>
                 <div class="col s1">{{item.quantity}}</div>
                 <div class="col s2">{{item.subtotal}}</div>
-                <button class="col s1 close">&times;</button>
+                <button class="col s1 close" {{action 'removeItem'}}>&times;</button>
 
                 </li> 
             {{/each}}

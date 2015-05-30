@@ -12,12 +12,15 @@ Router.map(function() {
 	    this.route('robotics');
 		this.resource('product', { path: '/:product_slug' });
   	});
+  	
 	this.route('blogs', function(){
 		this.resource('blog', { path: '/:blog_slug' });
 	});
 	this.route('about');
 	this.route('contact');
-	this.route('checkout');
+	this.route('checkout', function(){
+		this.route('success');
+	});
 });
 
 export default Router;

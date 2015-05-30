@@ -3,6 +3,7 @@
  
 // Custom color settings go here 
 $primary-color: color("blue", "lighten-5");
+$gray-bg-color: color("gray", "lighten-5");
 @import 'materialize';
 
 /* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
@@ -84,3 +85,36 @@ span.card-title.activator.black-text {
   height: 100%;
 }
 
+.checkout_input{
+ /* padding-left: 30px !important;
+  padding-right: 30px !important;
+  padding-top: 20px !important;*/
+
+  border-bottom: 1px #eeeeee solid;
+  padding: 10px 20px;
+  margin: 10px 10px;
+
+}
+
+.checkout_input > input {
+    height: 1.5rem !important;
+    border-bottom: none;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.checkout_input > label {
+    height: 1.5rem !important;
+    font-size: 1em !important;
+    margin-bottom: 0px;
+}
+
+.no_style > a:hover{
+  text-decoration: none;
+}
+
+.checkout_order_list{
+    padding: 20px;
+    margin-left: 20px !important;
+    background-color: $gray-bg-color;
+}

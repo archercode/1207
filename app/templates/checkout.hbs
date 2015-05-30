@@ -1,103 +1,137 @@
 <!-- {{md-input value=model.name label="Name"}}
 {{errors.name}} -->
 
-<div class="row">
-<div class="col s7">
 
- <div class="row">
-        <div class="col-md-6 col-xs-4">
-                {{md-input value=firstName label="First name"}}
-        </div>
-        <div class="col-md-6 col-xs-4">
-                {{md-input value=lastName label="Last name"}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+<div class="row">
+
+<div class="col s6 thumbnail checkout_info">
+
+<div class="row checkout_input">
+        <label class="col s4">First Name</label>
+        {{input value=firstName label="First name" class="col s8" placeholder="First Name"}}
+
+</div>
+<div class="row checkout_input">
+        <label class="col s4">Last Name</label>
+        {{input value=lastName label="Last name" class="col s8" placeholder="Last Name"}} 
+
+</div>
+
+ <div class="row checkout_input"> 
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=email label="Email Address"}}
-                    {{#if errors.email}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+
+        <label class="col s4">Email</label>
+        {{input class="col s8" value=email label="Email Address" placeholder="Email Address"}}
+            {{#if errors.email}}
+                <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+            {{/if}} 
+</div>
+
+ <div class="row checkout_input"> 
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=phone label="Phone"}}
+        <label class="col s4">Phone</label>
+                {{input value=phone label="Phone" class="col s8" placeholder="Phone"}}
                     {{#if errors.phone}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+        
+</div>
+
+ <div class="row checkout_input">
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=streetAddress label="Street Address"}}
+
+        <label class="col s4">Address</label>
+                {{input value=streetAddress label="Street Address" class="col s8" placeholder="Street Address"}}
                     {{#if errors.streetAddress}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+    
+</div>
+
+ <div class="row checkout_input">
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=streetAddress2 label="Street Address 2"}}
+        <label class="col s4">Apt, suite, etc.</label>
+                {{input value=streetAddress2 label="Street Address 2" class="col s8" placeholder="Apt, suite, etc."  autofocus=false}}
                     {{#if errors.streetAddress2}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+                    {{/if}} 
+</div>
+
+ <div class="row checkout_input"> 
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=zip label="Zip Code"}}
+        <label class="col s4">Zip Code</label>
+                {{input value=zip label="Zip Code" class="col s8" placeholder="Zip Code"}}
                     {{#if errors.phone}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+ 
+</div>
+
+ <div class="row checkout_input">
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=city label="City"}}
+        <label class="col s4">City</label>
+                {{input value=city label="City" class="col s8" placeholder="City"}}
                     {{#if errors.city}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
-        </div>
-        <div class="col-md-6 col-xs-4">
+        
+</div>
+<div class="row checkout_input">
             <!-- <label>*Last name: </label>
                 {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-                {{md-input value=state label="State/Province"}}
+        <label class="col s4">State/Province</label>
+                {{input value=state label="State/Province" class="col s8" placeholder="State/Province"}}
                     {{#if errors.state}}
                         <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                     {{/if}}
-        </div>
+</div>
+
+ <div class="row col s12">
 
 
-        
+        <div class="row">
          {{#md-tabs selected=selectedTabId}}
-            {{md-tab value='a' title='Cash on Meetup'}}
-            {{md-tab value='b' title='Bank Transfer'}}
-            {{md-tab value='c' title='PayPal'}}
+            {{md-tab value='a' class='col s4 no_style' title='Cash on Meetup'}}
+            {{md-tab value='b' class='col s4 no_style' title='Bank Transfer'}}
+            {{md-tab value='c' class='col s4 no_style' title='PayPal'}}
         {{/md-tabs}}
+        </div>
+        <div class="row checkout_payment_data" >
+            {{content}}
+        </div>
 </div>
 </div> 
-<div class="col s5">
-        <ul>
-        {{#each item in model}}
-        <li>{{item.title}} {{item.price}} {{item.quantity}} {{item.subtotal}}</li> 
-        {{/each}}
-        </ul>
-        {{subTotal}}
+  <div class="col s1">
+  </div>
+    <div class="col s5 ">
+        <div class="row checkout_order_list thumbnail">
+            <ul>
+            {{#each item in model}}
+            <li>{{item.title}} {{item.price}} {{item.quantity}} {{item.subtotal}}</li> 
+            {{/each}}
+            </ul>
+            {{subTotal}}dfsdf
 
 
-        <!-- Echo fields -->
-        <p><strong>{{firstName}}</strong></p>
-        <p><strong>{{lastName}}</strong></p>
-        <p><strong>{{email}}</strong></p>
-        <p><strong>{{phone}}</strong></p>
-        <p><strong>{{streetAddress}}</strong></p>
-        <p><strong>{{streetAddress2}}</strong></p>
-        <p><strong>{{zip}}</strong></p>
-        <p><strong>{{city}}</strong></p>
-        <p><strong>{{state}}</strong></p>
+            <!-- Echo fields -->
+            <p><strong>{{firstName}}</strong></p>
+            <p><strong>{{lastName}}</strong></p>
+            <p><strong>{{email}}</strong></p>
+            <p><strong>{{phone}}</strong></p>
+            <p><strong>{{streetAddress}}</strong></p>
+            <p><strong>{{streetAddress2}}</strong></p>
+            <p><strong>{{zip}}</strong></p>
+            <p><strong>{{city}}</strong></p>
+            <p><strong>{{state}}</strong></p>
 
-</div>
+        </div>
+    </div>
 </div>
 <div class="row">
         <button type="submit" class="btn btn-primary" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>

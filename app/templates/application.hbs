@@ -6,7 +6,11 @@
         <li>{{#link-to 'about'}} About {{/link-to}}</li>
         <li>{{#link-to 'checkout'}} {{count}} {{/link-to}}</li>
         <li><button {{action "showCartSummary" this}}>Summary</button></li>
-<button {{action "cl" target=view}}>✓</button>
+        <li>
+          <div class="cart shopping-cart">
+            <button {{action "showCartSummary" this}}>Summary</button>
+          </div>
+        </li>
       {{/md-navbar}}
         <!-- <div class="checkout_summary" style="display:none;"> -->
 <!-- catching a bug dont erase -->
@@ -27,7 +31,7 @@
             </div>
 
             <div class="col s3">
-           <!--  {{item.quantity}} -->
+            {{item.quantity}}
             </div>
 
             <div class="col s2">

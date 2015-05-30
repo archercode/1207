@@ -7,13 +7,16 @@ export default Ember.View.extend({
   mouseX: 0, 
   mouseY: 0,
 
-  click: function(e){
-    //this.setParent('getParent', e.)
-  },
+  click: function(e){},
 
 
   actions:{
     itemAnimation: function(product){
+      
+      //var viewElements = event.element;
+      //var elementsInTemplate = viewElements.children;
+      //var button = viewElements.getElementsByTagName('button');
+
       var object = this;
   
       var cart = $('.shopping-cart');
@@ -25,8 +28,8 @@ export default Ember.View.extend({
       if (imgtodrag) {
           var imgclone = imgtodrag.clone()
               .offset({
-              top: this.get('mouseX') - 75,
-              left: this.get('mouseY') - 75
+              top: event.target.offsetTop,//event.screenX,//button.pageX,//this.get('mouseX') - 75,
+              left: event.target.offsetLeft//event.screenY,//this.get('mouseY') - 75
           });
           imgclone.css({
               'opacity': '0.5',

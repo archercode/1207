@@ -10,14 +10,14 @@
 	  <div class="prod_cart_buttons row">
 
 		{{#if product.itemsCount}}
-			{{md-btn text='' icon='mdi-content-remove' action='minusItem'  class='col s4'
+			{{md-btn text='-' action='minusItem'  class='col s4'
 				isDisabled = false iconPosition='center'}}
 			<div class="prod_cart_button_text col s4 center-align" >
 				{{product.itemsCount}}
 			</div>
 
 		{{else}}
-			{{md-btn text='' icon='mdi-content-remove' action='minusItem' class='col s4'
+			{{md-btn text='-'  action='minusItem' class='col s4'
 				isDisabled = true iconPosition='center'}}
 			<div class="prod_cart_button_text col s4 center-align">
 				BUY
@@ -27,7 +27,7 @@
 		
 
 		<div {{action 'itemAnimation' product target=view.parentView}}>
-			{{md-btn text='' icon='mdi-content-add' iconPosition='center' class='col s4 add_button'}}
+			{{md-btn text='+'  iconPosition='center' class='col s4 add_button'}}
 		</div>
 
 	 </div>

@@ -13,12 +13,13 @@ Router.map(function() {
 		this.resource('product', { path: '/:product_slug' });
   	});
   	
-	this.route('blogs', function(){
+	this.resource('blogs', function(){
 		this.resource('blog', { path: '/:blog_slug' });
 	});
+
 	this.route('about');
 	this.route('contact');
-	this.route('checkout', function(){
+	this.resource('checkout', function(){
 		this.route('success');
 	});
 });

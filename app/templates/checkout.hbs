@@ -1,136 +1,182 @@
 <!-- {{md-input value=model.name label="Name"}}
 {{errors.name}} -->
 
-{{#link-to 'checkout.success'}}link to success{{/link-to}}
-<div class="row">
 
-<div class="col s6 thumbnail checkout_info">
+{{#link-to 'success'}}link to success{{/link-to}}
 
-<div class="row checkout_input">
-        <label class="col s4">First Name</label>
-        {{input value=firstName label="First name" class="col s8" placeholder="First Name"}}
 
-</div>
-<div class="row checkout_input">
-        <label class="col s4">Last Name</label>
-        {{input value=lastName label="Last name" class="col s8" placeholder="Last Name"}} 
 
-</div>
+<div class="row checkout">
 
- <div class="row checkout_input"> 
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
 
-        <label class="col s4">Email</label>
-        {{input class="col s8" value=email label="Email Address" placeholder="Email Address"}}
-            {{#if errors.email}}
-                <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-            {{/if}} 
-</div>
+<div class="col m6">
 
- <div class="row checkout_input"> 
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-        <label class="col s4">Phone</label>
-                {{input value=phone label="Phone" class="col s8" placeholder="Phone"}}
-                    {{#if errors.phone}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
+
+<div class="thumbnail checkout_info">
+
+            <div class="row checkout_title checkout_input">
+                Customer Information
+            </div>
+
+    <div class="row checkout_input">
+            <label class="col s4">First Name</label>
+            {{input value=firstName label="First name" class="col s8" placeholder="First Name"}}
+
+    </div>
+    <div class="row checkout_input">
+            <label class="col s4">Last Name</label>
+            {{input value=lastName label="Last name" class="col s8" placeholder="Last Name"}} 
+
+    </div>
+
+     <div class="row checkout_input"> 
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+
+            <label class="col s4">Email</label>
+            {{input class="col s8" value=email label="Email Address" placeholder="Email Address"}}
+                {{#if errors.email}}
+                    <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                {{/if}} 
+    </div>
+
+     <div class="row checkout_input"> 
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+            <label class="col s4">Phone</label>
+                    {{input value=phone label="Phone" class="col s8" placeholder="Phone"}}
+                        {{#if errors.phone}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}}
+            
+    </div>
+
+     <div class="row checkout_input">
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+
+            <label class="col s4">Address</label>
+                    {{input value=streetAddress label="Street Address" class="col s8" placeholder="Street Address"}}
+                        {{#if errors.streetAddress}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}}
         
-</div>
+    </div>
 
- <div class="row checkout_input">
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+     <div class="row checkout_input">
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+            <label class="col s4">Apt, suite, etc.</label>
+                    {{input value=streetAddress2 label="Street Address 2" class="col s8" placeholder="Apt, suite, etc."  autofocus=false}}
+                        {{#if errors.streetAddress2}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}} 
+    </div>
 
-        <label class="col s4">Address</label>
-                {{input value=streetAddress label="Street Address" class="col s8" placeholder="Street Address"}}
-                    {{#if errors.streetAddress}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
-    
-</div>
+     <div class="row checkout_input"> 
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+            <label class="col s4">Zip Code</label>
+                    {{input value=zip label="Zip Code" class="col s8" placeholder="Zip Code"}}
+                        {{#if errors.phone}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}}
+     
+    </div>
 
- <div class="row checkout_input">
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-        <label class="col s4">Apt, suite, etc.</label>
-                {{input value=streetAddress2 label="Street Address 2" class="col s8" placeholder="Apt, suite, etc."  autofocus=false}}
-                    {{#if errors.streetAddress2}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}} 
-</div>
+     <div class="row checkout_input">
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+            <label class="col s4">City</label>
+                    {{input value=city label="City" class="col s8" placeholder="City"}}
+                        {{#if errors.city}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}}
+            
+    </div>
+    <div class="row checkout_input ">
+                <!-- <label>*Last name: </label>
+                    {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
+            <label class="col s4">State/Province</label>
+                    {{input value=state label="State/Province" class="col s8" placeholder="State/Province"}}
+                        {{#if errors.state}}
+                            <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
+                        {{/if}}
+    </div>
 
- <div class="row checkout_input"> 
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-        <label class="col s4">Zip Code</label>
-                {{input value=zip label="Zip Code" class="col s8" placeholder="Zip Code"}}
-                    {{#if errors.phone}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
- 
-</div>
-
- <div class="row checkout_input">
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-        <label class="col s4">City</label>
-                {{input value=city label="City" class="col s8" placeholder="City"}}
-                    {{#if errors.city}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
-        
-</div>
-<div class="row checkout_input">
-            <!-- <label>*Last name: </label>
-                {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
-        <label class="col s4">State/Province</label>
-                {{input value=state label="State/Province" class="col s8" placeholder="State/Province"}}
-                    {{#if errors.state}}
-                        <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
-                    {{/if}}
-</div>
-
- <div class="row col s12">
+     <div class="row checkout_payment_method">
 
 
-        <div class="row">
-         {{#md-tabs selected=selectedTabId}}
-            {{md-tab value='a' class='col s4 no_style' title='Cash on Meetup'}}
-            {{md-tab value='b' class='col s4 no_style' title='Bank Transfer'}}
-            {{md-tab value='c' class='col s4 no_style' title='PayPal'}}
-        {{/md-tabs}}
-        </div>
-        <div class="row checkout_payment_data" >
-            {{content}}
-        </div>
+            <div class="row  col s12">
+             {{#md-tabs selected=selectedTabId}}
+                {{md-tab value='a' class='col m5 no_style' title='Cash on Meetup'}}
+                {{md-tab value='b' class='col m5 no_style' title='Bank Transfer'}}
+                {{md-tab value='c' class='col m2 no_style' title='PayPal'}}
+            {{/md-tabs}}
+            </div>
+            <div class="row col s12 checkout_payment_data" >
+                Hello payment method should be here!
+            </div>
+    </div>
+
+
 </div>
 </div> 
-  <div class="col s1">
+  <div class="col m1">
   </div>
-    <div class="col s5 ">
-        <div class="row checkout_order_list thumbnail">
-            <ul>
+    <div class="col m5 ">
+        <div class="row checkout_order thumbnail"> 
+
+            
+            <div class="row checkout_title checkout_input">
+               Order Summary
+            </div>
+
+            <ul class=" checkout_order_list checkout_input col s12 row">
+
+
+
+
+                <li>
+
+                <div class="col s6"><label>Item</label></div>
+                <div class="col s2"><label>Price</label></div>
+                <div class="col s1"><label>#</label></div>
+                <div class="col s2"><label> </label></div>
+
+                </li> 
+
             {{#each item in model}}
-            <li>{{item.title}} {{item.price}} {{item.quantity}} {{item.subtotal}}</li> 
+
+                <li>
+
+                <div class="col s6">{{item.title}}</div>
+                <div class="col s2">{{item.price}}</div>
+                <div class="col s1">{{item.quantity}}</div>
+                <div class="col s2">{{item.subtotal}}</div>
+                <button class="col s1 close">&times;</button>
+
+                </li> 
             {{/each}}
             </ul>
-            {{subTotal}}dfsdf
+            <div class="row col s12 checkout_total">
+            <div class="col s6 left-align">
+            <label>Total</label>
+            </div>
+            <div class="col s5 right-align checkout_title text_green">
+            <strong>P {{subTotal}}</strong>
+            </div>   
 
+            <div class="col m1 right-align">
 
-            <!-- Echo fields -->
-            <p><strong>{{firstName}}</strong></p>
-            <p><strong>{{lastName}}</strong></p>
-            <p><strong>{{email}}</strong></p>
-            <p><strong>{{phone}}</strong></p>
-            <p><strong>{{streetAddress}}</strong></p>
-            <p><strong>{{streetAddress2}}</strong></p>
-            <p><strong>{{zip}}</strong></p>
-            <p><strong>{{city}}</strong></p>
-            <p><strong>{{state}}</strong></p>
+            </div>
+            </div>
 
         </div>
+
+
+
+       
     </div>
 </div>
 <div class="row">

@@ -90,9 +90,9 @@ span.card-title.activator.black-text {
   padding-right: 30px !important;
   padding-top: 20px !important;*/
 
-  border-bottom: 1px #eeeeee solid;
+  border-bottom: 1px #ddd solid;
   padding: 10px 20px;
-  margin: 10px 10px;
+  margin: 0px -5px !important
 
 }
 
@@ -113,8 +113,39 @@ span.card-title.activator.black-text {
   text-decoration: none;
 }
 
-.checkout_order_list{
-    padding: 20px;
+.checkout_order{
     margin-left: 20px !important;
-    background-color: $gray-bg-color;
+    background-color: #eeeeee;
+}
+
+.checkout_order_list{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px #ddd solid;
+}
+
+.checkout{
+  margin-top: 30px;
+}
+.no_bottom_border{
+  border-bottom: none;
+  
+}
+
+.checkout_title{  
+  font-size: 16px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.checkout_total{
+  padding-top:10px !important;
+}
+
+.text_green{
+  color: #8fc243;
+}
+
+.checkout_payment_method{
+  padding: 0px 20px;
 }

@@ -19,9 +19,8 @@ Router.map(function() {
 
 	this.route('about');
 	this.route('contact');
-	this.resource('checkout', function(){
-		this.route('success');
-	});
+	this.route('checkout');
+	this.route('success',{path: 'checkout/success'});
 });
 
 export default Router;

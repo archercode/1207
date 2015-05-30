@@ -5,12 +5,12 @@ export default Ember.ObjectController.extend({
   	count: Ember.computed.sum('q'),
      
     actions: {
-  		// showCartSummary: function(){
-  		// 	//TODO: jquery show
-  		// 	var view = $('.checkout_summary');
-  		// 	//if(view.get(''))	
-  		// 	view.toggle();
-  		// },
+  		showCartSummary: function(){
+  			//TODO: jquery show
+  			var view = $('.checkout_summary');
+  			//if(view.get(''))	
+  			view.toggle();
+  		},
 
        
   		removeItem: function(){

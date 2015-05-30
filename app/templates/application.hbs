@@ -4,11 +4,9 @@
         <li>{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
         <li>{{#link-to 'contact'}} Contact {{/link-to}}</li>
         <li>{{#link-to 'about'}} About {{/link-to}}</li>
-        <li>{{#link-to 'checkout'}} {{count}} {{/link-to}}</li>
-        <li><button {{action "showCartSummary" this}}>Summary</button></li>
         <li>
           <div class="cart shopping-cart">
-            <button {{action "showCartSummary" this}}>Summary</button>
+            <button {{action "showCartSummary" this}}>Cart {{count}}</button>
           </div>
         </li>
       {{/md-navbar}}

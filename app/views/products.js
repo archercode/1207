@@ -2,25 +2,20 @@ import Ember from 'ember';
 
 export default Ember.View.extend({
   didInsertElement: function() {},
+  getParent: 0,
 
   mouseX: 0, 
   mouseY: 0,
-  click: function(e){},
 
-  mouseEnter: function(e){
-    var obj = this;
-    console.log(e);
-      // $(document).mousemove(function(event) {
-      //   obj.set('mouseY', event.pageX);
-      //   obj.set('mouseX', event.pageY);
-      // });
+  click: function(e){
+    //this.setParent('getParent', e.)
   },
+
 
   actions:{
     itemAnimation: function(product){
       var object = this;
-    
-
+  
       var cart = $('.shopping-cart');
         // var imgtodrag = arguments[0].target.parentElement.parentElement.parentElement.children[0].children[1];
        var imgtodrag = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))

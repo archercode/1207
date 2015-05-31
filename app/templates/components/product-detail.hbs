@@ -5,7 +5,7 @@
 
  {{#md-card title=product.title image=product.image activator=true}}
 	  {{#md-card-content}}
-	    {{#link-to 'product' product.slug}}More Info{{/link-to}}
+	    {{#link-to 'product' product.slug class="bottom-align" }}More Info{{/link-to}}
 	  {{/md-card-content}}
 	  {{#md-card-reveal}}
 	      {{product.description}}

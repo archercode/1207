@@ -1,18 +1,13 @@
-<div class="row">
-	<div class="col m5">
-		<div>
-	    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
-	    </div>
-	</div>
-	<div class="col m7 product_specific_text">
-		<div class="product_title">
-	 		{{title}}
-	 	</div>
-	 	<div class="badge text-uppercase">
-	 		{{type}}
-	 	</div>
+<div class="row" id="product_specific_container">
 
-	 	<div class="row">
+	<div class="col l4 fixed_component"> 
+		<div class="row col s12">
+
+			<div>
+		    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
+		    </div>
+		</div>
+		<div class="row">
 
 	 		<div class="col m4 s4 row checkout_total">
 
@@ -33,18 +28,23 @@
 
 	 		</div>
 
-				<div class="col m7 s7  right-align product_price text_green product_title">
-			 		P {{price}}
-			 	</div>
-	 	
+			<div class="col m7 s7  right-align product_price text_green product_title">
+		 		P {{price}}
+		 	</div>
 	 	</div>
-	 	<div class="description">
-    	{{{description}}}
-    	</div>
-   	</div>
+	</div>
 
+	<div class="col l7 content_of_fixed_bar"> 
+		<div class=" product_specific_text">
+			<div class="product_title">
+		 		{{title}}
+		 	</div>
+		 	<div class="badge text-uppercase">
+		 		{{type}}
+		 	</div>
+		 	<div class="description">
+	    	{{{description}}}
+	    	</div>
+	   	</div>
+	</div>
 </div>
-
-{{#each product in model}}
-{{product.title}}
-{{/each}}

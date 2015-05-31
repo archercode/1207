@@ -1,33 +1,56 @@
-<div class='row'>
-   <div class='col s12'> 
-      <ul class="tabs" >
-          <li class="tab col s3">
-             {{#link-to 'products' activeClass='selected'}} All
-            {{/link-to}}        
-          </li>
-          <li class="tab col s3">
-            {{#link-to 'products.boards' activeClass='selected'}} Boards
-            {{/link-to}}
-          </li>
-          <li class="tab col s3">
-            {{#link-to 'products.sensors' activeClass='selected'}} Sensors
-            {{/link-to}}
-          </li>
-          <li class="tab col s3" >
-            {{#link-to 'products.robotics' activeClass='selected'}} Robotics
-            {{/link-to}}
-          </li>
-          <div class="indicator"></div>
-      </ul> 
+<div class="row">
+
+<div class="col m3 navigation fixed_component">
+  <div class='row'>
+     <div class='col s12'> 
+        <ul class=" " >
+            <!--li class="  row nav_title">
+               {{#link-to 'products' activeClass='selected'}} All
+              {{/link-to}}        
+            </li-->
+            <li class="  row nav_title text-uppercase">
+              {{#link-to 'products.boards' activeClass='selected'}} 
+                <img src="/icons/Remote-Control-128.png"  class="nav_icon" height="48" width="48">
+                <span class="nav_text">
+                Boards
+                </span>
+              {{/link-to}}
+            </li>
+            <li class="  row nav_title text-uppercase">
+              {{#link-to 'products.sensors' activeClass='selected'}} 
+                <img src="/icons/Modem-Wireless-128.png"  class="nav_icon" height="48" width="48">
+                  
+                <span class="nav_text">
+                Sensors
+                </span>
+              {{/link-to}}
+            </li>
+            <li class="  row nav_title text-uppercase" >
+              {{#link-to 'products.robotics' activeClass='selected'}} 
+                <img src="/icons/Webcam-128.png" class="nav_icon" height="48" width="48">
+                  
+                <span class="nav_text">
+                Robotics
+                </span>
+              {{/link-to}}
+            </li> 
+        </ul> 
+    </div>
   </div>
 </div>
-<div class='row'>
-<div>
 
-  <div class='col s12'>
-    {{outlet}}
-    {{md-modal-container}}
-  </div>
 
+<div class="col m9 main content_of_fixed_bar">
+  <!--div class='row'>
+    <div-->
+
+      <div class=''>
+        {{outlet}}
+        {{md-modal-container}}
+      </div>
+
+    <!--/div>
+  </div-->
 </div>
+
 </div>

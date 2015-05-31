@@ -29,6 +29,10 @@ span.card-title.activator.black-text {
   line-height: 30px;
 }
 
+.main_container{
+  
+}
+
 .float_right{
 	float:right;
 }
@@ -137,7 +141,7 @@ span.card-title.activator.black-text {
 }
 
 .checkout{
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .no_bottom_border{
   border-bottom: none;
@@ -180,12 +184,86 @@ span.card-title.activator.black-text {
   top: 0 !important;
 }
 
+.nav_title{
+  font-size: 26px;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-bottom: 1px #eee solid; 
+}
+
+.nav_text{
+  text-decoration:none;
+}
+
 .page_title{
   font-size: 35px;
   letter-spacing: 2px;
   padding: 20px;
   border-bottom: 1px #333 solid; 
   text-align: center;
-  color: $primary-color;
-
+  color: $primary-color;  
+  margin-top: 90px;
 }
+
+.fixed_component{
+  position: fixed;
+}
+
+.content_of_fixed_bar{
+  position:absolute;
+  right: 0px;
+}
+
+footer.fixed_component {
+  bottom: 0px;
+  width: 100%;
+  z-index: 1050;
+  background-color: #fff;
+
+  opacity: 0;  
+  padding-top: 20px;
+  padding-right: 10%;
+  border-top: 1px #ddd solid;
+}
+
+footer.fixed_component:hover{
+opacity: 1;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1030;
+  background-color: #fff;
+  padding-right: 10%;
+}
+
+.card .card-content { 
+  height: 150px;
+}
+
+.bottom_align{
+  bottom:0px;
+}
+
+.header{
+  width: 100%;
+  z-index: 1030;
+}
+
+.main.content_of_fixed_bar{
+  margin-top: 90px;
+}
+
+.navigation{
+  margin-top: 90px;
+  height: 100%;
+  border-right: 1px #eee solid;
+}
+
+.hide{
+  display:none;
+}
+
+.product_specific_text{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+

@@ -12,7 +12,7 @@ export default Ember.View.extend({
 
   actions:{
     itemAnimation: function(product){
-      
+      console.log('product add');
       //var viewElements = event.element;
       //var elementsInTemplate = viewElements.children;
       //var button = viewElements.getElementsByTagName('button');

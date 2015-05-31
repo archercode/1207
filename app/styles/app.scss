@@ -142,6 +142,7 @@ span.card-title.activator.black-text {
 
 .checkout{
   margin-top: 80px;
+  margin-bottom: 0px;
 }
 .no_bottom_border{
   border-bottom: none;
@@ -163,8 +164,14 @@ span.card-title.activator.black-text {
 }
 
 .checkout_payment_method{
-  padding: 0px 20px;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 0px !important;
 }
+
+.checkout_payment_data{
+  margin-bottom: 0px !important;
+}
+
 
 .product_title{
   font-size: 25px;
@@ -267,3 +274,15 @@ opacity: 1;
   padding-right: 30px;
 }
 
+p > div.materialize-selectable-item {
+  width: 33.33333%;
+  margin-left:0;
+}
+
+.footer{
+  margin-bottom:80px;
+}
+
+.btn-whole{
+  width: 100%;
+}

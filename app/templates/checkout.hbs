@@ -118,17 +118,39 @@
 
      <div class="row checkout_payment_method">
 
+            <div class="row checkout_title col s12">
+                Payment Method
+            </div>
 
         {{md-radios
+            class='payment_method'
             selection=selectedVal
             content=radioSelection
             optionValuePath='value'
             optionLabelPath='label'}}
 
-
-            
             <div class="row col s12 checkout_payment_data" >
-                Hello payment method should be here!
+                
+                {{#if optionBank }}
+                <div class="alert alert-info" role="alert"> 
+                    Shipping is through LBC. An additional of P150 will be charge on top of the total amount. Kindly ask me for the bank details. Thank you. 
+                </div>
+              {{/if}}
+
+              {{#if optionMeet }}
+
+              <div class="alert alert-info" role="alert"> 
+                    Let's schedule for a meet up. Kindly contact me at 0905-575-3988/0998-469-2148. Thank you. 
+                </div>
+              {{/if}}
+
+                {{#if optionPayP }}
+                    
+                <div class="alert alert-info" role="alert"> 
+                    Just a heads up!
+                    After clicking the button below you will be redirected to PayPal to authorize the payment. Be sure to complete the process or your order will not be processed successfully.
+                </div>
+                {{/if}}
             </div>
     </div>
 
@@ -138,6 +160,8 @@
   <div class="col m1">
   </div>
     <div class="col m5 ">
+    {{#if sub}}
+
         <div class="row checkout_order thumbnail fixed_component"> 
 
             
@@ -188,12 +212,12 @@
         </div>
 
 
-
+{{/if}}
        
     </div>
 </div>
 <div class="row">
-        <button type="submit" class="btn btn-primary" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
+        <button type="submit" class="btn btn-primary btn-whole footer col m6" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
 </div>
 
 {{outlet}}

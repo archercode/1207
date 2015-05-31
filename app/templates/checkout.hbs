@@ -93,6 +93,7 @@
             <label class="col s4">State/Province</label>
                     {{input value=state label="State/Province" class="col s8" placeholder="State/Province"}}
                         {{#if errors.state}}
+                        hello
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
     </div>
@@ -105,12 +106,6 @@
             content=radioSelection
             optionValuePath='value'
             optionLabelPath='label'}}
-
-       <!--      {{md-radios
-        selection=radioSelection
-        content=radioChoices
-        optionValuePath='id'
-        optionLabelPath='text'}} -->
 
 
             <div class="row  col s12">

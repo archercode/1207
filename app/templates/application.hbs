@@ -1,13 +1,19 @@
 
 <div class="header fixed_component">
+        <a href="#" class="logo">
+            <img src="/logo.png"  class="img_logo" height="50" width="50">
+          </a>
       {{#md-navbar}}
-        <li>{{#link-to 'products'}} Products {{/link-to}}</li>
-        <li>{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
-        <li>{{#link-to 'contact'}} Contact {{/link-to}}</li>
+
+        <li class="navbar_border">{{#link-to 'products'}} Products {{/link-to}}</li>
+        <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
+        <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
         <li>{{#link-to 'about'}} About {{/link-to}}</li>
-        <li>
-          <div class="cart shopping-cart">
-            <button {{action "showCartSummary" this}}>Cart {{count}}</button>
+        <li class="cart">
+          <div class=" shopping-cart" {{action "showCartSummary" this}}>
+
+            <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
+            <div class="badge orange"> {{count}}</div>
           </div>
         </li>
       {{/md-navbar}}
@@ -48,15 +54,13 @@
       </div>
 
       {{#link-to 'checkout'}}
-      <button>CHECKOUT</button>
+    <button {{action 'goToCheckout'}}>CHECKOUT</button>
       {{/link-to}}
     {{else}}
       <div>
-        no item
+        Your cart is empty. Add some goodies!
       </div>
     {{/if}}
-
-    <button {{action 'goToCheckout'}}>CHECKOUT</button>
 
   </div>
 </div>

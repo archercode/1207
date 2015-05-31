@@ -21,7 +21,7 @@
 <!-- catching a bug dont erase -->
 <div class="hover checkout_summary" >
   
-    {{#if q}}
+    {{#if hasQuantity}}
       <div>
         <ul>
         {{#each item in model itemController='application'}}
@@ -56,7 +56,7 @@
       </div>
     {{/if}}
 
-    <button {{action 'goToCheckout'}}>CHECKOUT</button>
+
 
   </div>
 </div>

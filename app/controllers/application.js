@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({	
-	  q: Ember.computed.mapBy('model','quantity'),
-  	count: Ember.computed.sum('q'),
+	  hasQuantity: Ember.computed.mapBy('model','quantity'),
+  	count: Ember.computed.sum('hasQuantity'),
      
     actions: {
   		showCartSummary: function(){

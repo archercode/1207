@@ -25,13 +25,26 @@ body {
   font-family: "RC Font", Verdana, Arial, serif;
 }
 
+.logo{
+  position: absolute;
+  left: 10%;
+  padding: 7px 0;
+}
+
 span.card-title.activator.black-text {
   line-height: 30px;
 }
 
-.main_container{
-  
+li.navbar_border:after{
+  height:1px;
+  background:#333;
+  height:45%;
+  display:block;
+  content:"";
+  margin:6px auto;
 }
+
+
 
 .float_right{
 	float:right;
@@ -39,6 +52,12 @@ span.card-title.activator.black-text {
 
 .float_left{
 	float:left;
+}
+
+.cart{
+  margin-left: 100px;
+  margin-right: -100px;
+  padding: 0 10px;
 }
 
 .prod_cart_buttons{
@@ -55,13 +74,13 @@ span.card-title.activator.black-text {
 }
 
 .checkout_summary{
-	width: 30%;
+	width: auto;
   padding: 20px;
   position: absolute;
   right: 20px;
   background-color: #fff;
   background-color: rgba(255,255,255,.97);
-  border-color: rgba(210,210,210,.5);
+  border:  1px #ddd solid;
   border-radius: 2px;
   box-shadow: 0 5px 14px rgba(0,0,0,.1);
   -webkit-transform: translateY(-10px);
@@ -72,7 +91,7 @@ span.card-title.activator.black-text {
 }
 .checkout_summary:after{
 	  top: -7px;
-  right: 50%;
+  right: 39%;
   border-width: 0 9px 7px;
   border-color: #fff transparent;
     content: '';
@@ -257,6 +276,7 @@ opacity: 1;
 
 .main.content_of_fixed_bar{
   margin-top: 90px;
+  right: 2%;
 }
 
 .navigation{

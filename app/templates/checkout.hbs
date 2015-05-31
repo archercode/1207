@@ -14,11 +14,21 @@
     <div class="row checkout_input">
             <label class="col s4">First Name</label>
             {{input value=firstName label="First name" class="col s8" placeholder="First Name"}}
+            
+            {{#if errors.firstName}}
+                {{errors.firstName}}
+            {{/if}}
 
     </div>
     <div class="row checkout_input">
             <label class="col s4">Last Name</label>
-            {{input value=lastName label="Last name" class="col s8" placeholder="Last Name"}} 
+            {{input value=lastName 
+            label="Last name" 
+            class="col s8" placeholder="Last Name"}} 
+
+            {{#if errors.lastName}}
+                {{errors.lastName}}
+            {{/if}}
 
     </div>
 
@@ -28,7 +38,10 @@
 
             <label class="col s4">Email</label>
             {{input class="col s8" value=email label="Email Address" placeholder="Email Address"}}
+            
                 {{#if errors.email}}
+                {{errors.email}}
+
                     <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                 {{/if}} 
     </div>
@@ -39,6 +52,7 @@
             <label class="col s4">Phone</label>
                     {{input value=phone label="Phone" class="col s8" placeholder="Phone"}}
                         {{#if errors.phone}}
+                        {{errors.phone}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
             
@@ -51,6 +65,7 @@
             <label class="col s4">Address</label>
                     {{input value=streetAddress label="Street Address" class="col s8" placeholder="Street Address"}}
                         {{#if errors.streetAddress}}
+                            {{errors.streetAddress}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
         
@@ -62,6 +77,7 @@
             <label class="col s4">Apt, suite, etc.</label>
                     {{input value=streetAddress2 label="Street Address 2" class="col s8" placeholder="Apt, suite, etc."  autofocus=false}}
                         {{#if errors.streetAddress2}}
+                        {{errors.streetAddress2}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}} 
     </div>
@@ -71,7 +87,8 @@
                     {{input type="text" placeholder="Family name" value=newFamilyname class="form-control"}} -->
             <label class="col s4">Zip Code</label>
                     {{input value=zip label="Zip Code" class="col s8" placeholder="Zip Code"}}
-                        {{#if errors.phone}}
+                        {{#if errors.zip}}
+                        {{errors.zip}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
      
@@ -83,6 +100,7 @@
             <label class="col s4">City</label>
                     {{input value=city label="City" class="col s8" placeholder="City"}}
                         {{#if errors.city}}
+                        {{errors.city}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
             
@@ -93,6 +111,7 @@
             <label class="col s4">State/Province</label>
                     {{input value=state label="State/Province" class="col s8" placeholder="State/Province"}}
                         {{#if errors.state}}
+                        {{errors.state}}
                             <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                         {{/if}}
     </div>
@@ -109,14 +128,6 @@
             content=radioSelection
             optionValuePath='value'
             optionLabelPath='label'}}
-
-       <!--      {{md-radios
-        selection=radioSelection
-        content=radioChoices
-        optionValuePath='id'
-        optionLabelPath='text'}} -->
-
-
 
             <div class="row col s12 checkout_payment_data" >
                 

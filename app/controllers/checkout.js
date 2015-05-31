@@ -79,24 +79,25 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
             length: { minimum: 2}
           },
           //
-          email:{
-            format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  }
+          email:{ // /^(\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\.)/
+            format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ message: 'Enter valid email.'  }
           },
           phone: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field lastname.'  }
+            format: { with: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/ , message: 'Required field lastname.'  }
           },
           //
           streetAddress:{
-            format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  }
+            format: { with:  /\b(\d{2,5}\s+)(?![a|p]m\b)(NW|NE|SW|SE|north|south|west|east|n|e|s|w)?([\s|\,|.]+)?(([a-zA-Z|\s+]{1,30}){1,4})(court|ct|street|st|drive|dr|lane|ln|road|rd|blvd)/i, /*allowBlank: true,*/ message: 'Enter valid address.'  }
           },
           streetAddress2: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field lastname.'  }
+            //format: { with:  /^[a-zA-Z0-9_.-]*$/  }
+             length: { minimum: 5}
           },
           //
           zip:{
             //format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  }
             numericality: true,
-            length: { minimum: 7}
+            length: { minimum: 3}
           },
           city: {
             format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field city.'  }

@@ -27,7 +27,7 @@
 <!-- catching a bug dont erase -->
 <div class="hover checkout_summary" >
   
-    {{#if q}}
+    {{#if hasQuantity}}
       <div>
         <ul>
         {{#each item in model itemController='application'}}
@@ -61,7 +61,6 @@
         Your cart is empty. Add some goodies!
       </div>
     {{/if}}
-
   </div>
 </div>
   <!-- </div> -->

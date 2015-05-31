@@ -27,6 +27,37 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
       }, this);
     });    
   },
+
+  selectedVal: 'Ship',
+
+  radioSelection: [
+        {label: 'Shipping', value: 'Ship'},
+        {label: 'Meetup', value: 'Meet'},
+        {label: 'PayPal', value: 'Paypal'},
+        //{label: 'Credit Card', value: 'cc'},
+  ],
+  
+  optionBank: true,
+  optionMeet: false,
+  optionPayP: false,    
+
+  onChangeRadio : function () {
+      if (this.selectedVal === 'Ship'){
+        this.set('optionBank', true);
+        this.set('optionMeet', false);
+        this.set('optionPayP', false);
+      }
+      if (this.selectedVal === 'Meet'){
+        this.set('optionBank', false);
+        this.set('optionMeet', true);
+        this.set('optionPayP', false);
+      }
+      if (this.selectedVal === 'Paypal'){
+        this.set('optionBank', false);
+        this.set('optionMeet', false);
+        this.set('optionPayP', true);
+      }
+  }.observes('selectedVal'),
 	/*validations: {
 	    name: {
 	      presence: true,
@@ -74,6 +105,8 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
             format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Required field state.'  }
           },
         },
+
+        
     sub: Ember.computed.mapBy('model','subtotal'),
     subTotal: Ember.computed.sum('sub'),  
     actions:{

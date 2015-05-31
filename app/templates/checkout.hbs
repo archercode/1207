@@ -100,6 +100,19 @@
      <div class="row checkout_payment_method">
 
 
+        {{md-radios
+            selection=selectedVal
+            content=radioSelection
+            optionValuePath='value'
+            optionLabelPath='label'}}
+
+       <!--      {{md-radios
+        selection=radioSelection
+        content=radioChoices
+        optionValuePath='id'
+        optionLabelPath='text'}} -->
+
+
             <div class="row  col s12">
              {{#md-tabs selected=selectedTabId}}
                 {{md-tab value='a' class='col m5 no_style' title='Cash on Meetup'}}

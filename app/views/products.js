@@ -40,7 +40,7 @@ export default Ember.View.extend({
           });
           imgclone.appendTo($('body'));
           imgclone.animate({
-              'top': cart.offset().top - 30,
+              'top': cart.offset().top + 20,
                   'left': cart.offset().left,
                   'width': 75,
                   'height': 75

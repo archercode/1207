@@ -1,69 +1,55 @@
 
 <div class="header fixed_component">
-        <a href="/#" class="logo">
-            <img src="/logo.png"  class="img_logo" height="50" width="50">
+        <a class="logo">
+          <img src="/logo.png"  class="img_logo" height="50" width="50"> 
         </a>
-      {{#md-navbar}}
+        {{#md-navbar}}
 
-        <li class="navbar_border">{{#link-to 'products'}} Products {{/link-to}}</li>
-        <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
-        <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
-        <li>{{#link-to 'about'}} About {{/link-to}}</li>
-        <li class="cart">
-          <div class=" shopping-cart" {{action "showCartSummary" this}}>
+          <li class="navbar_border">{{#link-to 'products'}} Products {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
+          <li>{{#link-to 'about'}} About {{/link-to}}</li>
+          <li class="cart">
+            <div class=" shopping-cart" {{action "showCartSummary" this}}>
 
-            <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
-            <div class="badge orange"> {{count}}</div>
-          </div>
-        </li>
-      {{/md-navbar}}
-        <!-- <div class="checkout_summary" style="display:none;"> -->
-<!-- catching a bug dont erase -->
-<!-- {{#each item in model itemController='application'}}
-  {{item.title}}
-  <button {{action 'removeItem'}}></button>
-{{/each}} -->
-
-<!-- catching a bug dont erase -->
-<div class="hover checkout_summary" >
-  
-    {{#if hasQuantity}}
-      <div>
-        <ul>
-        {{#each item in model itemController='application'}}
-          <li class="row"> 
-            <div class="col s7">
-            {{item.title}}
-            </div>
-
-            <div class="col s3">
-            {{item.quantity}}
-            </div>
-
-            <div class="col s2">
-            <!-- {{md-btn text='' icon='mdi-content-remove' action='removeItem' 
-               isDisabled = false class="close"
-        iconPosition='center'}} -->
-
-        <button {{action 'removeItem'}}></button>
-
+              <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
+              <div class="badge orange"> {{count}}</div>
             </div>
           </li>
-        {{/each}}
-        </ul>
-      </div>
+        {{/md-navbar}}
+         
+    <div class="hover checkout_summary" >
+      {{#if hasQuantity}}
+        <div>
+          <ul>
+          {{#each item in model itemController='application'}}
+            <li class="row"> 
+              <div class="col s7">
+              {{item.title}}
+              </div>
 
-      {{#link-to 'checkout'}}
-    <button {{action 'goToCheckout'}}>CHECKOUT</button>
-      {{/link-to}}
-    {{else}}
-      <div>
-        Your cart is empty. Add some goodies!
-      </div>
-    {{/if}}
-  </div>
+              <div class="col s3">
+              {{item.quantity}}
+              </div>
+
+              <div class="col s2">
+          <button {{action 'removeItem'}}>x</button>
+              </div>
+            </li>
+          {{/each}}
+          </ul>
+        </div>
+
+        {{#link-to 'checkout'}}
+      <button>CHECKOUT</button>
+        {{/link-to}}
+      {{else}}
+        <div>
+          Your cart is empty. Add some goodies!
+        </div>
+      {{/if}}
+    </div>
 </div>
-  <!-- </div> -->
 
   <div class="main_container">
     {{md-modal-container}}

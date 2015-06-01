@@ -10,8 +10,6 @@
 		<div class="row">
 
 	 		<div class="col m4 s4 row checkout_total">
-
-
 				{{#if itemsCount}}
 					{{md-btn text='-' action='minusItem'  class='col m6'
 						isDisabled = false iconPosition='center'}} 
@@ -20,7 +18,7 @@
 					{{md-btn text='-' action='minusItem' class='col m6' isDisabled = true iconPosition='center'}} 
 				{{/if}}
 
-
+				{{itemsCount}}
 				<div {{action 'itemAnimation' this target=view}}>
 					{{md-btn text='+' iconPosition='center' class='col m6 add_button'}}
 
@@ -43,7 +41,7 @@
 		 		{{type}}
 		 	</div>
 		 	<div class="description">
-	    	{{{description}}}
+	    	{{{html}}}
 	    	</div>
 	   	</div>
 	</div>

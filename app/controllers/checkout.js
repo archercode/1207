@@ -112,7 +112,6 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
     subTotal: Ember.computed.sum('sub'),  
     actions:{
       removeItem: function(){
-        console.log('item clicked')
         //console.log(item.get('title'));
         this.set('quantity',0);
         var item = this.get('model');

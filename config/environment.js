@@ -5,12 +5,14 @@ module.exports = function(environment) {
     modulePrefix: 'rockincircuits',
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
-      'font-src': "'self' data: use.typekit.net",
-      'connect-src': "'self'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com https://cdn.mxpnl.com http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js http://threejs.org/examples/js/libs/stats.min.js",
+      'font-src': "'self' data: use.typekit.net http://fonts.gstatic.com",
+      'connect-src': "'self' https://api.mixpanel.com http://custom-api.local",
       'img-src': "'self' www.facebook.com p.typekit.net",
-      'style-src': "'self' 'unsafe-inline' use.typekit.net",
-      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+      'style-src': "'self' 'unsafe-inline' use.typekit.net http://fonts.googleapis.com",
+      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com", 
+      'media-src': "'self'",
+
     },
     environment: environment,
     baseURL: '/',

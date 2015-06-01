@@ -9,8 +9,8 @@ export default Ember.Route.extend({
       },
 	},
 	beforeModel: function(){
-    	// return new Ember.RSVP.Promise(function (resolve, reject) {
-    	//   setTimeout(function () {resolve({});}, 3000);
+    //  	 return new Ember.RSVP.Promise(function (resolve, reject) {
+    //  	   setTimeout(function () {resolve({});}, 3000);
     // });
   
 	},

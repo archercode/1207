@@ -5,7 +5,7 @@
         </a>
         {{#md-navbar}}
 
-          <li class="navbar_border">{{#link-to 'products'}} Products {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'products'}} Shop {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
           <li>{{#link-to 'about'}} About {{/link-to}}</li>
@@ -27,7 +27,7 @@
               <div class="col s7">
               {{item.title}}
               </div>
-
+              {{item.price}}
               <div class="col s3">
               {{item.quantity}}
               </div>
@@ -39,7 +39,7 @@
           {{/each}}
           </ul>
         </div>
-
+        Subtotal: {{subTotal}}
         {{#link-to 'checkout'}}
       <button>CHECKOUT</button>
         {{/link-to}}

@@ -56,6 +56,10 @@ export default Ember.View.extend({
                 .animate({left:0}, (((intDuration/intShakes)/4)));
             }
             object.get('controller').send('saveToStorage', product);
+            var view = $('.checkout_summary');
+            if (!view.is(':visible')){
+              view.toggle();
+            }
           }, 1300);
 
           imgclone.animate({

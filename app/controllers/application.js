@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.ObjectController.extend({	
 	  hasQuantity: Ember.computed.mapBy('model','quantity'),
   	count: Ember.computed.sum('hasQuantity'),
+
+    hasSubtotal: Ember.computed.mapBy('model','subtotal'),
+    subTotal: Ember.computed.sum('hasSubtotal'),
      
     actions: {
   		showCartSummary: function(){

@@ -88,7 +88,7 @@ Product.reopenClass({
       type: 'sensors',
       image: '/images/products/DFR0026.jpg',
     },
-    /*{
+    {
     	id : 7,
       title: 'Soil Moisture Sensor Immersion Gold',
       price: 180,
@@ -264,7 +264,7 @@ Product.reopenClass({
       html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Power Supply range: 5v or 7-12v</li><li>Arduino Leonardo Compatible</li><li>Integrate with WG1300 WIFI chip and support 2.4GHz IEEE 802.11 b/g network</li><li>WIFi and MicroSD driven by SPI port</li><li>On board 2.4G PCB Antenna</li><li>Driver pins</li><li>WIFI Module-D7(IRQ),D5(VBAT),D10(CS),D14(MISO),D15(SCK),D16(MOSI)</li><li>MicroSD-D4(CS),D14(MISO),D15(SCK),D16(MOSI)</li><li>User friendly Reset button</li><li>Dimension: 72 mm x 55 mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/Wido-WIFI_IoT_Node_SKU:DFR0321">Wiki Doc</a></li><li><a href="https://github.com/Lauren-ED209/Adafruit_CC3000_Library/archive/master.zip">Arduino library</a></li><li><a href="https://github.com/Lauren-ED209/Adafruit_CC3000_Library">Github</a></li><li><a href="https://github.com/Lauren-ED209/Wido-OpenSource-IOT-Node">Schematic</a></li></ul><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>WiDo x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
       type  : 'boards',
       image : '/images/products/DFR0321.jpg'
-    },*/
+    },
     
 
     /*
@@ -278,7 +278,7 @@ Product.reopenClass({
     },
     */
 
-    /*
+    
     {
     	id: 24,
       title: 'Tilt/Pan Kit (5kg)',
@@ -396,7 +396,7 @@ Product.reopenClass({
       html: '<section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><p>The DFRobot Relay Module is a standard relay used with a controller board to interface external electrical circuits or modules. Some of the most common applications with Arduino are: Home lighting, electrical appliances of high power and other equipments. The modular design makes it easy to integrate with a controller board. The Relay integrates a status LED, in order to acknoledge visually its status ON or OFF. It can be controlled through the digital IO port, with a simple HIGH or LOW on Arduino compatible boards. Other boards will work requiring same voltage level. Other usages include control of solenoid valves, lamps, motors and other high current or high voltage devices.</p> <p> </p> <p>Latest Update: V3.1</p><ul><li>Improved the silkscreen on the bottom layer of the sensor to indicate the hardware connection.</li><li>Some kits may include acrylic holder and nylon screw set to prevent shorting of high power interface with metalic surface.</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Single relay board</li><li>Rated through-current: 10A (NO) 5A (NC)</li><li>Maximum switching voltage: 150VAC 24VDC</li><li>Interface: Digital</li><li>Control signal: TTL level</li><li>Contact Rating (Res. Load): 10A 277VAC / 24VDC</li><li>Max. switching voltage 250VAC / 30VDC</li><li>Max. switching current 15A</li><li>Max. switching power 2770VA 240W </li><li>UL Rating: 10A 120VAC / 10A 277VAC</li><li>Operate time (at nomi. Vot.): 10ms</li><li>Release time (at nomi. Vot.): 5ms</li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php?title=Relay_Module_(Arduino_Compatible)_(SKU:_DFR0017)">Wiki Doc</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0017/DFR-0017-Relay%20JQC-3FF.pdf">Datasheet</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0017/Relay%20Module%20V3%20SCH.pdf">Schematic</a></li><li><a href="http://www.dfrobot.com/wiki/index.php?title=Tutorial:_DFR0017_V2_Relay">How to use relay tutorial </a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Relay Module V3.1 x1</li><li>Digital  Cable  x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section>',
       type  : 'robotics',
       image : '/images/products/DFR0017.jpg'
-    },*/
+    },
     
 	]
 });

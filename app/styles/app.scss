@@ -295,6 +295,19 @@ opacity: 1;
   bottom:0px;
 }
 
+.center_page{
+  position: fixed;
+  top: 0; 
+  bottom: 0;
+  right: 0;
+  left: 0; 
+  width: 80px; 
+  height:80px;
+  margin: auto; 
+  vertical-align: center;
+
+}
+
 .header{
   width: 100%;
   z-index: 1030;

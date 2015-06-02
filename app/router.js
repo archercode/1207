@@ -21,6 +21,7 @@ Router.map(function() {
 	this.route('contact');
 	this.route('checkout');
 	this.route('success',{path: 'checkout/success'});
+	this.resource('search');
 });
 
 export default Router;

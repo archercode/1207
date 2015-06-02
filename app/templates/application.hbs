@@ -1,12 +1,15 @@
 
 <div class="header fixed_component">
-        <a class="logo">
+        {{#link-to 'index' class = 'logo'}}
+        <!-- <a class="logo"> -->
           <img src="/logo.png"  class="img_logo" height="50" width="50"> 
-        </a>
+        <!-- </a> -->
+        {{/link-to}}
         {{#md-navbar}}
           <li class="navbar_border">{{#link-to 'products'}} Shop {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'search'}} Search {{/link-to}}</li>
           <li>{{#link-to 'about'}} About {{/link-to}}</li>
           <li class="cart">
             <div class=" shopping-cart" {{action "showCartSummary" this}}>

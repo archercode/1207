@@ -29,7 +29,7 @@ export default Ember.View.extend({
           var imgclone = imgtodrag.clone()
               .offset({
               top: event.target.offsetTop,//event.screenX,//button.pageX,//this.get('mouseX') - 75,
-              left: 300+event.target.offsetLeft//event.screenY,//this.get('mouseY') - 75
+              left: event.target.offsetLeft//event.screenY,//this.get('mouseY') - 75
           });
           imgclone.css({
               'opacity': '0.5',

@@ -1,6 +1,11 @@
 @import 'components/color';
 @import 'components/variables';
  
+
+$break-small: 320px;
+$break-medium: 1000px;
+$break-large: 1200px;
+
 // Custom color settings go here 
 $primary-color: color("green", "lighten-1");
 $primary-color-dark: color("green", "darken-2");
@@ -28,8 +33,18 @@ body {
 
 .logo{
   position: absolute;
-  left: 10%;
-  padding: 7px 0;
+  z-index: 1200;
+
+  @media screen and (max-width: $break-large) {
+    padding: 7px 0;
+    left: 3%;
+  }
+
+  @media screen and (max-width: $break-medium) {
+    padding: 2px 0;
+    right: 2%;
+    left: auto;
+  }
 }
 
 span.card-title.activator.black-text {
@@ -59,9 +74,9 @@ li.navbar_border:after{
 }
 
 .cart{
-  margin-left: 180px;
-  margin-right: -200px;
   padding: 0 10px;
+  position: absolute;
+  right: 3%;
 }
 
 .prod_cart_buttons{
@@ -95,7 +110,7 @@ li.navbar_border:after{
 }
 .checkout_summary:after{
 	top: -7px;
-  right: 39%;
+  right: 5%;
   border-width: 0 9px 7px;
   border-color: #fff transparent;
     content: '';
@@ -305,7 +320,15 @@ opacity: 1;
   height:80px;
   margin: auto; 
   vertical-align: center;
+}
 
+.center_page{ 
+  right: 0;
+  left: 0; 
+  width: 80px; 
+  height:80px;
+  margin: auto; 
+  vertical-align: center;
 }
 
 .header{

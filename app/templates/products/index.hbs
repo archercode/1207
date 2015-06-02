@@ -1,38 +1,36 @@
-<!-- <ol class="breadcrumb">
-  <li class="active">Products</li>
-</ol> -->
+<div class='space_on_top'>
 
 {{#each product in model itemController='product'}}
-	<div class='col l4 product_card'>
+	<div class='col l4 '>
 		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
-
-		{{product-detail product=product addItem='addItem'}}	
+		<div class='product_card'>
+			{{product-detail product=product addItem='addItem'}}	
 			<!-- <button>{{action "select" post target=view}}</button> -->
-	  <div class="prod_cart_buttons row">
+		  	<div class="prod_cart_buttons row">
 
-		{{#if product.itemsCount}}
-			{{md-btn text='-' action='minusItem'  class='col s4'
-				isDisabled = false iconPosition='center'}}
+			{{#if product.itemsCount}}
+				{{md-btn text='-' action='minusItem'  class='col s4'
+					isDisabled = false iconPosition='center'}}
 
-			<div class=" prod_cart_button_text col s4 center-align" >
-				{{product.itemsCount}}
+				<div class=" prod_cart_button_text col s4 center-align" >
+					{{product.itemsCount}}
+				</div>
+
+			{{else}}
+				{{md-btn text='-'  action='minusItem' class='col s4'
+					isDisabled = true iconPosition='center'}}
+
+				<div class=" prod_cart_button_text col s4 center-align">
+					BUY
+				</div>
+			{{/if}}
+
+				<div {{action 'itemAnimation' product target=view.parentView}}>
+					{{md-btn text='+'  iconPosition='center' class='col s4 add_button'}}
+				</div>
+
 			</div>
-
-		{{else}}
-			{{md-btn text='-'  action='minusItem' class='col s4'
-				isDisabled = true iconPosition='center'}}
-
-			<div class=" prod_cart_button_text col s4 center-align">
-				BUY
-			</div>
-		{{/if}}
-
-		
-
-		<div {{action 'itemAnimation' product target=view.parentView}}>
-			{{md-btn text='+'  iconPosition='center' class='col s4 add_button'}}
 		</div>
-
-	 </div>
 	</div>
 {{/each}}
+</div>

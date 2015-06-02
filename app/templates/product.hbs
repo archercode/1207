@@ -1,39 +1,43 @@
 <div class="row" id="product_specific_container">
 
-	<div class="col l4 fixed_component"> 
-		<div class="row col s12">
+	<div class="fixed_component"> 
+		<div class="col l5 space_on_top">
+			<div class="row col s12">
 
-			<div>
-		    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
-		    </div>
-		</div>
-		<div class="row">
+				<div>
+			    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
+			    </div>
+			</div>
+			<div class="row">
 
-	 		<div class="col m4 s4 row checkout_total">
-				{{#if itemsCount}}
-					{{md-btn text='-' action='minusItem'  class='col m6'
-						isDisabled = false iconPosition='center'}} 
+		 		<div class="col m4 s4 row checkout_total">
+					{{#if itemsCount}}
+						{{md-btn text='-' action='minusItem'  class='col m4'
+							isDisabled = false iconPosition='center'}} 
 
-				{{else}}
-					{{md-btn text='-' action='minusItem' class='col m6' isDisabled = true iconPosition='center'}} 
-				{{/if}}
+					{{else}}
+						{{md-btn text='-' action='minusItem' class='col m4' isDisabled = true iconPosition='center'}} 
+					{{/if}}
+					<div class="col m2 s2">
 
-				{{itemsCount}}
-				<div {{action 'itemAnimation' this target=view}}>
-					{{md-btn text='+' iconPosition='center' class='col m6 add_button'}}
+						{{itemsCount}}
+					</div>
+					<div {{action 'itemAnimation' this target=view}}>
+						{{md-btn text='+' iconPosition='center' class='col m4 add_button'}}
 
-				</div>
+					</div>
 
-	 		</div>
+		 		</div>
 
-			<div class="col m7 s7  right-align product_price text_green product_title">
-		 		P {{price}}
+				<div class="col m7 s7  right-align product_price text_green product_title">
+			 		P {{price}}
+			 	</div>
 		 	</div>
 	 	</div>
 	</div>
 
-	<div class="col l7 content_of_fixed_bar "> 
-		<div class="footer product_specific_text">
+	<div class="content_of_fixed_bar "> 
+		<div class=" col l7 space_on_top footer product_specific_text">
 			<div class="product_title">
 		 		{{title}}
 		 	</div>

@@ -7,12 +7,33 @@
           <li class="navbar_border">{{#link-to 'products'}} Shop {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
-          <li>{{#link-to 'about'}} About {{/link-to}}</li>
+          <li class="navbar_border" >{{#link-to 'about'}} About {{/link-to}}</li>
+          <li class="navbar_border" >
+
+              <div class="iconmelon header_icons row">
+                <div class="svg_icon" >
+                <svg viewBox="0 0 32 32">
+                  <use xlink:href="/icons.svg#facebook1"></use>
+                </svg> 
+                </div>
+                <div class="svg_icon" >
+
+                <svg class="svg_icon" viewBox="0 0 32 32">
+                  <use xlink:href="/icons.svg#twitter1"></use>
+                </svg>
+                </div>
+                <div class="svg_icon" >
+
+                <svg class="svg_icon" viewBox="0 0 32 32">
+                  <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+                </svg>
+                </div>
+              </div>
+          </li>
           <li class="cart">
             <div class=" shopping-cart" {{action "showCartSummary" this}}>
-
               <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
-              <div class="badge orange"> {{count}}</div>
+              <div class="badge orange prod_count"> {{count}}</div>
             </div>
           </li>
         {{/md-navbar}}

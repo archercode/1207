@@ -33,7 +33,11 @@ body {
 
 .logo{
   position: absolute;
-  z-index: 1200;
+
+  left: 10%;
+  padding: 7px 0;
+  z-index: 1080; //1200
+
 
   @media screen and (max-width: $break-large) {
     padding: 7px 0;
@@ -45,6 +49,7 @@ body {
     right: 2%;
     left: auto;
   }
+
 }
 
 span.card-title.activator.black-text {

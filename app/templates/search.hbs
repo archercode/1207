@@ -1,0 +1,36 @@
+
+<div class = 'row navigation fixed_component '>
+<form {{action "search" on="submit"}}>
+      {{input value=queryField}}
+      <input type="submit" value="Search"/>
+    </form>
+    
+    {{#if query}}
+      <p>Displaying results for "{{query}}"</p>
+      
+         <ul>
+  {{#each model as |item|}}
+  {{#link-to 'product' item.slug}}
+    <li>{{item.title}}</li>
+    {{/link-to}}
+  {{/each}}
+    </ul>
+    {{/if}}
+
+
+  {{count}}
+    <ul>
+    <!--  {{#each item in model itemController='search'}}
+        {{#link-to 'product' product.slug}}
+          <li>{{item.title}}</li>
+         {{/link-to}}
+
+     {{/each}} -->
+
+ 
+
+ 	</ul>
+sadfdaffadsfweafsdfdsfsdfsd
+</div>
+
+ <!-- {{#link-to 'product' product.slug class="bottom-align" }}More Info{{/link-to}} -->

@@ -1,13 +1,18 @@
 
 <div class="header fixed_component">
+
         {{#link-to 'index' class="logo"}}
           <img src="/logo.png"  class="img_logo" height="50" width="50"> 
+
         {{/link-to}}
         {{#md-navbar class='navbar_custom'}}
-          <li class="navbar_border start">{{#link-to 'products'}} Shop {{/link-to}}</li>
-          <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
-          <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
-          <li class="navbar_border" >{{#link-to 'about'}} About {{/link-to}}</li>
+          <li class="navbar_border start">{{#link-to 'products'}} SHOP {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'blogs'}} BLOGS {{/link-to}}</li>
+          <li class="navbar_border">{{#link-to 'contact'}} CONTACT {{/link-to}}</li>
+
+          <li class="navbar_border">{{#link-to 'search'}} SEARCH {{/link-to}}</li>
+
+          <li class="navbar_border" >{{#link-to 'about'}} ABOUT {{/link-to}}</li>
           <li class="navbar_border" >
 
               <div class=" header_icons valign-wrapper">
@@ -30,7 +35,12 @@
                 </div>
               </div>
           </li>
+<<<<<<< HEAD
           <li class="navbar_border cart start">
+=======
+
+          <li class="cart">
+>>>>>>> ca90909c18c9eff7a2e2f2fa43a392bc2b5a92a8
             <div class=" shopping-cart" {{action "showCartSummary" this}}>
               <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
               <div class="badge orange prod_count"> {{count}}</div>

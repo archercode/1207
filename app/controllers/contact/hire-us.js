@@ -61,20 +61,20 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	  optionPayP: false,    
 
 	onChangeRadio : function () {
-	   if (this.selectedVal === 'Ship'){
-        this.set('optionBank', true);
-        this.set('optionMeet', false);
-        this.set('optionPayP', false);
-     	 }	
-      if (this.selectedVal === 'Meet'){
-        this.set('optionBank', false);
-        this.set('optionMeet', true);
-        this.set('optionPayP', false);
-      	}
-      if (this.selectedVal === 'Paypal'){
-        this.set('optionBank', false);
-        this.set('optionMeet', false);
-        this.set('optionPayP', true);
+	      if (this.selectedVal === 'Ship'){
+	        this.set('optionBank', true);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', false);
+	      }
+	      if (this.selectedVal === 'Meet'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', true);
+	        this.set('optionPayP', false);
+	      }
+	      if (this.selectedVal === 'Paypal'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', true);
 	      }
 	  }.observes('selectedVal'),
 

@@ -1,11 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
-  dummy: 0,
-
-  didInsertElement: function(){
-  	debugger;
-  },
 
 
   count: function() {
@@ -20,7 +15,7 @@ export default Ember.ObjectController.extend({
   actions: {
     search: function() {
       this.set('query', this.get('queryField'));
-      this.set(this.get('queryField'), '');
+      //this.set(this.get('queryField'), '');
     }
   }
 });

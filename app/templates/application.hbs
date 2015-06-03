@@ -3,34 +3,34 @@
         {{#link-to 'index' class="logo"}}
           <img src="/logo.png"  class="img_logo" height="50" width="50"> 
         {{/link-to}}
-        {{#md-navbar}}
-          <li class="navbar_border">{{#link-to 'products'}} Shop {{/link-to}}</li>
+        {{#md-navbar class='navbar_custom'}}
+          <li class="navbar_border start">{{#link-to 'products'}} Shop {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'blogs'}} Blogs {{/link-to}}</li>
           <li class="navbar_border">{{#link-to 'contact'}} Contact {{/link-to}}</li>
           <li class="navbar_border" >{{#link-to 'about'}} About {{/link-to}}</li>
           <li class="navbar_border" >
 
-              <div class="iconmelon header_icons row">
-                <div class="svg_icon" >
-                <svg viewBox="0 0 32 32">
-                  <use xlink:href="/icons.svg#facebook1"></use>
-                </svg> 
+              <div class=" header_icons valign-wrapper">
+                <div class="iconmelon svg_icon" >
+                  <svg class="" viewBox="0 0 32 32">
+                    <use xlink:href="/icons.svg#facebook1"></use>
+                  </svg> 
                 </div>
-                <div class="svg_icon" >
 
-                <svg class="svg_icon" viewBox="0 0 32 32">
-                  <use xlink:href="/icons.svg#twitter1"></use>
-                </svg>
+                <div class="iconmelon svg_icon" >
+                  <svg class="" viewBox="0 0 32 32">
+                    <use xlink:href="/icons.svg#twitter1"></use>
+                  </svg>
                 </div>
-                <div class="svg_icon" >
 
-                <svg class="svg_icon" viewBox="0 0 32 32">
+                <div class="iconmelon svg_icon" >
+                <svg class="" viewBox="0 0 32 32">
                   <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
                 </svg>
                 </div>
               </div>
           </li>
-          <li class="cart">
+          <li class="navbar_border cart start">
             <div class=" shopping-cart" {{action "showCartSummary" this}}>
               <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
               <div class="badge orange prod_count"> {{count}}</div>
@@ -97,9 +97,41 @@
     {{outlet}}
   </div>
 
-<footer class='fixed_component'>
-    <p class='pull-right'>Credits</p>
-    {{#md-copyright text='Copyright Text' startYear=2014}}
-                <a class="grey-text text-lighten-1 right" href="#!">More Links</a>
-    {{/md-copyright}}
+<footer class='fixed_component _footer'>
+  <div class="text_white">
+    <div class="">
+      {{#link-to 'index'}}
+        Rockin' Circuits
+      {{/link-to}}
+    </div>
+    <div>
+
+    </div>
+    <div class="right valign-wrapper">
+        <div class="iconmelon svg_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#facebook1"></use>
+          </svg> 
+        </div>
+
+        <div class="iconmelon svg_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#twitter1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon svg_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+          </svg>
+        </div>
+
+        <div class="iconmelon svg_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+          </svg>
+        </div>
+    </div>
+  </div>
+
 </footer>

@@ -122,11 +122,31 @@ li.navbar_border:after{
 }
 
 .svg_icon{
-  float:left;
+  float: left;
+  top: -12px;
+  width: 28px !important;
+  height: 28px !important;
+  fill: #fff !important;
+  padding: 1px;
 }
 
-.iconmelon.header_icons{
-  fill:white !important;
+.header_icons{
+  height: 66px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.navbar_custom > div.nav-wrapper > div.container {
+  width: 100% !important;
+}
+
+li.navbar_border {
+  border-right: 1px rgba(250,250,250,0.2) solid;
+}
+
+li.navbar_border.start {
+  border-left: 1px rgba(250,250,250,0.2) solid;
 }
 
 .iconmelon,
@@ -209,9 +229,10 @@ li.navbar_border:after{
   color: #8fc243;
 }
 
-.text_white{
-  color: #fff;
+a, .text_white{
+  color: #fff !important;
 }
+
 
 .checkout_payment_method{
   padding: 20px 20px 0px 20px;
@@ -285,9 +306,8 @@ footer.fixed_component {
   bottom: 0px;
   width: 100%;
   z-index: 1050;
-  background-color: #fff;
-
-  opacity: 0;  
+  background-color: $primary-color;
+  opacity: 1;  
   padding-top: 20px;
   padding-right: 10%;
   border-top: 1px #ddd solid;
@@ -298,7 +318,6 @@ opacity: 1;
   bottom: 0px;
   width: 100%;
   z-index: 1030;
-  background-color: #fff;
   padding-right: 10%;
 }
 

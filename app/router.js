@@ -18,9 +18,14 @@ Router.map(function() {
 	});
 
 	this.route('about');
-	this.route('contact');
+
+	this.resource('contact', function(){
+		this.route('hire-us');
+		this.route('ask-us');
+	});
+	
 	this.route('checkout');
-	this.route('success',{path: 'checkout/success'});
+	this.route('success', {path: 'checkout/success'});
 	this.resource('search');
 });
 

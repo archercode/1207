@@ -47,9 +47,9 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
  
     },
 
-    selectedVal: 'Ship',
+    val: 'Ship',
 
-	  radioSelection: [
+	  radio: [
 	        {label: 'Shipping', value: 'Ship'},
 	        {label: 'Meetup', value: 'Meet'},
 	        {label: 'PayPal', value: 'Paypal'},
@@ -60,23 +60,28 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	  optionMeet: false,
 	  optionPayP: false,    
 
-	onChangeRadio : function () {
-	   if (this.selectedVal === 'Ship'){
-        this.set('optionBank', true);
-        this.set('optionMeet', false);
-        this.set('optionPayP', false);
-     	 }	
-      if (this.selectedVal === 'Meet'){
-        this.set('optionBank', false);
-        this.set('optionMeet', true);
-        this.set('optionPayP', false);
-      	}
-      if (this.selectedVal === 'Paypal'){
-        this.set('optionBank', false);
-        this.set('optionMeet', false);
-        this.set('optionPayP', true);
+	  programmers: [
+	    {firstName: "Yehuda", id: 1},
+	    {firstName: "Tom",    id: 2}
+  	],
+
+	onChangeVal : function () {
+	      if (this.selectedVal === 'Ship'){
+	        this.set('optionBank', true);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', false);
 	      }
-	  }.observes('selectedVal'),
+	      if (this.selectedVal === 'Meet'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', true);
+	        this.set('optionPayP', false);
+	      }
+	      if (this.selectedVal === 'Paypal'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', true);
+	      }
+	  }.observes('val'),
 
     actions:{
 		sendContactMaterial: function(){

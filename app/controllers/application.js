@@ -14,6 +14,12 @@ export default Ember.ObjectController.extend({
   			//if(view.get(''))	
   			view.toggle();
   		},
+      showSocialLinks: function(){
+        //TODO: jquery show
+        var view = $('.social_links');
+        //if(view.get(''))  
+        view.toggle();
+      },
 
        
   		removeItem: function(){

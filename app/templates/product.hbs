@@ -2,37 +2,63 @@
 
 	<div class="fixed_component"> 
 		<div class="col l5 space_on_top">
-			<div class="row col s12">
 
-				<div>
+			
+			<div class="row">
+
+				<div class="col s12">
 			    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
 			    </div>
 			</div>
 			<div class="row">
+		 		<div class="col m6 s6 ">
+		 			<div class="prod_cart_buttons row">
+						{{#if itemsCount}}
+							{{md-btn text='-' action='minusItem'  class='col m4'
+								isDisabled = false iconPosition='center'}} 
 
-		 		<div class="col m4 s4 row checkout_total">
-					{{#if itemsCount}}
-						{{md-btn text='-' action='minusItem'  class='col m4'
-							isDisabled = false iconPosition='center'}} 
+						{{else}}
+							{{md-btn text='-' action='minusItem' class='col m4' isDisabled = true iconPosition='center'}} 
+						{{/if}}
+						<div class="col m4 s4 center-align prod_cart_button_text">
 
-					{{else}}
-						{{md-btn text='-' action='minusItem' class='col m4' isDisabled = true iconPosition='center'}} 
-					{{/if}}
-					<div class="col m2 s2">
+							{{itemsCount}}
+						</div>
+						<div {{action 'itemAnimation' this target=view}}>
+							{{md-btn text='+' iconPosition='center' class='col m4 add_button'}}
 
-						{{itemsCount}}
+						</div>
 					</div>
-					<div {{action 'itemAnimation' this target=view}}>
-						{{md-btn text='+' iconPosition='center' class='col m4 add_button'}}
-
-					</div>
-
 		 		</div>
-
-				<div class="col m7 s7  right-align product_price text_green product_title">
+				<div class="col m6 s6  right-align product_price text_green product_title">
 			 		P {{price}}
 			 	</div>
 		 	</div>
+		 	<div class="row col s12">
+		 		<div class="col m6 s6 left-border">
+		 			
+                <!-- <div class="iconmelon svg_icon" >
+                  <svg class="" viewBox="0 0 32 32">
+                    <use xlink:href="/icons.svg#facebook1"></use>
+                  </svg> 
+                </div> -->
+
+      				<button class="btn btn-primary btn-whole col m6">Facebook</button>
+
+		 		</div>
+		 		<div class="col m6 s6 right-border">
+		 			
+
+      				<button class="btn btn-primary btn-whole col m6">Twitter</button>
+                <!-- <div class="iconmelon svg_icon" >
+                  <svg class="" viewBox="0 0 32 32">
+                    <use xlink:href="/icons.svg#twitter1"></use>
+                  </svg>
+                </div> -->
+
+		 		</div>
+		 	</div>
+		 	
 	 	</div>
 	</div>
 

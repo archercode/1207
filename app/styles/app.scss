@@ -68,7 +68,10 @@ li.navbar_border:after{
   margin:auto 6px;
 }
 
-
+.text_white.row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .float_right{
 	float:right;
@@ -97,6 +100,16 @@ li.navbar_border:after{
 	padding-top: 8px !important;
 }
 
+.social_links{
+  display:none;  
+  padding-left: 20px;
+  margin-right: -70px;
+}
+
+.social_link{
+  max-height: 24px;
+}
+
 .checkout_summary{
 	width: auto;
   padding: 20px;
@@ -122,8 +135,7 @@ li.navbar_border:after{
   position: absolute;
   display: block;
   border-style: solid;
-  width: 0;
-
+  width: 0; 
 }
 
 .svg_icon{
@@ -133,6 +145,14 @@ li.navbar_border:after{
   height: 28px !important;
   fill: #fff !important;
   padding: 1px;
+}
+
+.footer_icon{  
+  float: left; 
+ width: 40px !important;
+  height: 40px !important;
+  fill: #fff !important;
+  padding: 5px;
 }
 
 .header_icons{
@@ -234,7 +254,11 @@ li.navbar_border.start {
   color: #8fc243;
 }
 
-a, .text_white{
+.fill_primary{
+  fill: $primary-color;
+}
+
+.text_white{
   color: #fff !important;
 }
 
@@ -248,6 +272,24 @@ a, .text_white{
   margin-bottom: 0px !important;
 }
 
+.left-border{
+  border-bottom: solid #dddddd;
+  border-top: solid #dddddd;
+  border-left: solid #dddddd;
+  border-right: solid #dddddd;
+  border-width: 1px;
+  border-radius: 5px 0 0 5px;
+  padding: 10px !important;
+}
+
+.right-border{
+  border-bottom: solid #dddddd;
+  border-top: solid #dddddd;
+  border-right: solid #dddddd;
+  border-width: 1px;
+  border-radius: 0 5px 5px 0 ;
+  padding: 10px !important;
+}
 
 .product_title{
   font-size: 25px;
@@ -269,6 +311,10 @@ a, .text_white{
   padding-right: 5% !important;
 }
 
+nav ul a {
+  font-size: 12px !important;
+}
+
 #img_prod_specific{
   position:fixed !important; 
   top: 0 !important;
@@ -287,6 +333,19 @@ a, .text_white{
 
 .nav_text{
   text-decoration:none;
+}
+
+a.title, .title{
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #fff !important;
+}
+
+li.footer_links{
+  
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #fff !important;
 }
 
 .page_title{
@@ -313,9 +372,10 @@ footer.fixed_component {
   z-index: 1050;
   background-color: $primary-color;
   opacity: 1;  
-  padding-top: 20px;
+  /*padding-top: 20px;
   padding-right: 10%;
-  border-top: 1px #ddd solid;
+  border-top: 1px #ddd solid;*/
+
 }
 
 footer.fixed_component:hover{
@@ -421,17 +481,6 @@ p > div.materialize-selectable-item {
   margin-left: auto;
   width: 90%;
 }
-
-/* shapes */
-
-.triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid red;
-  border-bottom: 50px solid transparent;
-}
-
 
 
 /* partcile css */

@@ -1,0 +1,15 @@
+<ul>
+        {{#each model as |item|}}
+    <li>
+		{{#md-card title=item.title titleClass="orange-text" image=item.image}}
+  				{{#md-card-content}}
+      I am a very simple card. I am good at containing small bits of information.
+      I am convenient because I require little markup to use effectively.
+  				{{/md-card-content}}
+  				{{#md-card-action}}
+    			{{#link-to 'product' item.slug}}{{item.title}}{{/link-to}}
+  				{{/md-card-action}}
+			{{/md-card}}
+    </li>
+        {{/each}}
+</ul>

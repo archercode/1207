@@ -47,9 +47,9 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
  
     },
 
-    selectedVal: 'Ship',
+    val: 'Ship',
 
-	  radioSelection: [
+	  radio: [
 	        {label: 'Shipping', value: 'Ship'},
 	        {label: 'Meetup', value: 'Meet'},
 	        {label: 'PayPal', value: 'Paypal'},
@@ -60,7 +60,12 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	  optionMeet: false,
 	  optionPayP: false,    
 
-	onChangeRadio : function () {
+	  programmers: [
+	    {firstName: "Yehuda", id: 1},
+	    {firstName: "Tom",    id: 2}
+  	],
+
+	onChangeVal : function () {
 	      if (this.selectedVal === 'Ship'){
 	        this.set('optionBank', true);
 	        this.set('optionMeet', false);
@@ -76,7 +81,7 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	        this.set('optionMeet', false);
 	        this.set('optionPayP', true);
 	      }
-	  }.observes('selectedVal'),
+	  }.observes('val'),
 
     actions:{
 		sendContactMaterial: function(){

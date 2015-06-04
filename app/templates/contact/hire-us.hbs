@@ -27,15 +27,17 @@
 
 <!-- organization -->
 {{md-select 
-	content=frameworks 
-	value=framework 
-	label="organization" 
-	prompt="Please choose..."
-  	optionLabelPath='label'
-  	optionValuePath='value'
+	  
+  content=programmers
+	value=2
+  optionLabelPath='content.firstName'
+
+  optionValuePath = 'content.id'
+  label ="organization" 
+  prompt ="Please choose..."
 }}
 
-<!-- looking for -->
+<!-- looking for
 {{md-select 
 	content=frameworks 
 	value=framework 
@@ -45,7 +47,7 @@
   	optionValuePath='value'
 }}
 
-<!-- reference -->
+<!-- reference 
 {{md-select 
 	content=frameworks 
 	value=framework 
@@ -55,6 +57,7 @@
   	optionValuePath='value'
 }}
 
+-->
 <!-- Reasong -->
 {{input value=reason label="reason" class="col s8" placeholder="My Company is looking for"}}
 

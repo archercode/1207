@@ -32,12 +32,15 @@
 				<div class="col m7 s7  right-align product_price text_green product_title">
 			 		P {{price}}
 
-   				{{share-twitter data-url=currentBaseUrl
+   			 	{{#share-twitter data-url=currentBaseUrl
                     data-text= 'check this out!'
                     data-size= 'large' 
                     data-hashtags= 'rockincircuits'
                     data-via= 'rockincircuits'
                 }}
+                	tweet
+                {{/share-twitter}}
+
                 {{fb-send}}
 			 	</div>
 
@@ -55,8 +58,10 @@
 		 		{{type}}
 		 	</div>
 		 	<div class="description">
-	    	{{{html}}}
+	    		{{{html}}}
 	    	</div>
+	    	{{outlet 'sidebar'}}
+	    	
 	   	</div>
 	</div>
 </div>

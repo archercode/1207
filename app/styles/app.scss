@@ -341,11 +341,36 @@ a.title, .title{
   color: #fff !important;
 }
 
-li.footer_links{
-  
+ul.footer_links{
+    margin-top: 13px;
+}
+
+.author.footer_links{
+  margin-top: 11px
+}
+.footer_logo.footer_links{
+    margin-top: 5px;
+}
+
+footer{  
   font-size: 10px;
   letter-spacing: 2px;
   color: #fff !important;
+}
+
+.text-normal{  
+  font-size: 12px;
+  letter-spacing: 2px; 
+}
+
+.text-small{  
+  font-size: 10px;
+  letter-spacing: 2px; 
+}
+
+.text-smaller{  
+  font-size: 6px;
+  letter-spacing: 2px; 
 }
 
 .page_title{
@@ -371,19 +396,15 @@ footer.fixed_component {
   width: 100%;
   z-index: 1050;
   background-color: $primary-color;
-  opacity: 1;  
-  /*padding-top: 20px;
-  padding-right: 10%;
-  border-top: 1px #ddd solid;*/
+  opacity: 1;   
 
 }
 
 footer.fixed_component:hover{
-opacity: 1;
+  opacity: 1;
   bottom: 0px;
   width: 100%;
-  z-index: 1030;
-  padding-right: 10%;
+  z-index: 1030; 
 }
 
 .card .card-content { 

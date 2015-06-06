@@ -141,24 +141,41 @@
 
 <footer class='fixed_component'>
   <div class="text_white row">
-    <div class="col l8 ">
-      <!-- {{#link-to 'index' class="title"}}
-        Rockin' Circuits
-      {{/link-to}} -->
-      <ul class="row  center-align">
-         <li class="footer_links col s2 center-align">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
-          <li class="footer_links col s2 center-align">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
-          <li class="footer_links col s2 center-align">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
+    <div class="col l3">
+      <div class="col l2 footer_logo footer_links">
+        {{#link-to 'index' class=""}}
+          <img src="/logo_small.png"  class="img_logo" height="32" width="32">  
+        {{/link-to}}
+      </div>
+      <div class="col l10 author footer_links">
+      <div class="  text-uppercase text-smaller">
+        developed and designed by
+      </div>
+      <div class="  text-uppercase">
+        TYQuintos & FBarcelona
+      </div>
+    </div>
 
-          <li class="footer_links col s2 center-align">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
+    </div>
+    <div class="col l5">
+      <ul class="footer_links text-normal  center-align">
+         <li class="  col s2 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
+          <li class="  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
+          <li class="  col s3">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
 
-          <li class="footer_links col s2 center-align" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
+          <li class="  col s2">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
+
+          <li class="  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
       </ul>
     </div>
     <div>
 
     </div>
-    <div class=" center-align valign-wrapper col l4">
+    <div class="footer_links right valign-wrapper col l4">
+        <div class="col l4 text_small text-uppercase">
+          Follow Us
+        </div>
+        <div class="">
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
             <use xlink:href="/icons.svg#facebook1"></use>
@@ -182,6 +199,13 @@
             <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
           </svg>
         </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 

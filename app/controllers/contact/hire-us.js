@@ -30,42 +30,45 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 
   	validations: {
           companyName:{
-            format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  },
+            format: { with: /^[A-Za-z-]{2,16}$/, 
+            message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
           name: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Enter valid name.'  },
+            format: { with: /^[A-Za-z-]{3,16}$/ , 
+            message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
           //
-          email:{ // /^(\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\.)/
-            format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ message: 'Enter valid email.'  }
+          email:{
+            format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ 
+            message: 'Enter valid email.'  }
           },
           phone: {
             format: { with: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/ , message: 'Enter valid phone number.'  }
           },
+          reason: {
+          	format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
+          	message: 'Describe properly.'  },
+            length: { minimum: 10}
+          },
  
     },
-
+    /*
     val: 'Ship',
 
-	  radio: [
-	        {label: 'Shipping', value: 'Ship'},
-	        {label: 'Meetup', value: 'Meet'},
-	        {label: 'PayPal', value: 'Paypal'},
-	        //{label: 'Credit Card', value: 'cc'},
-	  ],
+	radio: [
+	    {label: 'Shipping', value: 'Ship'},
+	    {label: 'Meetup', value: 'Meet'},
+	    {label: 'PayPal', value: 'Paypal'},
+	],
 	  
-	  optionBank: true,
-	  optionMeet: false,
-	  optionPayP: false,    
-
-	  programmers: [
-	    {firstName: "Yehuda", id: 1},
-	    {firstName: "Tom",    id: 2}
-  	],
-
+	optionBank: true,
+	optionMeet: false,
+	optionPayP: false,    
+	*/
 	onChangeVal : function () {
+		console.log();
 	      if (this.selectedVal === 'Ship'){
 	        this.set('optionBank', true);
 	        this.set('optionMeet', false);
@@ -81,7 +84,28 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	        this.set('optionMeet', false);
 	        this.set('optionPayP', true);
 	      }
-	  }.observes('val'),
+	  }.observes('currentProgrammer.id'),
+	
+	organization: [
+	    {type: 'Individual', id: 1},
+	    {type: 'Startup',    id: 2},
+	    {type: 'Enterprise', id: 3},
+  	],
+
+  	currentOrganization: {
+     id: 0
+ 	},
+
+ 	projectType: [
+	    {type: 'Mobile App', id: 1},
+	    {type: 'Web App',    id: 2},
+	    {type: 'Hardware Related', id: 3},
+	    {type: 'Mix', id: 4},
+  	],
+
+  	currentProjectType: {
+     id: 0
+ 	},
 
     actions:{
 		sendContactMaterial: function(){

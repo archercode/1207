@@ -1,25 +1,25 @@
-{{input value=companyName label="companyName" class="col s8" placeholder="Company Name"}}
+{{input value=companyName label="companyName" class="col s8" placeholder="Company | Organization Name"}}
             
             {{#if errors.companyName}}
                 {{errors.companyName}}
             {{/if}}
 
 
-{{input value=name label="name" class="col s8" placeholder="Company Name"}}
+{{input value=name label="name" class="col s8" placeholder="Name"}}
             
             {{#if errors.name}}
                 {{errors.name}}
             {{/if}}
 
 
-{{input value=phone label="phone" class="col s8" placeholder="phone"}}
+{{input value=phone label="phone" class="col s8" placeholder="Phone Number"}}
             
             {{#if errors.phone}}
                 {{errors.phone}}
             {{/if}}
 
 
-{{input value=email label="email" class="col s8" placeholder="email"}}
+{{input value=email label="email" class="col s8" placeholder="Email Address"}}
             
             {{#if errors.email}}
                 {{errors.email}}
@@ -27,39 +27,24 @@
 
 <!-- organization -->
 {{md-select 
-	  
-  content=programmers
-	value=2
-  optionLabelPath='content.firstName'
-
+  content = organization
+	value = currentOrganization.id
+  optionLabelPath = 'content.type'
   optionValuePath = 'content.id'
-  label ="organization" 
-  prompt ="Please choose..."
+  prompt = "Organization"
 }}
 
-<!-- looking for
+ <!-- looking for -->
 {{md-select 
-	content=frameworks 
-	value=framework 
-	label="looking for" 
-	prompt="Please choose..."
-  	optionLabelPath='label'
-  	optionValuePath='value'
+	content = projectType 
+	value = currentProjectType.id 
+  optionLabelPath = 'content.type'
+  optionValuePath = 'content.id'
+	prompt= "Project Type"
 }}
 
-<!-- reference 
-{{md-select 
-	content=frameworks 
-	value=framework 
-	label="reference" 
-	prompt="Please choose..."
-  	optionLabelPath='label'
-  	optionValuePath='value'
-}}
-
--->
 <!-- Reasong -->
-{{input value=reason label="reason" class="col s8" placeholder="My Company is looking for"}}
+{{input value=reason label="reason" class="col s8" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
 
 <div class="row">
         <!-- <button type="submit" class="btn btn-primary btn-whole footer col m6" {{bind-attr disabled='isInvalid'}}{{action 'sendContactMaterial'}}>SUBMIT</button> -->

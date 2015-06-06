@@ -26,26 +26,59 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	        });
 	      }, this);
 	    });    
-    },
+  	},
 
   	validations: {
-          companyName:{
-            format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ message: 'Enter valid name.'  },
-            length: { minimum: 2}
-          },
           name: {
-            format: { with: /^[A-Za-z-]{3,16}$/ , message: 'Enter valid name.'  },
+            format: { with: /^[A-Za-z-]{3,16}$/ , 
+            message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
           //
-          email:{ // /^(\d{1,5}\s\w.\s(\b\w*\b\s){1,2}\w*\.)/
-            format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ message: 'Enter valid email.'  }
+          email:{
+            format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ 
+            message: 'Enter valid email.'  }
           },
           phone: {
             format: { with: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/ , message: 'Enter valid phone number.'  }
           },
+          reason: {
+          	format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
+          	message: 'Describe properly.'  },
+            length: { minimum: 10}
+          },
  
     },
+    
+	onChangeVal : function () {
+		console.log();
+	      if (this.selectedVal === 'Ship'){
+	        this.set('optionBank', true);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', false);
+	      }
+	      if (this.selectedVal === 'Meet'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', true);
+	        this.set('optionPayP', false);
+	      }
+	      if (this.selectedVal === 'Paypal'){
+	        this.set('optionBank', false);
+	        this.set('optionMeet', false);
+	        this.set('optionPayP', true);
+	      }
+	  }.observes('currentProgrammer.id'),
+
+ 	questionType: [
+	    {type: 'Software Related', id: 1},
+	    {type: 'Hardware Related',    id: 2},
+	    {type: 'Mix', id: 3},
+  	],
+
+  	currentQuestionType: {
+     id: 0
+ 	},
+
     actions:{
 		sendContactMaterial: function(){
 			console.log('sendContactMaterial');

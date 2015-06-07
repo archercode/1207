@@ -1,16 +1,20 @@
 <div class="main container">
-	<div class="page_title text-uppercase text_green">
-		Contact
-		
-		{{#link-to 'contact.hire-us'}}
-			Hire us
-		{{/link-to}}
-		
-		{{#link-to 'contact.ask-us'}}
-			Ask us
-		{{/link-to}}
-			<div class = 'container'>
-				{{outlet}}
-			</div>
+	<div class="space_on_top">
+
+		<div class="row contact_us_links ">
+			{{#link-to 'contact.hire-us' class='no_style hire_us page_title text-uppercase text_green col l6 no_bottom_border' }}
+				Hire us
+			{{/link-to}}
+			
+			{{#link-to 'contact.ask-us' class='no_style ask_us page_title text-uppercase text_green col l6 no_bottom_border' }}
+				Ask us
+			{{/link-to}}
+
+			<span class='nav_indicator'>
+			</span>
+		</div>
+		<div class = 'container'>
+			{{outlet}}
+		</div>
 	</div>
 </div>

@@ -68,6 +68,39 @@ li.navbar_border:after{
   margin:auto 6px;
 }
 
+.row.contact_us_links > a.page_title {
+  margin-top: 0px !important;
+}
+.row.contact_us_links{
+  width: 100%;
+}
+
+.ask_us.active ~ span.nav_indicator{
+  left: 10px;
+  //right: 20%;
+}
+
+.hire_us.active ~ span.nav_indicator{
+  left: 100px;
+}
+
+.nav_indicator{
+  margin-top: 20px !important;
+  position: absolute;
+  //bottom: 0;
+  left: 0;
+  top: 180px;
+  width: 25%;
+  border-bottom-style: solid;
+  border-bottom-color: $primary-color-dark;
+  -webkit-transition-duration: .25s;
+  transition-duration: .25s;
+  -webkit-transition-property: left;
+  transition-property: left;  
+  transition: .3s ease-in-out;
+}
+
+
 .container.whole{
   width: 100%;
   padding-right: 0px;
@@ -282,7 +315,7 @@ li.navbar_border.start {
     margin-bottom: 0px;
 }
 
-.no_style > a:hover{
+.no_style > a:hover, a.no_style:hover, a.no_style.active{
   text-decoration: none;
 }
 
@@ -302,8 +335,7 @@ li.navbar_border.start {
   margin-bottom: 0px;
 }
 .no_bottom_border{
-  border-bottom: none;
-  
+  border-bottom: none !important;
 }
 
 .checkout_title{  
@@ -478,7 +510,7 @@ li.navbar_border > a, li.footer_link > a  {
 } 
 
 li.navbar_border > a.active, li.footer_link > a.active
-, li.navbar_border > a:hover  , li.footer_link > a:hover {
+, li.navbar_border > a:hover  , li.footer_link > a:hover{
   opacity: 1;
 }
 footer_logo{

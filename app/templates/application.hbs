@@ -1,7 +1,7 @@
 
 <div class="header fixed_component">
 
-        {{#link-to 'index' class="logo title"}}
+        {{#link-to 'index' class="logo title no_style"}}
           <img src="/logo.png"  class="img_logo" height="50" width="50"> 
 
         Rockin' Circuits
@@ -34,21 +34,27 @@
 
                 <div class="iconmelon svg_icon" >
                 <svg class="" viewBox="0 0 32 32">
-                  <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+                  <use xlink:href="/icons.svg#google-plus1"></use> <!--google+-->
                 </svg>
                 </div>
               </div>
           </li>
-          <li class="social_links">
-            <div class="">
-              <div class=""><!-- 
-                <li>
-                  <div class="fb-like" data-href="https://www.facebook.com/rockincircuits/" data-layout="standard" data-action="like" data-show-
-      faces="true" data-share="true"></div>
-                </li>
- -->            <div class="social_link">
-                  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                </div><!-- 
+          
+          <li class="navbar_border cart start">
+            <div class=" shopping-cart" {{action "showCartSummary" this}}>
+              <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
+              <div class="badge orange prod_count"> {{count}}</div>
+            </div>
+          </li>
+        {{/md-navbar}}
+         
+    <div class="hover social_links" >
+              <div class="">
+          <div class="social_link">
+
+                  <div class="fb-like" data-href="https://www.facebook.com/rockincircuits" data-width="70" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                </div>
+                <!-- 
                 <li>
                   {{fb-send}}
                 </li> -->
@@ -64,20 +70,6 @@
       <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/104379645768107546602" data-rel="publisher"></div>
                 </div>
               </div>
-
-
-            </div>
-          </li>
-          <li class="navbar_border cart start">
-            <div class=" shopping-cart" {{action "showCartSummary" this}}>
-              <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
-              <div class="badge orange prod_count"> {{count}}</div>
-            </div>
-          </li>
-        {{/md-navbar}}
-         
-    <div class="hover checkout_summary" >
-      hello this is social hover
     </div>
     <div class="hover checkout_summary" >
       {{#if hasQuantity}}
@@ -141,24 +133,41 @@
 
 <footer class='fixed_component'>
   <div class="text_white row">
-    <div class="col l8 ">
-      <!-- {{#link-to 'index' class="title"}}
-        Rockin' Circuits
-      {{/link-to}} -->
-      <ul class="row  center-align">
-         <li class="footer_links col s2 center-align">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
-          <li class="footer_links col s2 center-align">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
-          <li class="footer_links col s2 center-align">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
+    <div class="col l3">
+      <div class="col l1 footer_logo footer_links">
+        {{#link-to 'index' class=""}}
+          <img src="/logo_small.png"  class="footer_logo" height="32" width="32">  
+        {{/link-to}}
+      </div>
+      <div class="col l10 author footer_links">
+      <div class="  text-uppercase text-smaller">
+        developed and designed by
+      </div>
+      <div class="  text-uppercase">
+        TYQuintos & FBarcelona
+      </div>
+    </div>
 
-          <li class="footer_links col s2 center-align">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
+    </div>
+    <div class="col l5">
+      <ul class="footer_links text-normal  center-align">
+         <li class="footer_link col s2 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
+          <li class="footer_link  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
+          <li class="footer_link  col s3">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
 
-          <li class="footer_links col s2 center-align" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
+          <li class=" footer_link col s2">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
+
+          <li class="footer_link  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
       </ul>
     </div>
     <div>
 
     </div>
-    <div class=" center-align valign-wrapper col l4">
+    <div class="footer_links right valign-wrapper col l4">
+        <div class="col l4 text_small text-uppercase">
+          Follow Us
+        </div>
+        <div class="">
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
             <use xlink:href="/icons.svg#facebook1"></use>
@@ -173,6 +182,12 @@
 
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#google-plus1"></use> <!--google+-->
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
             <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
           </svg>
         </div>
@@ -182,6 +197,7 @@
             <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
           </svg>
         </div>
+      </div>
     </div>
   </div>
 

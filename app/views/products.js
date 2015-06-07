@@ -3,12 +3,8 @@ import Ember from 'ember';
 export default Ember.View.extend({
   didInsertElement: function() {},
   getParent: 0,
-
   mouseX: 0, 
   mouseY: 0,
-
-  click: function(e){},
-
 
   actions:{
     itemAnimation: function(product){
@@ -21,10 +17,10 @@ export default Ember.View.extend({
   
       var cart = $('.shopping-cart');
         // var imgtodrag = arguments[0].target.parentElement.parentElement.parentElement.children[0].children[1];
-       var imgtodrag = $('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+       var imgtodrag = this.$('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
       imgtodrag.attr('src', product.get('image'));
     
-      imgtodrag = $(imgtodrag);
+      imgtodrag = this.$(imgtodrag);
       if (imgtodrag) {
           var imgclone = imgtodrag.clone()
               .offset({
@@ -46,7 +42,8 @@ export default Ember.View.extend({
                   'height': 75
           }, 1000, 'easeInOutExpo');
           
-          var object = this;
+          object = this;
+          
           setTimeout(function () {
             var intShakes = 2, intDuration = 200, intDistance = 30;
             cart.css("position","relative"); 

@@ -9,7 +9,8 @@ $break-large: 1200px;
 // Custom color settings go here 
 $primary-color: color("green", "lighten-1");
 $primary-color-dark: color("green", "darken-2");
-$gray-bg-color: color("gray", "lighten-5");
+
+
 @import 'materialize';
 
 /* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
@@ -71,35 +72,47 @@ li.navbar_border:after{
 .row.contact_us_links > a.page_title {
   margin-top: 0px !important;
 }
+
 .row.contact_us_links{
-  width: 100%;
+  margin: auto;
 }
 
 .ask_us.active ~ span.nav_indicator{
-  left: 10px;
-  //right: 20%;
+  left: 50%; 
 }
 
 .hire_us.active ~ span.nav_indicator{
-  left: 100px;
+  left: 0;
 }
 
 .nav_indicator{
-  margin-top: 20px !important;
-  position: absolute;
-  //bottom: 0;
-  left: 0;
-  top: 180px;
-  width: 25%;
+  display: block;
+  margin-top: 55px !important;
+  margin-bottom: 20px;
+  position: relative;
+  /* top: 180px; */
+  width: 50%;
+  height: 5px !important;
   border-bottom-style: solid;
-  border-bottom-color: $primary-color-dark;
+  border-bottom-color: #388E3C;
   -webkit-transition-duration: .25s;
   transition-duration: .25s;
   -webkit-transition-property: left;
-  transition-property: left;  
+  transition-property: left;
   transition: .3s ease-in-out;
 }
 
+.nav_indicator:after{
+  border-width: 0 9px 7px;
+  border-color: #388E3C transparent;
+  content: '';
+  position: absolute;
+  display: block;
+  border-style: solid;
+  width: 0;
+  top: -5px;
+  right: 50%;
+}
 
 .container.whole{
   width: 100%;

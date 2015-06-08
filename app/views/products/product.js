@@ -6,9 +6,9 @@ export default Ember.View.extend({
 
   	//todo: minimize navbar
 
-  	var navTexts = $(".nav_text");
-  	for(text in navTexts){
-  		text.hide();
+  	var navTexts = this.$(".nav_text");
+  	for(var i = 0; i < navTexts.length; i++){//text in navTexts){
+  		navTexts[i].hide();
   	}
 
   },

@@ -1,3 +1,4 @@
+/* jshint -W100 */
 import DS from 'ember-data';
 
 var Product = DS.Model.extend({

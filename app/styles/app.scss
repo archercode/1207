@@ -164,6 +164,17 @@ li.navbar_border:after{
   padding-bottom:15px;
 }
 
+hr{
+    margin: 5px !important;
+}
+
+div.hover.checkout_summary > div ul {
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 200px;
+}
+
 .hover{
 	width: auto;
   position: absolute;
@@ -180,8 +191,9 @@ li.navbar_border:after{
 
 
   &.checkout_summary{
-    padding: 20px;
+    padding: 15px 8px;
     right: 20px;
+    width: 330px;
   }
 
   &.checkout_summary:after{
@@ -553,6 +565,10 @@ footer{
     opacity: 0;   
   }
 
+}
+
+li.row {
+  margin-bottom: 5px !important;
 }
 
 footer.fixed_component:hover{

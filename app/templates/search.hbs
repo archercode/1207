@@ -34,6 +34,7 @@ Search
 
       {{#if query}}
         <!-- <p>Displaying results for "{{query}}"</p> -->
+        {{#if model}}
         <ul>
         <div class="row">
           {{#each model as |product|}}
@@ -67,7 +68,7 @@ Search
                     </div>
                   {{/if}}
 
-                    <div {{action 'itemAnimation' product target=view.parentView}}>
+                    <div {{action 'itemAnimation' product target=view}}>
                       {{md-btn text='+'  iconPosition='center' class='col s4 add_button'}}
                     </div>
 
@@ -81,7 +82,14 @@ Search
           {{/each}}
         </div>
         </ul>
+        {{else}}
+        No results for {{queryField}}
+        {{/if}}
+
+
       {{/if}}
+
+
 
 
 

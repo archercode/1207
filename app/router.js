@@ -28,6 +28,12 @@ Router.map(function() {
 	this.route('success', {path: 'checkout/success'});
 	this.resource('search');
 	this.route('solutions');
+	this.resource('information', function() {
+	    this.route('termsandcondition');
+	    this.route('shipping');
+	    this.route('payment');
+		this.route('privacypolicy')
+  	});
 });
 
 export default Router;

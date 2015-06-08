@@ -35,7 +35,7 @@ body {
 .logo{
   position: absolute;
 
-  left: 10%;
+  left: 3%;
   padding: 7px 0;
   z-index: 1080; //1200
 
@@ -46,7 +46,7 @@ body {
   }
 
   @media screen and (max-width: $break-medium) {
-    padding: 2px 0;
+    padding: 7px 0 0 0 ;
     right: 2%;
     left: auto;
   }
@@ -180,42 +180,41 @@ li.navbar_border:after{
 
 
   &.checkout_summary{
-  padding: 20px;
+    padding: 20px;
     right: 20px;
   }
 
-  &.social_links{
-  padding: 10px;
-    right: 20%;
-  }
-
-}
-.hover:after{
-  border-width: 0 9px 7px;
-  border-color: #fff transparent;
-    content: '';
-  position: absolute;
-  display: block;
-  border-style: solid;
-  width: 0; 
-
-
-    top: -7px;
-    right: 50%;
-
-  &.social_links{
-
-    top: -7px;
-    right: 50%;
-  }
-
-  &.checkout_summary{
-
+  &.checkout_summary:after{
+    border-width: 0 9px 7px;
+    border-color: #fff transparent;
+      content: '';
+    position: absolute;
+    display: block;
+    border-style: solid;
+    width: 0; 
     top: -7px;
     right: 5%;
   }
-}
 
+  &.social_links{
+    padding: 10px;
+    right: 20%;
+  }
+
+
+  &.social_links:after{
+    border-width: 0 9px 7px;
+    border-color: #fff transparent;
+      content: '';
+    position: absolute;
+    display: block;
+    border-style: solid;
+    width: 0; 
+    top: -7px;
+    right: 50%;
+  }
+
+}
 .footer_logo{
   padding-right:2px;
 }
@@ -330,6 +329,19 @@ li.navbar_border.start {
 
 .no_style > a:hover, a.no_style:hover, a.no_style.active{
   text-decoration: none;
+}
+
+.row.footer_links.valign-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 202px;
+    margin-bottom: 0px;
+}
+
+footer.hidden-md.hidden-lg {
+  padding: 10px;
 }
 
 .checkout_order{
@@ -458,7 +470,8 @@ ul.footer_links{
 }
 
 .author.footer_links{
-  margin-top: 11px
+  margin-top: 11px; 
+  margin-left: -20px !important;
 }
 .footer_logo.footer_links{
     margin-top: 5px;
@@ -530,12 +543,15 @@ footer_logo{
   padding-right: 7px;
 }
 
-footer.fixed_component {
+footer{
   bottom: 0px;
   width: 100%;
   z-index: 1050;
   background-color: $primary-color;
-  opacity: 0;   
+  
+  &.fixed_component {
+    opacity: 0;   
+  }
 
 }
 
@@ -625,6 +641,9 @@ p > div.materialize-selectable-item {
   width: 100%;
 }
 
+.contact_us_links.center-align.row.container {
+  margin-top: 110px;
+}
 .btn-intro{
   background-color: transparent;
   border: 5px #fff solid;
@@ -670,7 +689,7 @@ canvas {
 
 .count-particles{
   background: #000022;
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 0;
   width: 80px;

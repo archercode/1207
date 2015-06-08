@@ -2,7 +2,9 @@
 <div class="header fixed_component">
     {{#link-to 'index' class="logo title no_style"}}
       <img src="/logo.png"  class="img_logo" height="50" width="50"> 
+      <b class=" hidden-xs hidden-sm">
     Rockin' Circuits
+  </b>
     {{/link-to}}
     {{#md-navbar class='navbar_custom'}}
       <li class="navbar_border start">{{#link-to 'products'}} SHOP {{/link-to}}</li>
@@ -81,10 +83,10 @@
     
   </div>
 
-<footer class='fixed_component'>
+<footer class='fixed_component hidden-xs hidden-sm'>
   <div class="text_white row">
-    <div class="col l3">
-      <div class="col l1 footer_logo footer_links">
+    <div class="col s1 l3">
+      <div class="col l2 footer_logo footer_links">
         {{#link-to 'index' class=""}}
           <img src="/logo_small.png"  class="footer_logo" height="32" width="32">  
         {{/link-to}}
@@ -99,20 +101,21 @@
     </div>
 
     </div>
-    <div class="col l5">
+    <div class="col s6 l5">
       <ul class="footer_links text-normal  center-align">
           <li class="footer_link col s2 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
-          <li class="footer_link  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
+          <li class="footer_link col s3">{{#link-to 'solutions' class='text_white'}} SOLUTIONS {{/link-to}}</li>
+          <!-- <li class="footer_link  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li> -->
           <li class="footer_link  col s3">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
           <li class="footer_link col s2">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
-          <li class="footer_link  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
+          <!-- <li class="footer_link  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li> -->
       </ul>
     </div>
     <div>
 
     </div>
-    <div class="footer_links right valign-wrapper col l4">
-        <div class="col l4 text_small text-uppercase">
+    <div class="footer_links right valign-wrapper col s5 l4 hidden-xs ">
+        <div class="col l4 text_small text-uppercase  hidden-xs hidden-sm">
           Follow Us
         </div>
         <div class="">
@@ -148,5 +151,78 @@
       </div>
     </div>
   </div>
+</footer>
 
+<footer class='hidden-md hidden-lg'>
+    
+<div class="text_white ">
+
+    <div class=" text-center">
+      <ul class="footer_links text-normal  center-align">
+          <li class="footer_link col s3 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
+          <li class="footer_link col s3">{{#link-to 'solutions' class='text_white'}} SOLUTIONS {{/link-to}}</li>
+          <!-- <li class="footer_link  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li> -->
+          <li class="footer_link  col s3">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
+          <li class="footer_link col s3">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
+          <!-- <li class="footer_link  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li> -->
+      </ul>
+    </div>
+    <div>
+
+    </div>
+    <div class="row footer_links valign-wrapper ">
+        <div class="col l4 text_small text-uppercase  hidden-xs hidden-sm">
+          Follow Us
+        </div>
+        <div class="">
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#facebook1"></use>
+          </svg> 
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#twitter1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#google-plus1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center center-align footer_logo footer_links">
+        {{#link-to 'index' class=""}}
+          <img src="/logo_small.png"  class="footer_logo" height="32" width="32">  
+        {{/link-to}}
+    </div>
+    <div class=" text-center">
+      <div class="">
+        <div class="  text-uppercase text-smaller">
+          developed and designed by
+        </div>
+        <div class="  text-uppercase">
+          TYQuintos & FBarcelona
+        </div>
+    </div>
+
+    </div>
+
+  </div>
 </footer>

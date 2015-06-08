@@ -10,13 +10,13 @@ export default Ember.ObjectController.extend({
     actions: {
   		showCartSummary: function(){
   			//TODO: jquery show
-  			var view = $('.checkout_summary');
+  			var view = Ember.$('.checkout_summary');
   			//if(view.get(''))	
   			view.toggle();
   		},
       showSocialLinks: function(){
         //TODO: jquery show
-        var view = $('.social_links');
+        var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
       },

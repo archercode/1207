@@ -9,12 +9,12 @@ export default Ember.Component.extend({
 	},
 	mouseEnter:function(){
      //this.get('controller').send('hover', this.get('context'));
-  	 var view = $('.social_links');
+  	 var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
   },
    mouseLeave: function(){
-  	 var view = $('.social_links');
+  	 var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
   },

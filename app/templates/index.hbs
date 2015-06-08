@@ -1,24 +1,32 @@
-
-
+{{particle-bg}}
+<!-- particles.js container -->
 <div id="particles-js"></div>
 
+ <!-- stats - count particles  -->
+<!--
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+-->
 <div class="intro main container">
-	<div class="intro_text page_title text-uppercase text_white">
-		Hello, what can I do for you?
-	</div>
-
-	<div class="row center">
-		<div class="col m6">
-		<button class=" btn-intro text_white">SHOP</button>
-		</div> 
-		<div class="col m6">
-		<button class="btn-intro text_white">SOLUTIONS</button>
-		</div>
-	</div>
+  <div class="intro_text page_title text-uppercase text_white">
+    Hello, are you here to shop or to find solutions?
+  </div>
+  <div class="row center">
+    <div class="col m6">
+    {{#link-to 'products'}}<button class=" btn-intro text_white">SHOP</button>{{/link-to}}
+    </div>
+    <div class="col m6">
+    {{#link-to 'solutions'}}<button class="btn-intro text_white">SOLUTIONS</button>{{/link-to}}
+    </div>
+  </div>
 </div>
 
 <script>
-$ particlesJS("particles-js", {
+/* ---- particles.js config ---- */
+$
+
+particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 80,
@@ -153,4 +161,4 @@ requestAnimationFrame(update);
 
 </script>
 
-<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
+<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js 

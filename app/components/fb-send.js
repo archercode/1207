@@ -5,7 +5,7 @@
     actions: {
       sendLink: function(url) {
         console.log(url);
-        FB.ui({
+        Ember.FB.ui({
          //method: 'send',
          method: 'share',
          //link: 'https://developers.facebook.com/docs/plugins/',

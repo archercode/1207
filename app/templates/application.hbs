@@ -1,36 +1,26 @@
 
 <div class="header fixed_component">
+    {{#link-to 'index' class="logo title no_style"}}
+      <img src="/logo.png"  class="img_logo" height="50" width="50"> 
+    Rockin' Circuits
+    {{/link-to}}
+    {{#md-navbar class='navbar_custom'}}
+      <li class="navbar_border start">{{#link-to 'products'}} SHOP {{/link-to}}</li>
+      <li class="navbar_border">{{#link-to 'solutions'}} SOLUTIONS {{/link-to}}</li>
+      <li class="navbar_border">{{#link-to 'contact'}} CONTACT {{/link-to}}</li>
+      <li class="navbar_border">{{#link-to 'search'}} SEARCH {{/link-to}}</li>
+      <li class="navbar_border" >
+        {{social-apps}}
+      </li>        
+      <li class="navbar_border cart start">
+        <div class=" shopping-cart" {{action "showCartSummary" this}}>
+          <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
+          <div class="badge orange prod_count"> {{count}}</div>
+        </div>
+      </li>
+    {{/md-navbar}}
+     
 
-        {{#link-to 'index' class="logo title no_style"}}
-          <img src="/logo.png"  class="img_logo" height="50" width="50"> 
-
-        Rockin' Circuits
-        {{/link-to}}
-        {{#md-navbar class='navbar_custom'}}
-          <li class="navbar_border start">{{#link-to 'products'}} SHOP {{/link-to}}</li>
-          <li class="navbar_border">{{#link-to 'blogs'}} BLOGS {{/link-to}}</li>
-          <li class="navbar_border">{{#link-to 'contact'}} CONTACT {{/link-to}}</li>
-
-          <li class="navbar_border">{{#link-to 'search'}} SEARCH {{/link-to}}</li>
-
-          <li class="navbar_border" >{{#link-to 'about'}} ABOUT {{/link-to}}</li>
-
-           <!-- <li class="navbar_border" >{{#link-to 'products.related'}} related {{/link-to}}</li>
- -->
-
-<li class="navbar_border" >
-  {{social-apps}}
-</li>
-          
-          
-          <li class="navbar_border cart start">
-            <div class=" shopping-cart" {{action "showCartSummary" this}}>
-              <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
-              <div class="badge orange prod_count"> {{count}}</div>
-            </div>
-          </li>
-        {{/md-navbar}}
-         
     <div class="hover checkout_summary" >
       {{#if hasQuantity}}
         <div>
@@ -111,12 +101,10 @@
     </div>
     <div class="col l5">
       <ul class="footer_links text-normal  center-align">
-         <li class="footer_link col s2 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
+          <li class="footer_link col s2 ">{{#link-to 'products' class='text_white'}} SHOP {{/link-to}}</li>
           <li class="footer_link  col s2">{{#link-to 'blogs' class='text_white'}} BLOGS {{/link-to}}</li>
           <li class="footer_link  col s3">{{#link-to 'contact' class='text_white'}} CONTACT {{/link-to}}</li>
-
-          <li class=" footer_link col s2">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
-
+          <li class="footer_link col s2">{{#link-to 'search' class='text_white'}} SEARCH {{/link-to}}</li>
           <li class="footer_link  col s2" >{{#link-to 'about' class='text_white'}} ABOUT {{/link-to}}</li>
       </ul>
     </div>
@@ -142,19 +130,19 @@
 
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
-            <use xlink:href="/icons.svg#google-plus1"></use> <!--google+-->
+            <use xlink:href="/icons.svg#google-plus1"></use>
           </svg>
         </div>
 
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
-            <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+            <use xlink:href="/icons.svg#youtube1"></use>
           </svg>
         </div>
 
         <div class="iconmelon footer_icon" >
           <svg class="" viewBox="0 0 32 32">
-            <use xlink:href="/icons.svg#youtube1"></use> <!--google+-->
+            <use xlink:href="/icons.svg#youtube1"></use>
           </svg>
         </div>
       </div>

@@ -8,24 +8,18 @@ export default Ember.View.extend({
 
   actions:{
     itemAnimation: function(product){
-      console.log('product add');
-      //var viewElements = event.element;
-      //var elementsInTemplate = viewElements.children;
-      //var button = viewElements.getElementsByTagName('button');
 
       var object = this;
-  
-      var cart = $('.shopping-cart');
-        // var imgtodrag = arguments[0].target.parentElement.parentElement.parentElement.children[0].children[1];
-       var imgtodrag = this.$('<img id="dynamic">'); //Equivalent: $(document.createElement('img'))
+      var cart = Ember.$('.shopping-cart');
+      var imgtodrag = this.$('<img id="dynamic">'); 
       imgtodrag.attr('src', product.get('image'));
     
       imgtodrag = this.$(imgtodrag);
       if (imgtodrag) {
           var imgclone = imgtodrag.clone()
               .offset({
-              top: event.target.offsetTop,//event.screenX,//button.pageX,//this.get('mouseX') - 75,
-              left: event.target.offsetLeft//event.screenY,//this.get('mouseY') - 75
+              top: event.target.offsetTop,
+              left: event.target.offsetLeft
           });
           imgclone.css({
               'opacity': '0.5',
@@ -34,7 +28,7 @@ export default Ember.View.extend({
                   'width': '150px',
                   'z-index': '1050'
           });
-          imgclone.appendTo($('body'));
+          imgclone.appendTo(Ember.$('body'));
           imgclone.animate({
               'top': cart.offset().top + 20,
                   'left': cart.offset().left,
@@ -53,7 +47,7 @@ export default Ember.View.extend({
                 .animate({left:0}, (((intDuration/intShakes)/4)));
             }
             object.get('controller').send('saveToStorage', product);
-            var view = $('.checkout_summary');
+            var view = Ember.$('.checkout_summary');
             if (!view.is(':visible')){
               view.toggle();
             }
@@ -63,17 +57,9 @@ export default Ember.View.extend({
               'width': 10,
               'height': 10
           }, function () {
-              $(this).detach();
+              Ember.$(this).detach();
           });
       }
-
-
-
-
-      //
-      // 
-
-     // this.get('controller').send('saveToStorage', product);
     },
   },
 });

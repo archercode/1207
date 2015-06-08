@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	actions: {
-    	loading: function(transition, originRoute) {
+    	loading: function() {
       //displayLoadingSpinner();
 
       // Return true to bubble this event to `FooRoute`

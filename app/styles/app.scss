@@ -175,6 +175,20 @@ div.hover.checkout_summary > div ul {
   max-height: 200px;
 }
 
+
+.product-detail-price{
+  color: white;
+  position: inherit;
+  top: -365px;
+  bottom: 0px;
+  z-index: 10;
+  right: -35px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  font-weight: 600;
+  /* font-size: 0px; */
+}
+
 .hover{
 	width: auto;
   position: absolute;

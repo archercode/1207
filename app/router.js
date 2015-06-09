@@ -32,7 +32,7 @@ Router.map(function() {
 	    this.route('termsandcondition');
 	    this.route('shipping');
 	    this.route('payment');
-		this.route('privacypolicy')
+		this.route('privacypolicy');
   	});
 });
 

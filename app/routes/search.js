@@ -2,15 +2,9 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 	queryParams: {
     query: {
-      refreshModel: true
-    }
-  },
-	
-	beforeModel: function(){
-	 //return new Ember.RSVP.Promise(function (resolve, reject) {
-     // 	  setTimeout(function () {resolve({});}, 5000);
-     // });
-	},
+      	refreshModel: true
+    	}
+  	},
 	model:function(params){
 		if (!params.query) {
 				return [];
@@ -23,7 +17,6 @@ export default Ember.Route.extend({
 	    	return arr;
 	    });
 	},
-
 	actions:{
 		loading: function() {
         	return true;

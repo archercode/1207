@@ -123,6 +123,7 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
       },
       processOrder: function(){
         this.send('inputInformation');  
+        this.send('deleteData');
       },
       inputInformation: function(){
             var order = this.store.createRecord('order', {
@@ -137,6 +138,16 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
                     state: this.get('state'),
                 });
             order.save();
+      },
+      deleteData: function(){
+        this.get('store').findAll('item').then(function(record){
+          record.content.forEach(function(rec) {
+            Ember.run.once(this, function() {
+            rec.deleteRecord();
+            rec.save();
+            });
+          }, this);
+        });
       },
     }
 });

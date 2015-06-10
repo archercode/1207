@@ -32,10 +32,8 @@
      <div class="row checkout_input"> 
             <label class="col s4">Email</label>
             {{input class="col s8" value=email label="Email Address" placeholder="Email Address"}}
-            
                 {{#if errors.email}}
                 {{errors.email}}
-
                     <!-- <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> {{errors.newFamilyname}}</span> -->
                 {{/if}} 
     </div>
@@ -111,7 +109,6 @@
     </div>
 
      <div class="row checkout_payment_method">
-
             <div class="row checkout_title col s12">
                 Payment Method
             </div>
@@ -124,22 +121,19 @@
             optionLabelPath='label'}}
 
             <div class="row col s12 checkout_payment_data" >
-                
-                {{#if optionBank }}
+              {{#if optionBank }}
                 <div class="alert alert-info" role="alert"> 
-                    Shipping is through LBC. An additional of P150 will be charge on top of the total amount. Kindly ask me for the bank details. Thank you. 
+                   Kindly ask me for the bank details or other information after placing your order. 
+                   You may deposit the amount to BDO, BPI or UNIONBANK
+                   or remit via LBC, JRS, and other pawnshop that provides nationwide money transfer
                 </div>
               {{/if}}
-
-              {{#if optionMeet }}
-
+              {{#if optionMeet}}
               <div class="alert alert-info" role="alert"> 
                     Let's schedule for a meet up. Kindly contact me at 0905-575-3988/0998-469-2148. Thank you. 
                 </div>
               {{/if}}
-
-                {{#if optionPayP }}
-                    
+               {{#if optionPayP}}     
                 <div class="alert alert-info" role="alert"> 
                     Just a heads up!
                     After clicking the button below you will be redirected to PayPal to authorize the payment. Be sure to complete the process or your order will not be processed successfully.
@@ -164,10 +158,6 @@
             </div>
 
             <ul class=" checkout_order_list checkout_input row">
-
-
-
-
                 <li class="row">
 
                 <div class="col s6"><label>Item</label></div>
@@ -191,18 +181,37 @@
             {{/each}}
             </ul>
             <div class="row col s12 checkout_total">
-            <div class="col s6 left-align">
-            <label>Total</label>
+                <div class="col s6 left-align">
+                    <label>Sub Total</label>
+                </div>
+                <div class="col s5 right-align checkout_title text_green">
+                    <strong>P {{subTotal}}</strong>
+                </div>   
+                <div class="col m1 right-align">
+                </div>
             </div>
-            <div class="col s5 right-align checkout_title text_green">
-            <strong>P {{subTotal}}</strong>
-            </div>   
-
-            <div class="col m1 right-align">
-
+            {{#if isShipping}}
+            <div class="row col s12 checkout_total">
+                <div class="col s6 left-align">
+                    <label>Shipping Fee</label>
+                </div>
+                <div class="col s5 right-align checkout_title text_green">
+                    <strong>P 150</strong>
+                </div>   
+                <div class="col m1 right-align">
+                </div>
             </div>
+            {{/if}}
+            <div class="row col s12 checkout_total">
+                <div class="col s6 left-align">
+                    <label>Grand Total</label>
+                </div>
+                <div class="col s5 right-align checkout_title text_green">
+                    <strong>P {{grandTotal}}</strong>
+                </div>   
+                <div class="col m1 right-align">
+                </div>
             </div>
-
         </div>
 
 

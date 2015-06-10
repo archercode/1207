@@ -2,8 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	model: function(params){
-		console.log('product model');
-		
 		var products = this.modelFor('products');
     	return products.findBy('slug', params.product_slug);	
 	},
@@ -19,9 +17,7 @@ export default Ember.Route.extend({
 	      into: 'product',
 	      outlet: 'sidebar',
           model: this.modelFor('products'),
-          //controller: 'related',
           controller: modalController 
-
 	  });
   	},
  	

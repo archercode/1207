@@ -19,6 +19,7 @@ export default Ember.ObjectController.extend({
         var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
+        
       },
 
        

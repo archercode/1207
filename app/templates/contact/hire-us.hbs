@@ -1,22 +1,40 @@
-{{input value=companyName label="companyName" class="col s8" placeholder="Company | Organization Name"}}
-            
-            {{#if errors.companyName}}
-                {{errors.companyName}}
-            {{/if}}
 
 
-{{input value=name label="name" class="col s8" placeholder="Name"}}
-            
-            {{#if errors.name}}
-                {{errors.name}}
-            {{/if}}
+  <div class="row">
+    <div class="col s11">
+      {{input value=companyName label="companyName" class="" placeholder="Company | Organization Name"}}
+    </div>
+    <div class="col s1 contact_underline">
+      {{#if errors.companyName}}
+        <!--   {{errors.companyName}} -->
+        {{md-btn icon='mdi-alert-error' action='debug' buttonType='flat' class="center"}}         
+      {{/if}}
+    </div>
+  </div>    
 
+  <div class="row">
+    <div class="col s11">
+      {{input value=name label="name" class="" placeholder="Name"}} 
+    </div>
+    <div class="col s1 contact_underline">
+      {{#if errors.name}}
+        <!--   {{errors.companyName}} -->
+        {{md-btn icon='mdi-alert-error' action='debug' buttonType='flat' class="center"}}         
+      {{/if}}
+    </div>
+  </div>   
 
-{{input value=phone label="phone" class="col s8" placeholder="Phone Number"}}
-            
-            {{#if errors.phone}}
-                {{errors.phone}}
-            {{/if}}
+  <div class="row">
+    <div class="col s11">
+      {{input value=phone label="phone" class="" placeholder="Phone Number"}}
+    </div>
+    <div class="col s1 contact_underline">
+      {{#if errors.phone}}
+        <!--   {{errors.companyName}} -->
+        {{md-btn icon='mdi-alert-error' action='debug' buttonType='flat' class="center"}}         
+      {{/if}}
+    </div>
+  </div>   
 
 
 {{input value=email label="email" class="col s8" placeholder="Email Address"}}
@@ -46,7 +64,7 @@
 <!-- Reasong -->
 {{input value=reason label="reason" class="col s8" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
 
-<div class="row">
+<div class="row center">
         <!-- <button type="submit" class="btn btn-primary btn-whole footer col m6" {{bind-attr disabled='isInvalid'}}{{action 'sendContactMaterial'}}>SUBMIT</button> -->
 
         {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit' action = 'sendContactMaterial' isDisabled=isInvalid}}

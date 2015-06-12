@@ -45,12 +45,16 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
             message: 'Enter valid email.'  }
           },
           phone: {
-            format: { with: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/ , message: 'Enter valid phone number.'  }
+            format: { with: /^([0-9\(\)\/\+ \-]*)$/ , 
+           	 //message: 'Enter valid phone number.'  
+        	},
+            length: {minimum: 7, maximum: 14}
           },
           reason: {
-          	format: { with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
-          	message: 'Describe properly.'  },
-            length: { minimum: 10}
+          	format: { //with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
+          		//message: 'Describe properly.'  
+          	},
+            length: { minimum: 10, maximum: 50}
           },
  
     },

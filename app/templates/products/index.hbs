@@ -2,7 +2,6 @@
 
 {{#each product in model itemController='product'}}
 	<div class='col l4 '>
-		<!-- {{#link-to 'product' product.slug}}<h2>{{product.title}}</h2>{{/link-to}} -->
 		<div class='product_card'>
 			{{product-detail product=product addItem='addItem'}}	
 			<!-- <button>{{action "select" post target=view}}</button> -->
@@ -33,5 +32,4 @@
 		</div>
 	</div>
 {{/each}}
-<!-- {{md-pagination min=1 max=10 current=1 range=5}} -->
 </div>

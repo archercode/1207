@@ -34,6 +34,7 @@ Router.map(function() {
 	    this.route('payment');
 		this.route('privacypolicy');
   	});
+  	this.route('catchall', {path: '/*wildcard'});
 });
 
 export default Router;

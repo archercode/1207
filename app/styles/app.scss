@@ -320,6 +320,7 @@ li.navbar_border.start {
   height: 32px;
   display: block;
   fill: #525151;
+
 }
 .iconmelon:after,
 .im:after {
@@ -330,6 +331,19 @@ li.navbar_border.start {
   width: 100%;
   height: 100%;
 }
+
+.iconmelon.icon_green{
+  width: 250px;
+  height: 250px;
+  fill: $primary_color;
+}
+
+.iconmelon.icon_green:hover{
+  width: 260px;
+  height: 260px;
+  fill: $primary-color-dark;
+}
+
 
 .checkout_input{
  /* padding-left: 30px !important;
@@ -780,6 +794,10 @@ canvas {
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
   z-index: 3;
+
+  &.microcontroller{
+    bottom: 20%;
+  }
 }
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
@@ -795,6 +813,16 @@ canvas {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
+
+  &.filler{
+    height: 500px;
+    z-index: 10;
+    background-color: #fff;
+  }
+}
+
+div.filler > div.page_title{
+  font-size: 34px;
 }
 
 .parallax__group {
@@ -832,6 +860,21 @@ canvas {
     }
   }
 
+  &.web{  
+    background: #26a69a;
+    width: 84%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 100px;
+    
+    &.title{
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 84%;
+    }
+  }
 
   &.title {
     width: 40%;
@@ -849,12 +892,14 @@ canvas {
       color:  rgba(250,250,250, 0) !important;
       opacity: 0.2;
 
-      &.mobile{
-      opacity: 0;
+      &.web{
+        opacity: 0;
       }
   }
 
 }
+
+
 
 #slide1{
 
@@ -876,7 +921,7 @@ canvas {
   background: url('/images/solutions/intro.png');
   background-repeat: repeat;
   color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 
 .parallax_image{

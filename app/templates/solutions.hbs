@@ -6,9 +6,17 @@
  -->
 
 <div class="paralla space_on_top" >
+
+	<div class="parallax__group filler " id="intro">
+	 	 <div class="parallax__layer parallax__layer--base page_title">
+	 	 	We can help you create
+	 	 </div>
+  	</div>
+
+
 	<div class="parallax__group"id="slide1">
 	  <div class="parallax__layer parallax__layer--back">
-	  	{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card title microcontroller shadow"}}
+	  	{{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title microcontroller shadow"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Microcontroller-based applications
@@ -31,10 +39,10 @@
 	  	</div>
 
 	  </div>
-	  <div class="parallax__layer parallax__layer--base">
+	  <div class="parallax__layer parallax__layer--base microcontroller">
 
 	  	
-			{{#md-card-panel class="teal" bodyClass="white-text" class="parallax_card title microcontroller"}}
+			{{#md-card-panel class="teal" bodyClass="white-text center" class="parallax_card title microcontroller"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Microcontroller-based applications
@@ -54,9 +62,66 @@
 
   </div>
 
-  <div class="parallax__group"id="slide2">
+
+<div class="parallax__group"id="slide2">
+	  <div class="parallax__layer parallax__layer--base">
+	  	{{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title web shadow"}}
+
+		  		<div class="parallax_title text-uppercase">
+			  		Cloud Solutions and Web Applications
+			  	</div>
+ 			{{/md-card-panel}}
+
+			{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card web shadow"}}
+ 			<div >
+			  	 
+			  	<div class="parallax_desc">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices.  </p>
+
+			  	</div>
+ 			</div>
+ 			{{/md-card-panel}}
+	  </div>
+	  <div class="parallax__layer parallax__layer--base">
+
+
+	 	 	 <div class="iconmelon icon_green center_page" >
+              <svg class="" viewBox="0 0 32 32">
+                <use xlink:href="/icons.svg#cloud"></use>
+              </svg> 
+            </div>
+
+	  	
+			{{#md-card-panel class="teal center" bodyClass="white-text" class="parallax_card title web"}}
+
+		  		<div class="parallax_title text-uppercase">
+			  		Cloud Solutions and Web Applications
+			  	</div>
+ 			{{/md-card-panel}}
+
+			{{#md-card-panel class="" bodyClass="white-text" class="parallax_card web"}}
+ 			<div >
+			  	 
+			  	<div class="parallax_desc">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices. </p>
+
+			  	</div>
+ 			</div>
+ 			{{/md-card-panel}}
+	  </div>
+
+	  <!-- <div class="parallax__layer parallax__layer--deep"> 
+	  	<div class="parallax_image">
+	  		<img src="/DFR0009.jpg" height="100px" width="100px"/>
+	  	</div>
+	  </div> -->
+  </div>	
+
+  <div class="parallax__group"id="slide3">
+
+
 	  <div class="parallax__layer parallax__layer--deep">
-	  	{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card title mobile shadow"}}
+	  	{{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title mobile shadow"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Mobile Applications
@@ -73,18 +138,19 @@
  			</div>
  			{{/md-card-panel}}
 
+  			<div class="parallax_image ios">
+		  		<img src="/images/solutions/iphone6.png" height="500px" width="500px"/>
+		  	</div>
+		  	<div class="parallax_image android">
+		  		<img src="/images/solutions/nexus6.png" height="500px" width="500px"/>
+		  	</div>
 
-	  	<div class="parallax_image ios">
-	  		<img src="/images/solutions/iphone6.png" height="500px" width="500px"/>
-	  	</div>
-	  	<div class="parallax_image android">
-	  		<img src="/images/solutions/nexus6.png" height="500px" width="500px"/>
-	  	</div>
+	  	
 	  </div>
 	  <div class="parallax__layer parallax__layer--base">
 
 	  	
-			{{#md-card-panel class="teal" bodyClass="white-text" class="parallax_card title mobile"}}
+			{{#md-card-panel class="teal center" bodyClass="white-text" class="parallax_card title mobile"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Mobile Applications
@@ -106,52 +172,22 @@
   </div>
 
 
-<div class="parallax__group"id="slide3">
-	  <div class="parallax__layer parallax__layer--back">
-	  	{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card title web shadow"}}
+	<div class="parallax__group filler" id="end">
+	 	 <div class="parallax__layer parallax__layer--base page_title ">
+	 	 	... tell us what you need 
 
-		  		<div class="parallax_title text-uppercase">
-			  		Web Applications
-			  	</div>
- 			{{/md-card-panel}}
+{{#link-to 'contact'}} 
+	 	 	 <div class="iconmelon icon_green center_page" >
+              <svg class="" viewBox="0 0 32 32">
+                <use xlink:href="/icons.svg#mail"></use>
+              </svg> 
+            </div>
+            {{/link-to}}
 
-			{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card web shadow"}}
- 			<div >
-			  	 
-			  	<div class="parallax_desc">
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices.  </p>
+	 	 </div>
 
-			  	</div>
- 			</div>
- 			{{/md-card-panel}}
-	  </div>
-	  <div class="parallax__layer parallax__layer--base">
 
-	  	
-			{{#md-card-panel class="teal" bodyClass="white-text" class="parallax_card title web"}}
-
-		  		<div class="parallax_title text-uppercase">
-			  		Web Applications
-			  	</div>
- 			{{/md-card-panel}}
-
-			{{#md-card-panel class="" bodyClass="white-text" class="parallax_card web"}}
- 			<div >
-			  	 
-			  	<div class="parallax_desc">
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices. </p>
-
-			  	</div>
- 			</div>
- 			{{/md-card-panel}}
-	  </div>
-
-	  <div class="parallax__layer parallax__layer--deep"> 
-	  	<div class="parallax_image">
-	  		<img src="/DFR0009.jpg" height="100px" width="100px"/>
-	  	</div>
-	  </div>
-  </div>	
+  	</div>
 
 </div>
 

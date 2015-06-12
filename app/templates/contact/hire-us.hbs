@@ -2,6 +2,12 @@
             
             {{#if errors.companyName}}
                 {{errors.companyName}}
+              {{md-badge icon='mdi-alert-error' action='debug' iconPosition='center' class='deep-purple darken-3'}}
+          
+        
+  {{md-btn icon='mdi-alert-error' action='debug'
+           buttonType='flat' class="btn-"}}
+                   
             {{/if}}
 
 
@@ -46,7 +52,7 @@
 <!-- Reasong -->
 {{input value=reason label="reason" class="col s8" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
 
-<div class="row">
+<div class="row center">
         <!-- <button type="submit" class="btn btn-primary btn-whole footer col m6" {{bind-attr disabled='isInvalid'}}{{action 'sendContactMaterial'}}>SUBMIT</button> -->
 
         {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit' action = 'sendContactMaterial' isDisabled=isInvalid}}

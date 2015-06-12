@@ -12,6 +12,9 @@ export default Ember.Component.extend({
   	 var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
+
+      /*  var view = Ember.$('.social_links_icon');
+        view.toggle();*/
   },
    mouseLeave: function(){
   	 var view = Ember.$('.social_links');

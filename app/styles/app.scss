@@ -320,6 +320,7 @@ li.navbar_border.start {
   height: 32px;
   display: block;
   fill: #525151;
+
 }
 .iconmelon:after,
 .im:after {
@@ -330,6 +331,19 @@ li.navbar_border.start {
   width: 100%;
   height: 100%;
 }
+
+.iconmelon.icon_green{
+  width: 250px;
+  height: 250px;
+  fill: $primary_color;
+}
+
+.iconmelon.icon_green:hover{
+  width: 260px;
+  height: 260px;
+  fill: $primary-color-dark;
+}
+
 
 .checkout_input{
  /* padding-left: 30px !important;
@@ -780,15 +794,18 @@ canvas {
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
   z-index: 3;
+
+  &.microcontroller{
+    bottom: 20%;
+  }
 }
 .parallax__layer--deep {
   transform: translateZ(-2px) scale(3);
   z-index: 2;
 }
 
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
+.parallax__layer--fore { 
+  transform: translateZ(0) scale(.7);
   z-index: 1;
 }
 
@@ -796,6 +813,16 @@ canvas {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
+
+  &.filler{
+    height: 500px;
+    z-index: 10;
+    background-color: #fff;
+  }
+}
+
+div.filler > div.page_title{
+  font-size: 34px;
 }
 
 .parallax__group {
@@ -808,6 +835,17 @@ canvas {
   left: 30%;
   position: relative;
   
+  &.mobile{
+    background: #26a69a;
+    left: 20%; 
+    top: 90px;
+
+    &.title{
+        top: 90px;
+  left: 24%;
+  width: 31%;
+    }
+  }
 
   &.microcontroller{
     background: #26a69a;
@@ -822,6 +860,21 @@ canvas {
     }
   }
 
+  &.web{  
+    background: #26a69a;
+    width: 84%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 100px;
+    
+    &.title{
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 84%;
+    }
+  }
 
   &.title {
     width: 40%;
@@ -838,9 +891,15 @@ canvas {
       margin-left: 20px;
       color:  rgba(250,250,250, 0) !important;
       opacity: 0.2;
+
+      &.web{
+        opacity: 0;
+      }
   }
 
 }
+
+
 
 #slide1{
 
@@ -862,7 +921,7 @@ canvas {
   background: url('/images/solutions/intro.png');
   background-repeat: repeat;
   color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 
 .parallax_image{
@@ -875,11 +934,11 @@ canvas {
   z-index: -100;
   }
   &.android {
-    top: 40px;
+    top: 80px;
     right: 5%;
   }
   &.ios {
-    top: 40px;
-    right: 10%;
+    top: 70px;
+    right: 21%;
   }
 }

@@ -815,9 +815,13 @@ canvas {
   transform-style: preserve-3d;
 
   &.filler{
-    height: 500px;
+    //height: 500px;
     z-index: 10;
     background-color: #fff;
+
+    &.intro{
+      background-color: #eee;
+    }
   }
 }
 
@@ -842,8 +846,26 @@ div.filler > div.page_title{
 
     &.title{
         top: 90px;
-  left: 24%;
-  width: 31%;
+      left: 24%;
+      width: 31%;
+    }
+  }
+
+
+  &.intro{
+    width: 50%;
+    font-size: 20px;
+    padding: 30px;
+    top: 40px;
+    left: 40%;
+    background: rgba(255, 255, 255, 0.4);
+    &.title{
+      width: 40%;
+      left: 15%;
+      top: 80px;
+      font-size: 50px;
+      padding: 50px;
+      background-color: rgba(187,102, 137, 0.9);//#BB6689;//$primary-color;
     }
   }
 
@@ -851,22 +873,26 @@ div.filler > div.page_title{
     background: #26a69a;
     left: 55%;
 
-    top: 80px;
+    top: 120px;
 
     &.title{
-      top: 60px;
+      top: 120px;
       left: 45%;
       width: 37%;
     }
   }
 
   &.web{  
-    background: #26a69a;
-    width: 84%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 100px;
+    //background: #26a69a;
+      border: 15px #26a69a solid;
+  background: transparent;
+  width: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 100px;
+  font-size: 26px;
+  padding: 10px;
     
     &.title{
       left: 0;
@@ -893,7 +919,14 @@ div.filler > div.page_title{
       opacity: 0.2;
 
       &.web{
-        opacity: 0;
+        margin-left: auto;
+        left: 20px;
+        border: white 15px solid;
+        background: #fff;
+        font-size: 26px;
+        padding: 10px;
+        opacity: 1;
+
       }
   }
 
@@ -911,8 +944,7 @@ div.filler > div.page_title{
 
 #slide2{
 
-  background: #fff;
-  color: #fff;
+  background: #eee; 
   z-index: 4;
 }
 
@@ -929,16 +961,34 @@ div.filler > div.page_title{
   position:absolute;
 
   &.arduino{
-      bottom: 25%;
-  left: 15%;
-  z-index: -100;
+    top: 120px;
+    bottom: 25%;
+    left: 15%;
+    z-index: -100;
   }
   &.android {
     top: 80px;
-    right: 5%;
+    right: 0%;
   }
   &.ios {
     top: 70px;
     right: 21%;
   }
+}
+
+
+/** video bg **/
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('https://www.paypalobjects.com/webstatic/en_TW/mktg/wright/home/home_hero_roa_holidays.jpg') no-repeat;
+  background-size: cover;
 }

@@ -7,10 +7,58 @@
 
 <div class="paralla space_on_top" >
 
-	<div class="parallax__group filler " id="intro">
-	 	 <div class="parallax__layer parallax__layer--base page_title">
-	 	 	We can help you create
-	 	 </div>
+	<div class="parallax__group filler intro" id="intro">
+
+		<div>
+			<video autoplay loop poster="https://www.paypalobjects.com/webstatic/en_TW/mktg/wright/home/home_hero_roa_holidays.jpg" id="bgvid">
+				<source src="https://www.paypalobjects.com/webstatic/mktg/roa/videos/buyer-protection/matt.webm" type="video/webm">
+				<source src="https://www.paypalobjects.com/webstatic/mktg/roa/videos/buyer-protection/matt.mp4" type="video/mp4">
+			</video>
+		</div>
+
+
+	 	 <div class="parallax__layer parallax__layer--base ">
+	  	{{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title intro shadow"}}
+
+		  		<div class="parallax_title text-uppercase">
+			  		
+	 	 			How can we assist you?
+			  	</div>
+ 			{{/md-card-panel}}
+
+		<!-- 	{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card intro shadow"}}
+ 			<div >
+			  	 
+			  	<div class="parallax_desc">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices. </p>
+
+			  	</div>
+ 			</div>
+ 			{{/md-card-panel}} -->
+
+
+	  </div>
+	  <div class="parallax__layer parallax__layer--base intro">
+
+	  	
+			{{#md-card-panel class="teal" bodyClass="white-text center" class="parallax_card title intro"}}
+		  		<div class="parallax_title text-uppercase">
+	 	 			We can  you create
+			  	</div>
+ 			{{/md-card-panel}}
+
+			{{#md-card-panel class="" bodyClass="" class="parallax_card intro"}}
+ 			<div >
+			  	<div class="parallax_desc">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			  	</div>
+ 			</div>
+ 			{{/md-card-panel}}
+	  </div>
+
+
+
+
   	</div>
 
 
@@ -65,12 +113,12 @@
 
 <div class="parallax__group"id="slide2">
 	  <div class="parallax__layer parallax__layer--base">
-	  	{{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title web shadow"}}
+	  	<!-- {{#md-card-panel class="white center" bodyClass="transparent" class="parallax_card title web shadow"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Cloud Solutions and Web Applications
 			  	</div>
- 			{{/md-card-panel}}
+ 			{{/md-card-panel}} -->
 
 			{{#md-card-panel class="white" bodyClass="transparent" class="parallax_card web shadow"}}
  			<div >
@@ -79,27 +127,29 @@
 			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit nunc, finibus sit amet sem in, aliquam viverra nibh. In nunc metus, pulvinar dignissim justo non, viverra semper neque. Ut eleifend enim eget ligula commodo ultrices.  </p>
 
 			  	</div>
+ 			
+		 	 	 <!-- <div class="iconmelon icon_green center_page" >
+	              <svg class="" viewBox="0 0 32 32">
+	                <use xlink:href="/icons.svg#cloud"></use>
+	              </svg> 
+	            </div> -->
  			</div>
+
  			{{/md-card-panel}}
 	  </div>
 	  <div class="parallax__layer parallax__layer--base">
 
 
-	 	 	 <div class="iconmelon icon_green center_page" >
-              <svg class="" viewBox="0 0 32 32">
-                <use xlink:href="/icons.svg#cloud"></use>
-              </svg> 
-            </div>
 
 	  	
-			{{#md-card-panel class="teal center" bodyClass="white-text" class="parallax_card title web"}}
+			<!-- {{#md-card-panel class="teal center" bodyClass="white-text" class="parallax_card title web"}}
 
 		  		<div class="parallax_title text-uppercase">
 			  		Cloud Solutions and Web Applications
 			  	</div>
- 			{{/md-card-panel}}
+ 			{{/md-card-panel}} -->
 
-			{{#md-card-panel class="" bodyClass="white-text" class="parallax_card web"}}
+			{{#md-card-panel class="" bodyClass="center text-green" class="parallax_card web"}}
  			<div >
 			  	 
 			  	<div class="parallax_desc">
@@ -139,7 +189,7 @@
  			{{/md-card-panel}}
 
   			<div class="parallax_image ios">
-		  		<img src="/images/solutions/iphone6.png" height="500px" width="500px"/>
+		  		<img src="/images/solutions/iphone6.png" height="425px" width="338px"/>
 		  	</div>
 		  	<div class="parallax_image android">
 		  		<img src="/images/solutions/nexus6.png" height="500px" width="500px"/>

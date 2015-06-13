@@ -805,6 +805,12 @@ canvas {
 .parallax__layer--base {
   transform: translateZ(0);
   z-index: 4;
+
+&.about{
+  
+        transform: scale(0.9);
+}
+
 }
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
@@ -836,6 +842,10 @@ canvas {
 
     &.intro{
       background-color: #eee;
+    }
+
+    &.about{
+      background-color: transparent;
     }
 
 
@@ -966,23 +976,24 @@ div.filler > div.page_title{
       }
 
       &.about{
-
         margin-left: auto;
         left: 20px;
         border: white 15px solid;
         background: #fff;
         font-size: 18px;
         padding: 10px;
-        opacity: 0.7;
+        opacity: 0.9;
       }
 
   }
 }
 
 
-#about > div.parallax__layer--back{
+//#about > div.parallax__layer--back
+.paralla.about
+{
   background: url('/images/bg/sky.jpg');
-  background-size: 150%;
+  background-size: auto 150%;
   background-position: 100 100;
   background-repeat: no-repeat; 
   background-position: center;

@@ -52,7 +52,6 @@ body {
   }
 
 }
-
 span.card-title.activator.black-text {
   line-height: 30px;
   font-size: 20px;
@@ -178,18 +177,6 @@ div.hover.checkout_summary > div ul {
 }
 
 
-.product-detail-price{
-  color: white;
-  position: inherit;
-  top: -365px;
-  bottom: 0px;
-  z-index: 10;
-  right: -35px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  letter-spacing: 1px;
-  font-weight: 600;
-  /* font-size: 0px; */
-}
 
 .hover{
 	width: auto;
@@ -612,7 +599,7 @@ footer.fixed_component:hover{
   height: 120px;
 }
 
-.card:hover{
+.card:hover, div.product_card > div.details:hover {
   bottom: 2px;
 }
 
@@ -1000,3 +987,123 @@ video#bgvid {
   background: url('https://www.paypalobjects.com/webstatic/en_TW/mktg/wright/home/home_hero_roa_holidays.jpg') no-repeat;
   background-size: cover;
 }
+
+/** sample banner **/
+
+.card .card-reveal {
+  z-index: 3;
+}
+
+.product-detail-price{ 
+  text-align: left;
+  width: 110px;
+  color: white;
+  position: relative !important;
+  top: 60px !important;
+  right: -270px !important;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ribbon-container {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  overflow: visible;
+  /* so we can see the pseudo-elements we're going to add to the anchor */
+  
+  font-size: 18px;
+  /* font-size and line-height must be equal so we can account for the height of the banner */
+  
+  line-height: 18px;
+}
+
+.ribbon-container:before {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  border-top: 20px solid rgba(0, 0, 0, .3);
+  /* These 4 border properties create the first part of our drop-shadow */
+  
+  border-bottom: 20px solid rgba(0, 0, 0, .3);
+  border-right: 20px solid rgba(0, 0, 0, .3);
+  border-left: 20px solid transparent;
+}
+
+
+.ribbon-container:after {
+  /* This adds the second part of our dropshadow */
+  content: "";
+  height: 3px;
+  background: rgba(0, 0, 0, .3);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 40px;
+  right: 3px;
+}
+
+.ribbon-container a {
+  display: block;
+  padding: 12px;
+  position: relative;
+  /* allows us to position our pseudo-elements properly */
+  
+  background: #0089d0;
+  overflow: visible;
+  height: 40px;
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ribbon-container a:after {
+  /* this creates the "folded" part of our ribbon */
+  
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  border-top: 15px solid #004a70;
+  border-right: 15px solid transparent;
+}
+
+.ribbon-container a:before {
+  /* this creates the "forked" part of our ribbon */
+  
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  border-top: 20px solid #0089d0;
+  border-bottom: 20px solid #0089d0;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.ribbon-container a:hover {
+  background: #009ff1;
+}
+
+.ribbon-container a:hover:before {
+  /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+  
+  border-top: 20px solid #009ff1;
+  border-bottom: 20px solid #009ff1;
+}
+
+
+

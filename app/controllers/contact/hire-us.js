@@ -28,6 +28,10 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	    });    
   	},
 
+  	isVal: function(){
+  		return Ember.computed.not(this.get('errors.companyName'));
+  	}.property('errors.companyName'),
+
   	validations: {
           companyName:{
             format: { with: /^[A-Za-z-]{2,16}$/, 
@@ -58,19 +62,7 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
           },
  
     },
-    /*
-    val: 'Ship',
 
-	radio: [
-	    {label: 'Shipping', value: 'Ship'},
-	    {label: 'Meetup', value: 'Meet'},
-	    {label: 'PayPal', value: 'Paypal'},
-	],
-	  
-	optionBank: true,
-	optionMeet: false,
-	optionPayP: false,    
-	*/
 	onChangeVal : function () {
 		console.log();
 	      if (this.selectedVal === 'Ship'){

@@ -6,9 +6,12 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.companyName}}
-        <!--   {{errors.companyName}} -->
         {{md-btn icon='mdi-alert-error' action='debug' buttonType='flat' class="center"}}         
       {{/if}}
+
+      {{#unless errors.companyName}}
+        correct
+      {{/unless}}
     </div>
   </div>    
 

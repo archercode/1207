@@ -641,6 +641,7 @@ footer.fixed_component:hover{
   vertical-align: center;
 }
 
+
 .header{
   width: 100%;
   z-index: 1030;
@@ -713,8 +714,7 @@ p > div.materialize-selectable-item {
 
 .contact_underline{
   min-height: 46px;
-  border-bottom: 1px #9e9e9e solid;
-  padding: 4.5px !important;
+  border-bottom: 1px #9e9e9e solid; 
 }
 
 /* partcile css */
@@ -850,12 +850,12 @@ div.filler > div.page_title{
   
   &.mobile{
     background: #26a69a;
-    left: 20%; 
-    top: 90px;
+    left: 12%; 
+    top: 120px;
 
     &.title{
-        top: 90px;
-      left: 24%;
+        top: 120px;
+      left: 20%;
       width: 31%;
     }
   }
@@ -880,13 +880,13 @@ div.filler > div.page_title{
 
   &.microcontroller{
     background: #26a69a;
-    left: 55%;
+    left: 58%;
 
     top: 120px;
 
     &.title{
       top: 120px;
-      left: 45%;
+      left: 53%;
       width: 37%;
     }
   }
@@ -972,16 +972,16 @@ div.filler > div.page_title{
   &.arduino{
     top: 120px;
     bottom: 25%;
-    left: 15%;
+    left: 12%;
     z-index: -100;
   }
   &.android {
-    top: 80px;
-    right: 0%;
+    top: 110px;
+    right: 5%;
   }
   &.ios {
-    top: 70px;
-    right: 21%;
+    top: 90px;
+    right: 26%;
   }
 }
 

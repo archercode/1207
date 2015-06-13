@@ -28,6 +28,22 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	    });    
   	},
 
+	isNameEmpty: function(){
+  		if (!Ember.isEmpty(this.get('name'))){ return true; }
+  	}.property('name'),
+
+  	isEmailEmpty: function(){
+  		if (!Ember.isEmpty(this.get('email'))){ return true; }
+  	}.property('email'),
+
+  	isPhoneEmpty: function(){
+  		if (!Ember.isEmpty(this.get('phone'))){ return true; }
+  	}.property('phone'),
+
+  	isReasonEmpty: function(){
+  		if (!Ember.isEmpty(this.get('reason'))){ return true; }
+  	}.property('reason'),
+
   	validations: {
           name: {
             format: { with: /^[A-Za-z-]{3,16}$/ , 
@@ -54,25 +70,6 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
           },
  
     },
-    
-	onChangeVal : function () {
-		console.log();
-	      if (this.selectedVal === 'Ship'){
-	        this.set('optionBank', true);
-	        this.set('optionMeet', false);
-	        this.set('optionPayP', false);
-	      }
-	      if (this.selectedVal === 'Meet'){
-	        this.set('optionBank', false);
-	        this.set('optionMeet', true);
-	        this.set('optionPayP', false);
-	      }
-	      if (this.selectedVal === 'Paypal'){
-	        this.set('optionBank', false);
-	        this.set('optionMeet', false);
-	        this.set('optionPayP', true);
-	      }
-	  }.observes('currentProgrammer.id'),
 
  	questionType: [
 	    {type: 'Software Related', id: 1},

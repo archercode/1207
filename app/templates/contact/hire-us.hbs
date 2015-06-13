@@ -2,10 +2,10 @@
 
   <div class="row">
     <div class="col s11">
-      {{input value=companyName label="companyName" class="" placeholder="Company | Organization Name"}}
+      {{input value=hire_companyName label="companyName" class="" placeholder="Company | Organization Name"}}
     </div>
     <div class="col s1 contact_underline">
-      {{#if errors.companyName}}
+      {{#if errors.hire_companyName}}
          <i class="small mdi-alert-error"></i>    
         {{else}}
           {{#if isCompanyNameEmpty}}
@@ -17,10 +17,10 @@
 
   <div class="row">
     <div class="col s11">
-      {{input value=name label="name" class="" placeholder="Name"}} 
+      {{input value=hire_name label="name" class="" placeholder="Name"}} 
     </div>
     <div class="col s1 contact_underline">
-      {{#if errors.name}}
+      {{#if errors.hire_name}}
          <i class="small mdi-alert-error"></i>    
          {{else}}
           {{#if isNameEmpty}}
@@ -32,10 +32,10 @@
 
   <div class="row">
     <div class="col s11">
-      {{input value=phone label="phone" class="" placeholder="Phone Number"}}
+      {{input value=hire_phone label="phone" class="" placeholder="Phone Number"}}
     </div>
     <div class="col s1 contact_underline">
-      {{#if errors.phone}}
+      {{#if errors.hire_phone}}
          <i class="small mdi-alert-error"></i>    
          {{else}}
           {{#if isPhoneEmpty}}
@@ -47,10 +47,10 @@
 
   <div class="row">
     <div class="col s11">
-      {{input value=email label="email" class="" placeholder="Email Address"}}
+      {{input value=hire_email label="email" class="" placeholder="Email Address"}}
     </div>
     <div class="col s1 contact_underline">
-      {{#if errors.email}}
+      {{#if errors.hire_email}}
          <i class="small mdi-alert-error"></i>    
          {{else}}
           {{#if isEmailEmpty}}
@@ -85,10 +85,10 @@
     <div class="col s11">
       
 
-{{input value=reason label="reason" class="" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
+{{input value=hire_reason label="reason" class="" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
     </div>
     <div class="col s1 contact_underline">
-      {{#if errors.reason}}
+      {{#if errors.hire_reason}}
          <i class="small mdi-alert-error"></i>    
          {{else}}
           {{#if isReasonEmpty}}

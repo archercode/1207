@@ -1,4 +1,4 @@
-import Ember from 'ember';
+  import Ember from 'ember';
 
 import Errors from 'ember-validations/errors';
 import EmberValidations from 'ember-validations';
@@ -29,40 +29,40 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
   	},
 
 	isNameEmpty: function(){
-  		if (!Ember.isEmpty(this.get('name'))){ return true; }
-  	}.property('name'),
+  		if (!Ember.isEmpty(this.get('ask_name'))){ return true; }
+  	}.property('ask_name'),
 
   	isEmailEmpty: function(){
-  		if (!Ember.isEmpty(this.get('email'))){ return true; }
-  	}.property('email'),
+  		if (!Ember.isEmpty(this.get('ask_email'))){ return true; }
+  	}.property('ask_email'),
 
   	isPhoneEmpty: function(){
-  		if (!Ember.isEmpty(this.get('phone'))){ return true; }
-  	}.property('phone'),
+  		if (!Ember.isEmpty(this.get('ask_phone'))){ return true; }
+  	}.property('ask_phone'),
 
   	isReasonEmpty: function(){
-  		if (!Ember.isEmpty(this.get('reason'))){ return true; }
-  	}.property('reason'),
+  		if (!Ember.isEmpty(this.get('ask_reason'))){ return true; }
+  	}.property('ask_reason'),
 
   	validations: {
-          name: {
+          ask_name: {
             format: { with: /^[A-Za-z-]{3,16}$/ , 
             
             message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
           //
-          email:{
+          ask_email:{
             format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ 
             message: 'Enter valid email.'  }
           },
-          phone: {
+          ask_phone: {
             format: { with: /^([0-9\(\)\/\+ \-]*)$/ , 
            	 //message: 'Enter valid phone number.'  
         	},
             length: {minimum: 7, maximum: 14}
           },
-          reason: {
+          ask_reason: {
           	format: { //with:  /^[A-Za-z-]{3,16}$/, /*allowBlank: true,*/ 
           	//message: 'Describe properly.'  
           	},

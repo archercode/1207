@@ -31,6 +31,7 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
   	validations: {
           name: {
             format: { with: /^[A-Za-z-]{3,16}$/ , 
+            
             message: 'Enter valid name.'  },
             length: { minimum: 2}
           },

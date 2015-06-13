@@ -6,14 +6,12 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.companyName}}
-
          <i class="small mdi-alert-error"></i>    
-
+        {{else}}
+          {{#if isCompanyNameEmpty}}
+          <i class="small mdi-navigation-check"></i>  
+          {{/if}}
       {{/if}}
-
-      {{#unless errors.companyName}}
-        correct
-      {{/unless}}
     </div>
   </div>    
 
@@ -23,7 +21,11 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.name}}
-         <i class="small mdi-alert-error"></i>     
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isNameEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>   
@@ -34,7 +36,11 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.phone}}
-         <i class="small mdi-alert-error"></i>       
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isPhoneEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>   
@@ -45,7 +51,11 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.email}}
-         <i class="small mdi-alert-error"></i>     
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isEmailEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>  
@@ -79,13 +89,16 @@
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.reason}}
-         <i class="small mdi-alert-error"></i>       
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isReasonEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>  
 
 <div class="row center">
-        <!-- <button type="submit" class="btn btn-primary btn-whole footer col m6" {{bind-attr disabled='isInvalid'}}{{action 'sendContactMaterial'}}>SUBMIT</button> -->
 
         {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit' action = 'sendContactMaterial' isDisabled=isInvalid}}
 </div>

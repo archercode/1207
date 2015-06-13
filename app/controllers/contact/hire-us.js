@@ -27,11 +27,28 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	      }, this);
 	    });    
   	},
+  	
+  	isCompanyNameEmpty: function(){
+  		if (!Ember.isEmpty(this.get('companyName'))){ return true; }
+  	}.property('companyName'),
 
-  	isVal: function(){
-  		return Ember.computed.not(this.get('errors.companyName'));
-  	}.property('errors.companyName'),
+	isNameEmpty: function(){
+  		if (!Ember.isEmpty(this.get('name'))){ return true; }
+  	}.property('name'),
 
+  	isEmailEmpty: function(){
+  		if (!Ember.isEmpty(this.get('email'))){ return true; }
+  	}.property('email'),
+
+  	isPhoneEmpty: function(){
+  		if (!Ember.isEmpty(this.get('phone'))){ return true; }
+  	}.property('phone'),
+
+  	isReasonEmpty: function(){
+  		if (!Ember.isEmpty(this.get('reason'))){ return true; }
+  	}.property('reason'),
+
+	
   	validations: {
           companyName:{
             format: { with: /^[A-Za-z-]{2,16}$/, 
@@ -54,6 +71,7 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
         	},
             length: {minimum: 7, maximum: 14}
           },
+
           reason: {
           	format: { //with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
           		//message: 'Describe properly.'  
@@ -64,7 +82,9 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
     },
 
 	onChangeVal : function () {
-		console.log();
+		console.log(this.get('currentOrganization.id'));
+		
+		/*
 	      if (this.selectedVal === 'Ship'){
 	        this.set('optionBank', true);
 	        this.set('optionMeet', false);
@@ -80,7 +100,8 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	        this.set('optionMeet', false);
 	        this.set('optionPayP', true);
 	      }
-	  }.observes('currentProgrammer.id'),
+	      */
+	  }.observes('currentOrganization.id'),
 	
 	organization: [
 	    {type: 'Individual', id: 1},

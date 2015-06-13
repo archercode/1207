@@ -1,44 +1,44 @@
  <div class="row">
     <div class="col s11">
-
-{{input value=name label="name" class="" placeholder="Name"}}
+      {{input value=name label="name" class="" placeholder="Name"}} 
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.name}}
-        <!--   {{errors.companyName}} -->
-         <i class="small mdi-alert-error"></i> 
-      {{else}}
-
-         <i class="small mdi-navigation-check"></i>  
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isNameEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
-  </div>  
+  </div>   
 
-<div class="row">
+  <div class="row">
     <div class="col s11">
-
-{{input value=phone label="phone" class="" placeholder="Phone Number"}}
-            
+      {{input value=phone label="phone" class="" placeholder="Phone Number"}}
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.phone}}
-        <!--   {{errors.companyName}} -->
-
          <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isPhoneEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
-  </div>  
+  </div>   
 
-
-<div class="row">
+  <div class="row">
     <div class="col s11">
-
-{{input value=email label="email" class="" placeholder="Email Address"}}
-            
+      {{input value=email label="email" class="" placeholder="Email Address"}}
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.email}}
-         <i class="small mdi-alert-error"></i>     
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isEmailEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>  
@@ -53,17 +53,20 @@
 }}
 
 <!-- Reasong -->
+ 
   <div class="row">
     <div class="col s11">
       
 
-{{input value=reason label="reason" class="" placeholder="Reason |  I would like to create something but not sure on what to buy? |etc"}}
-
-
+{{input value=reason label="reason" class="" placeholder="Reason |  My Company is looking to create a web app that does the following | etc "}}
     </div>
     <div class="col s1 contact_underline">
       {{#if errors.reason}}
-         <i class="small mdi-alert-error"></i>  
+         <i class="small mdi-alert-error"></i>    
+         {{else}}
+          {{#if isReasonEmpty}}
+          <i class="small mdi-navigation-check"></i> 
+          {{/if}} 
       {{/if}}
     </div>
   </div>  

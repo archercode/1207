@@ -28,51 +28,52 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
 	    });    
   	},
   	
+  	
   	isCompanyNameEmpty: function(){
-  		if (!Ember.isEmpty(this.get('companyName'))){ return true; }
-  	}.property('companyName'),
+  		if (!Ember.isEmpty(this.get('hire_companyName'))){ return true; }
+  	}.property('hire_companyName'),
 
 	isNameEmpty: function(){
-  		if (!Ember.isEmpty(this.get('name'))){ return true; }
-  	}.property('name'),
+  		if (!Ember.isEmpty(this.get('hire_name'))){ return true; }
+  	}.property('hire_name'),
 
   	isEmailEmpty: function(){
-  		if (!Ember.isEmpty(this.get('email'))){ return true; }
-  	}.property('email'),
+  		if (!Ember.isEmpty(this.get('hire_email'))){ return true; }
+  	}.property('hire_email'),
 
   	isPhoneEmpty: function(){
-  		if (!Ember.isEmpty(this.get('phone'))){ return true; }
-  	}.property('phone'),
+  		if (!Ember.isEmpty(this.get('hire_phone'))){ return true; }
+  	}.property('hire_phone'),
 
   	isReasonEmpty: function(){
-  		if (!Ember.isEmpty(this.get('reason'))){ return true; }
-  	}.property('reason'),
-
+  		if (!Ember.isEmpty(this.get('hire_reason'))){ return true; }
+  	}.property('hire_reason'),
+	
 	
   	validations: {
-          companyName:{
+          hire_companyName:{
             format: { with: /^[A-Za-z-]{2,16}$/, 
             message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
-          name: {
+          hire_name: {
             format: { with: /^[A-Za-z-]{3,16}$/ , 
             message: 'Enter valid name.'  },
             length: { minimum: 2}
           },
-          //
-          email:{
+          
+          hire_email:{
             format: { with: /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i, /*allowBlank: true,*/ 
             message: 'Enter valid email.'  }
           },
-          phone: {
+          hire_phone: {
             format: { with: /^([0-9\(\)\/\+ \-]*)$/ , 
            	 //message: 'Enter valid phone number.'  
         	},
             length: {minimum: 7, maximum: 14}
           },
 
-          reason: {
+          hire_reason: {
           	format: { //with: /^[A-Za-z-]{2,16}$/, /*allowBlank: true,*/ 
           		//message: 'Describe properly.'  
           	},

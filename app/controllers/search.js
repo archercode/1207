@@ -4,12 +4,18 @@ export default Ember.ObjectController.extend({
   queryParams: ['query'],
   query: null,
   queryField: Ember.computed.oneWay('query'),
+  noResultField: null,
   isEmptyField: function(){
     return Ember.isEmpty(this.get('queryField'));
   }.property('queryField'),
   actions: {
     search: function() {
-      this.set('query', this.get('queryField'));
+      var trim = this.get('queryField');
+        trim = trim.substring(0, trim.length - 1);
+      this.set('query', trim);
+      this.set('noResultField', this.get('queryField'));
+      //this.set('queryField', '');
+
     }
   },
 });

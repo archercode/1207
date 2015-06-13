@@ -2,7 +2,7 @@
 <div class ="container whole" >
   <div class="search_header">
   <div class=" page_title search text-uppercase text_green">
-  Search
+  I'M LOOKING FOR...
   </div>
     <form class="input-group container" {{action "search" on="submit"}}>
         {{input class="search form-control" placeholder="Search shop for ..." value=queryField}}
@@ -32,7 +32,7 @@
     </ul>
     {{else}}
     <div class="page_title no_bottom_border">
-    No results for {{queryField}}
+        No results for {{noResultField}}
      </div>
   {{/if}}
   {{/if}}

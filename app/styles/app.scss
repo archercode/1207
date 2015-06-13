@@ -471,11 +471,33 @@ footer.hidden-md.hidden-lg {
   padding: 10px 20px;
 }
 
+div.product_specific_choices > div.header{
+  color: #777;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+
 .product_specific_text{
   padding-top:20px !important;
   position: absolute;
-  right: 0;
+  right: 17%;
   padding-right: 5% !important;
+}
+
+.product_specific_choices{
+  position: absolute;
+  right: 0;
+  padding-left: 35px !important;
+
+  &.inner{
+    overflow-y: scroll;
+    position: absolute;
+    height: 100vh;
+  }
+}
+.product_specific_choice{
+  height: 80px;
 }
 
 nav ul a {
@@ -615,7 +637,7 @@ footer.fixed_component:hover{
 }
 
 .card .card-content { 
-  height: 120px;
+  height: 150px;
 }
 
 .card:hover, div.product_card > div.details:hover {
@@ -715,7 +737,8 @@ p > div.materialize-selectable-item {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  width: 90%;
+  
+  padding: 10px;
 }
 
 .contact_underline{

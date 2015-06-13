@@ -1,16 +1,48 @@
+
+<div class="hidden-xs hidden-s col l3 space_on_top footer product_specific_choices fixed_component">
+
+<div class="header ">
+  You might also want to look at:
+</div>
+
+<div class="product_specific_choices inner">
 <ul>
         {{#each model as |item|}}
     <li>
-    {{#md-card title=item.title titleClass="orange-text" image=item.image}}
+
+      <div>
+
+      {{#link-to 'product' item.slug}}
+
+        <div class="product_specific_choice row">
+        <div class="col l4">
+        <img {{bind-attr src='item.image'}} height="70px" width="70px">
+        </div>
+        
+        <div class="col l8">
+          {{item.title}}
+        </div>
+        </div>
+
+      {{/link-to}}
+      </div>
+
+
+
+
+   <!--  {{#md-card title=item.title titleClass="orange-text" image=item.image}}
 
           {{#md-card-content}}
+
       {{#link-to 'product' item.slug}}
       More Info
       {{/link-to}}
           {{/md-card-content}}
           {{#md-card-action}}
           {{/md-card-action}}
-      {{/md-card}}
+      {{/md-card}} -->
     </li>
         {{/each}}
 </ul>
+</div>
+</div>

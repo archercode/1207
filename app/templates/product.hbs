@@ -74,19 +74,28 @@
 	 	</div>
 	</div>
 
-	<div class="content_of_fixed_bar "> 
-		<div class=" col l7 space_on_top footer product_specific_text">
-			<div class="product_title">
-		 		{{title}}
-		 	</div>
-		 	<div class="badge text-uppercase">
-		 		{{type}}
-		 	</div>
-		 	<div class="description">
-	    		{{{html}}}
-	    	</div>
-	    	{{outlet 'sidebar'}}
-	    	
-	   	</div>
+	<div class="content_of_fixed_bar col l7">
+		<div class="row"> 
+			<div class=" col l6 space_on_top footer product_specific_text">
+				<div class="product_title">
+			 		{{title}}
+			 	</div>
+			 	<div class="badge text-uppercase">
+			 		{{type}}
+			 	</div>
+			 	<div class="description">
+		    		{{{html}}}
+		    	</div>
+		    	
+		   	</div>
+		</div>  
 	</div>
+
+
+	<div class="content_of_fixed_bar  col l7">
+		<div class="row"> 
+		    {{outlet 'sidebar'}}
+		</div>  
+	</div>
+
 </div>

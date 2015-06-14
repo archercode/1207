@@ -12,13 +12,19 @@ export default Ember.Component.extend({
   	 var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
+     var view = Ember.$('.social.header_icons'); 
+        view.addClass('hide_opacity');
 
       /*  var view = Ember.$('.social_links_icon');
         view.toggle();*/
   },
    mouseLeave: function(){
-  	 var view = Ember.$('.social_links');
-        //if(view.get(''))  
+  	 var view = Ember.$('.social_links'); 
         view.toggle();
+     /*var view = Ember.$('.social.header_icons'); 
+        view.toggle();*/
+
+     var view = Ember.$('.social.header_icons'); 
+        view.removeClass('hide_opacity');
   },
 });

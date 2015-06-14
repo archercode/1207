@@ -162,12 +162,27 @@ li.navbar_border:after{
   display:none;  
   padding-left: 20px;
   margin-right: -70px;
+  margin-top: 8px;
 }
 
 .social_link{
   max-height: 24px;
   padding-bottom:15px;
+
+  &.fb {
+    margin-top: -45px;
+  }
+
+  &.twitter {
+    margin-top: 30px;
+  }
 }
+
+.hide_opacity{
+  margin-top:-66px;
+}
+
+
 
 hr{
     margin: 5px !important;
@@ -1092,7 +1107,7 @@ video#bgvid {
   color: white;
   position: relative !important;
   top: 60px !important;
-  right: -270px !important;
+  right: -249px !important;
   z-index: 2;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   letter-spacing: 1px;

@@ -495,6 +495,7 @@ footer.hidden-md.hidden-lg {
 
 .product_card{
   padding: 10px 20px;
+  position: relative;
 }
 
 div.product_specific_choices > div.header{
@@ -1143,11 +1144,11 @@ video#bgvid {
 
 .product-detail-price{ 
   text-align: left;
-  width: 110px;
-  color: white;
-  position: relative !important;
-  top: 60px !important;
+  /*width: 110px;
   right: -249px !important;
+  position: relative !important;
+  top: 60px !important;*/
+  color: white;
   z-index: 2;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   letter-spacing: 1px;
@@ -1157,8 +1158,8 @@ video#bgvid {
 
 .ribbon-container {
   position: absolute;
-  top: 15px;
-  right: -20px;
+  top: 30px;
+  right: 5px;
   overflow: visible;
   /* so we can see the pseudo-elements we're going to add to the anchor */
   

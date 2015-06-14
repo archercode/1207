@@ -16,7 +16,7 @@ export default Ember.Route.extend({
 	    this.render('related',{
 	      into: 'product',
 	      outlet: 'sidebar',
-          model: this.modelFor('products'),
+          model: this.modelFor('products').slice(0,5),
           controller: modalController 
 	  });
   	},

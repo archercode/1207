@@ -507,7 +507,7 @@ div.product_specific_choices > div.header{
 .product_specific_text{
   padding-top:20px !important;
   position: absolute;
-  right: 17%;
+  right: 20%;
   padding-right: 5% !important;
 }
 
@@ -524,6 +524,24 @@ div.product_specific_choices > div.header{
 }
 .product_specific_choice{
   height: 80px;
+}
+
+button.social_box {
+  border: none;
+  width: 115px;
+  height: 32px;
+  padding: 14px;
+  padding-left: 43px;
+
+  &.facebook{
+    background-color: #3b5998;
+  }
+  &.twitter{
+    background-color: #00acee;
+  }
+  &.google{
+    background-color: #dd4b39;
+  }
 }
 
 nav ul a {
@@ -544,6 +562,16 @@ nav ul a {
   letter-spacing: 2px;
   padding: 0px !important;
   border-bottom: 1px #eee solid; 
+
+  &.contact_us{
+    font-size: 30px;
+    min-height: 40px;
+  
+    .nav_text{
+    font-size: 16px;
+    color:#23527c;
+    }
+  }
 }
 
 .nav_text{
@@ -748,7 +776,7 @@ p > div.materialize-selectable-item {
 }
 
 .contact_us_links.center-align.row.container {
-  margin-top: 110px;
+  margin-top: 130px;
 }
 .btn-intro{
   background-color: transparent;
@@ -1082,8 +1110,8 @@ div.filler > div.page_title{
     z-index: -100;
   }
   &.android {
-    top: 110px;
-    right: 5%;
+   top: 60px;
+    right: 3%;
   }
   &.ios {
     top: 90px;

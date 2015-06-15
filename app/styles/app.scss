@@ -2,7 +2,7 @@
 @import 'components/variables';
  
 
-$break-small: 320px;
+$break-small: 400px;
 $break-medium: 1000px;
 $break-large: 1200px;
 
@@ -104,6 +104,12 @@ a.contact_us.active, a.contact_us:hover{
   -webkit-transition-property: left;
   transition-property: left;
   transition: .3s ease-in-out;
+
+
+
+  @media screen and (max-width: $break-small) {
+    margin-top: 110px !important;
+  }
 }
 
 .nav_indicator:after{
@@ -116,6 +122,19 @@ a.contact_us.active, a.contact_us:hover{
   width: 0;
   top: -5px;
   right: 50%;
+}
+
+.main.container{
+
+  @media #{$small-and-down} {
+    
+    max-width: none !important;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .container.whole{
@@ -590,8 +609,17 @@ nav ul a {
     min-height: 40px;
   
     .nav_text{
-    font-size: 16px;
-    color:#23527c;
+      font-size: 10px;
+      color:#23527c;
+      
+      @media #{$small-and-down} { 
+        font-size: 8px;
+      }
+
+      @media #{$large-and-up} { 
+        font-size: 12px;
+      }
+
     }
   }
 }
@@ -768,15 +796,13 @@ footer.fixed_component:hover{
 }
 
 .navigation{
-  margin-top: 65px;
-  width: 100%;
-  border-right: 1px #eee solid;
+  margin-top: 65px; 
   z-index: 800;
   right: 0;
   left: 0;
-  margin-right: auto;
+  padding-right: 20px !important;
   margin-left: auto;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hide{
@@ -803,7 +829,11 @@ p > div.materialize-selectable-item {
 
 .contact_us_links.center-align.row.container {
   margin-top: 130px;
+  @media screen and (max-width: $break-medium) {
+    width: 100% !important;
+  }
 }
+
 .btn-intro{
   background-color: transparent;
   border: 5px #fff solid;
@@ -823,7 +853,7 @@ p > div.materialize-selectable-item {
 }
 
 .contact_underline{
-  min-height: 46px;
+  height: 3rem;
   border-bottom: 1px #9e9e9e solid; 
 }
 

@@ -53,6 +53,13 @@ body {
   }
 
 }
+
+
+/** side nav**/
+.side-nav{
+  background-color: #333;
+}
+
 span.card-title.activator.black-text {
   line-height: 30px;
   font-size: 20px;
@@ -210,6 +217,7 @@ a.contact_us.active, a.contact_us:hover{
 
 .hide_opacity{
   margin-top:-66px;
+  display:none;
 }
 
 
@@ -339,6 +347,11 @@ div.hover.checkout_summary > div ul {
 
 div.navbar_custom > div.nav-wrapper > div.container {
   width: 100% !important;
+}
+
+
+#nav-mobile > li{
+  border: none
 }
 
 li.navbar_border {

@@ -440,6 +440,13 @@ footer.hidden-md.hidden-lg {
     background-color: #eeeeee;
 }
 
+.checkout_order.fixed_component {
+
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
+}
+
 .checkout_order_list{
   padding-top: 10px !important;
   padding-bottom: 10px !important;

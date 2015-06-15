@@ -28,7 +28,10 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin,{
     });    
   },
 
-
+  isItemPresent: function(){
+    return this.get('length');
+  }.property('length'),
+  
 
   isShipping: false,
   selectedVal: 'Meet',

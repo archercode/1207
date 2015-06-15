@@ -12,8 +12,8 @@ export default Ember.Component.extend({
   	 var view = Ember.$('.social_links');
         //if(view.get(''))  
         view.toggle();
-     var view = Ember.$('.social.header_icons'); 
-        view.addClass('hide_opacity');
+     var v = Ember.$('.social.header_icons'); 
+        v.addClass('hide_opacity');
 
       /*  var view = Ember.$('.social_links_icon');
         view.toggle();*/
@@ -24,7 +24,7 @@ export default Ember.Component.extend({
      /*var view = Ember.$('.social.header_icons'); 
         view.toggle();*/
 
-     var view = Ember.$('.social.header_icons'); 
-        view.removeClass('hide_opacity');
+     var v = Ember.$('.social.header_icons'); 
+        v.removeClass('hide_opacity');
   },
 });

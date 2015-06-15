@@ -221,7 +221,9 @@
 </div>
 <div class="row">
     <div class=" footer col m6">
+        {{#if isItemPresent}}
         <button type="submit" class="btn btn-primary btn-whole" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
+        {{/if}}
     </div>
 </div>
 

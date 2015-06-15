@@ -37,7 +37,7 @@ Product.reopenClass({
       type  : 'sensors',
       image : '/images/products/SEN0001.jpg'
     },
-    
+    /*
     {
       id: 2,
       title: 'Sharp GP2Y0A21 Distance Sensor (10-80cm)',
@@ -48,7 +48,7 @@ Product.reopenClass({
       type  : 'sensors',
       image : '/images/products/SEN0014.png'
     },
-    
+    */
     {
     	id: 3,
       title:'LED Current Meter 10A',
@@ -69,6 +69,7 @@ Product.reopenClass({
       type: 'sensors',
       image: '/images/products/TOY0044.jpg',
     },
+    /*
     {
     	id: 5,
       title: 'DS18B20 Temperature Sensor',
@@ -79,6 +80,7 @@ Product.reopenClass({
       type: 'sensors',
       image: '/images/products/DFR0024.jpg',
     },
+    */
     {
     	id : 6,
       title: 'Analog Ambient Light Sensor',
@@ -99,6 +101,7 @@ Product.reopenClass({
       type: 'sensors',
       image: '/images/products/SEN0114.jpg',
     },
+    /*
     {
     	id: 8,
       title: 'Waterproof DS18B20 Digital temperature sensor',
@@ -109,6 +112,8 @@ Product.reopenClass({
       type: 'sensors',
       image: '/images/products/DFR0198.jpg',
     },
+    */
+    /*
     {
     	id: 9,
       title:'Real Time Clock Module',
@@ -119,6 +124,8 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/DFR0151.jpg'
     },
+    */
+    /*
     {
     	id: 10,
       title: '360 Degree Motor (20kg)',
@@ -129,6 +136,7 @@ Product.reopenClass({
       type: 'robotics',
       image: '/images/products/SER0035.jpg',
     },
+    */
     
     {
     	id: 11,
@@ -170,6 +178,7 @@ Product.reopenClass({
       type: 'boards',
       image: "/images/products/DFR0267.jpg",
     },
+    /*
     {
     	id: 15,
       title: 'LCD Keypad Shield for Arduino',
@@ -180,7 +189,7 @@ Product.reopenClass({
       type: 'boards',
       image: '/images/products/DFR0009.jpg',
     },
-    
+    */
     {
     	id: 16,
       title: 'Digital Push Button',
@@ -287,7 +296,7 @@ Product.reopenClass({
       model: 'FIT0045',
       description: 'This DF05BB Pan and Tilt assembly for horizontal surface mount. Made using two DFRobot servo brackets. Perfect for your small remote piloted robot! Includes hardware and two DF05 ball bearing servos.',
       html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><p>This DF05BB Pan and Tilt assembly for horizontal surface mount. Made using two DFRobot servo brackets. Perfect for your small remote piloted robot! Includes hardware and two DF05 ball bearing servos.</p></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Working Voltage: 4.8-6V</li><li>Working current: 0.1-0.8 A</li><li>Torque: 4.8kg-cm @ 4.8V ; 5.5kg-cm @6V  </li><li>Average speed: 60 rpm</li><li>Rotation range: 0- 120</li><li>Working Temperature: 0℃~55℃</li><li>Size: 41x20x38mm</li><li>Weight: 48g</li></ul> <p> </p></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/image/data/FIT0045/Pan-tilt--assembly-guide-v0.1.rar"><strong>Assembly guide</strong></a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div> <p> </p><ul><li>DF05BB Standard Servo x2</li><li>Aluminum multifunction bracket x1</li><li>Aluminum U-shape bracket x1</li><li>Bearing cup x1</li><li>High-quality sets of screw nuts x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
-      type: 'robotics',
+      type: 'actuators',
       image: '/images/products/FIT0045.png',
     },
     {
@@ -327,7 +336,7 @@ Product.reopenClass({
       price: 3000,
       description: "This shield with a Quad-band GSM/GPRS engine works on frequencies EGSM 900MHz/DCS 1800MHz and GSM850 MHz/PCS 1900MHz. It also supports GPS technology for satellite navigation. It's possible for your robot and control system to send messages and use the GSM network.",
       html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><div><div>This is a GPS/GPRS/GSM shield from DFRobot. This shield with a Quad-band GSM/GPRS engine works on frequencies EGSM 900MHz/DCS 1800MHz and GSM850 MHz/PCS 1900MHz. It also supports GPS technology for satellite navigation. Its possible for your robot and control system to send messages and use the GSM network.</div><div> </div><div>It is controlled via AT commands (GSM07.07 ,07.05 and SIMCOM enhanced AT Commands). And the design of this shield allows you to drive the GSM &amp; GPS function directly with the computer and the Arduino Board. It includes a high-gain SMD antenna for GPS and a flexible GSM antenna 8.5cm ( U.FL connector ).</div><div> </div><div>This GPS/GPRS/GSM shield uses an embedded SIM908 chip from SIMCom. Featuring an industry-standard interface and GPS function, the combination of both technologies allows items, vehicles and people to be tracked seamlessly at any location and anytime with signal coverage.</div></div><div> </div></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Power supply: 6-12v</li><li>Low power consumption (100mA@7v - GSM mode)</li><li>Quad-Band 850/900/18001900MHz</li><li>GPRS multi-slot class 10</li><li>GPRS mobile station class B</li><li>Compliant to GSM phase 2/2+</li><li>Class 4 (2 W @ 850/900 MHz)</li><li>Class 1 (1 W @ 1800/1900MHz)</li><li>Control via AT commands(GSM07.07 ,07.05 and SIMCOM enhanced AT Commands)</li><li>Support GPS technology for satellite navigation</li><li>Embeded high-gain SMD antennas for GPS &amp; GSM</li><li>Directly support 4*4 button pad</li><li>USB/Arduino control switch</li><li>Programmable switch for Arduino</li><li>LED indicators for power supply, network states and working status</li><li>Board Surface:Immersion Gold</li><li>Switches:<ul><li>S1 -- Programming mode / Communication mode</li><li>S2 -- Controlling interface: USB / Arduino</li></ul></li><li>Interfaces:<ul><li>Embedded SIM card holder</li><li>Speaker &amp; Mic Jack socket</li></ul></li><li>Size: 81x70mm </li></ul><div> </div><ul><li>Specifications for SMS via GSM / GPRS<ul><li>Point-to-point MO and MT</li><li>SMS cell broadcast</li><li>Text and PDU mode </li></ul></li></ul><div> </div><ul><li>Specification for GPS<ul><li>Receiver 42 channels, GPS L1 C/A code, High-performance STE engine</li><li>Sensitivity:<ul><li>Tracking: -160 dBm</li><li>Cold starts: -143 dBm</li></ul></li><li>Time-To-First-Fix:<ul><li>Cold starts: 30s (typ.)</li><li>Hot starts: 1s (typ.)</li></ul></li><li><div>Accuracy:Horizontal position: &lt;2.5m CEP</div></li><li><div>Power consumption (GSM engine in idle mode):Acquisition 77mA,Tracking 76mA</div></li></ul></li></ul><div> </div></div></div></div></section><section><div><div><div><p><strong>OPTIONAL PARTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/index.php?route=product/product&amp;product_id=701&amp;search=sma&amp;description=true">Antenna adapter</a></li><li><a href="http://www.dfrobot.com/index.php?route=product/product&amp;product_id=1012&amp;search=gps&amp;description=true">Antenna amplifier</a></li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/GPS/GPRS/GSM_Module_V3.0_(SKU:TEL0051)">Wiki</a></li><li><a href="http://www.dfrobot.com/image/data/TEL0051/GSM+GPRS+GPS%20SIM908%20V3.0.pdf">Schematic<span> </span></a>       </li><li><a href="http://www.dfrobot.com/image/data/TEL0051/3.0/NMEA%20Reference%20Manual-Rev2.1-Dec07.pdf">SiRF NMEA Protocol</a>      </li><li><a href="http://www.dfrobot.com/image/data/TEL0051/3.0/SIM908_AT%20Command%20Manual_V1.01.pdf">AT Command manual</a>      </li><li><a href="http://www.dfrobot.com/image/data/TEL0051/3.0/SIM908_SIM548C_ATC_Comparison_V1.00.pdf">SIM908_SIM548C_ATC_Comparison</a>       </li><li><a href="http://www.dfrobot.com/image/data/TEL0051/3.0/SIM908%20datasheet.pdf">SIM908 Datasheet</a>      </li><li><a href="http://www.simcom.us/product_detail.php?cid=1&amp;pid=38">SIM908 Product Page</a>  </li><li><a href="https://www.youtube.com/watch?v=6ryQ-aTnO6I&amp;feature=youtu.be">Youtube Video</a>               </li><li><a href="https://github.com/DFRobot/GPS-GPRS-GSM-Shield-V3.0/tree/master/gps_gsm_sim908">Test library for Leonardo based boards</a></li></ul><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>GPS/GPRS/GSM Module V3.0 x1</li></ul></div></div></div></section><section><div><div><div><p><strong>PROJECTS</strong></p></div><div><ul><li>Geolocator sample script contributed by N4rf ( <a href="http://www.dfrobot.com/forum/index.php?topic=886.msg22717#msg22717">forum discussion</a>, <a href="https://github.com/DFRobot/GPS-GPRS-GSM-Shield-V3.0/tree/master/geoLocator">software sources</a> )</li><li>DTMF encoder / decoder world-wide remote control robot ( <a href="http://www.dfrobot.com/forum/index.php?topic=1590.msg5377#msg5377">forum discussion</a> )</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
-      type  : 'boards',
+      type  : 'shields',
       image : '/images/products/TEL0051.jpg'
     },
     
@@ -398,7 +407,387 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/DFR0017.jpg'
     },
-    
+    ///ELECROW/////////////////////
+    {
+      id: 35,
+      title:'Dual Channel H-Bridge Motor Shield (8A 22V)',
+      model: 'ACS70028DH',
+      price: 1124,
+      description: "The Dual Channel H-Bridge Motor Shield is composed of 2 discrete MOSFET H-bridge, designed to drive two DC motor with max current 8A. It is made up of 8 N-channel MOSFET IRF3205S and 4 pcs of half bridge motor controller IR2104, to build 2 H-bridge. With this shield and the Arduino board, users can control and drive motors with a max current 8A@ 22V. The universal 7.4~11.1V lipo battery that are popular used in the remote car and model airplane can be applied as well.",
+      html: '<div>The Dual Channel H-Bridge Motor Shield is composed of 2 discrete MOSFET H-bridge, designed to drive two DC motor with max current 8A. It is made up of 8 N-channel MOSFET IRF3205S and 4 pcs of half bridge motor controller IR2104, to build 2 H-bridge. With this shield and the Arduino board, users can control and drive motors with a max current 8A@ 22V. The universal 7.4~11.1V lipo battery that are popular used in the remote car and model airplane can be applied as well.<p>    The H-Bridge Motor Shield can be controlled by simply applying logic 0 or 1 to the direction pins for that motor and a PWM signal to the speed pin. In this way, speed and direction of two separate motors can be controlled independently. Note that the PWM signal on the P_1 and P_2 can be 0~99%, but 100% high signal (logic 1) not works because of the motor controller IR2104 boost circuit.</p><p>    Besides, the H-bridge motor shield PCB has a copper thickness of 2 oz, which make it supports larger current flow and stable. It would be your best choice creating your applications that needs large driver current for your DC motor.</p></div><div><h3>Features</h3></div><div><ul><li>Uses the IRF3205S MOSFET, which support max current up to 110A</li><li>Uses Half bridge motor controller IR2104, to avoid H-bridge shortage.</li><li>2 Channels</li><li>Operating Voltage: 6- 22V</li><li>Continuous output current: 8 Amps</li><li>Peak output current: 15 Amps</li><li>PWM Duty: 0~99%</li><li>2 oz cupper thickness, ensure larger current flow</li></ul></div><div><h3>Documentation</h3></div><div><ul><li><a href="http://www.elecrow.com/download/ir2104.pdf">IR2104 Dateasheet</a></li><li><a href="http://www.elecrow.com/download/irf3205s.pdf">IRF3205 Datasheet</a></li><li><a href="http://www.elecrow.com/wiki/index.php?title=Dual_Channel_H-Bridge_Motor_Shield&amp;action=edit&amp;redlink=1">Wiki Page</a></li></ul></div>',
+      type  : 'shields',
+      image : '/images/products/ACS70028DH.jpg'
+    },
+    {
+      id: 36,
+      title:'Proto Shield For Arduino',
+      model: 'MCS01004S',
+      price: 333,
+      description: "This is a design for an open-source prototyping shield for Arduino and other Arduino compatible boards. It has tons of cool features, to make prototyping on your Arduino easy. This shield include a breadboard. If you want other colorful breadboard, please let us know, or the included breadboard will be white.",
+      html: '<ul><li><div>This is a design for an open-source prototyping shield for Arduino and other Arduino compatible boards. It has tons of cool features, to make prototyping on your Arduino easy. This shield include a breadboard. If you want other colorful breadboard, please let us know, or the included breadboard will be white.</div><div><h3>Features</h3></div><div><ul><li>Compatible with NG, Diecimila, Duemilanove, UNO and any Arduino-clone in the classic shape and pinout</li><li>Reset button up top</li><li>Lots of GND and +5V rails</li><li>DIP prototyping area makes it easy to add more chips</li><li>SOIC prototyping area above USB jack for up to 14-pin SOIC chip, narrow medium or wide package</li><li>Use mini or medium breadboard</li><li>Two 3mm LEDs with matching resistors</li><li>Extra 6mm button</li></ul></div><div><h3>Specification</h3></div><div><ul><li>Dimension: 69.2 * 53.9mm</li></ul></div><div><h3>Package list</h3></div><div><ul><li>Arduino Proto Shield PCBA x1;</li><li>Mini Breadboard x1;</li></ul></div></li></ul>',
+      type  : 'shields',
+      image : '/images/products/MCS01004S.jpg'
+    },
+    {
+      id: 37,
+      title:'LCD Keypad Shield (Arduino Compatible)',
+      model: 'MCS01602M',
+      price: 432,
+      description: "The LCD Keypad Shield is arduino compactible boards,to provide a user-friendly interface that allows users to display what they want to and make selections etc. it consists of a 1602 white character blue backlight LCD. The keypad consists of 5 keys selections, up, right, down and left. To save the digital IO pins, the keypad interface uses only one ADC channel(AD0). The key value is read through a 5 stage voltage divider.",
+      html: '<ul><li><div>The LCD Keypad Shield is arduino compactible boards,to provide a user-friendly interface that allows users to display what they want to and make selections etc. it consists of a 1602 white character blue backlight LCD. The keypad consists of 5 keys selections, up, right, down and left. To save the digital IO pins, the keypad interface uses only one ADC channel(AD0). The key value is read through a 5 stage voltage divider.</div><div><h3>Features</h3></div><div><ul><li>The keypad interface uses only one ADC channel</li><li>Potentiometer to control contrast of LCD</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=LCD_Keypad_Shield">Manual&amp;Wiki</a></li><li><a href="http://www.elecrow.com/download/LCDKeypad.zip">LCD Keypad Library</a> -A modified library with a sample game. Submitted by Fj604</li><li><a href="http://www.elecrow.com/download/DFR_Key_v2.zip">Key Grabber Library V2</a> - Submitted by ecefixer</li><li><a href="http://www.elecrow.com/download/LCDKeypad%20Shield%20V1.0%20SCH.pdf">Schematics V1.0</a></li><li><a href="http://www.elecrow.com/download/LCDKeypad%20Shield%20V1.01%20SCH.pdf">Schematics V1.01</a></li><li><a href="http://www.elecrow.com/download/HD44780.pdf">LCD Datasheet</a></li></ul></div></li></ul>',
+      type  : 'shields',
+      image : '/images/products/MCS01602M.jpg'
+    },
+    {
+      id: 38,
+      title:'Screw Shield',
+      model: 'MCS01110',
+      price: 412,
+      description: "The Screw Shield extends all pins of the Arduino out to 3.5mm pitch screw terminals. It also has a lot of the utility provided by Arduino Protoshield, including: a large prototyping space of both connected and unconnected 0.1 spaced through-holes, a couple 5V and GND busses, a reset button, and a 5mm green LED.",
+      html: '<ul><li><div><br/><div><p>The Screw Shield extends all pins of the Arduino out to 3.5mm pitch screw terminals. It also has a lot of the utility provided by Arduino Protoshield, including: a large prototyping space of both connected and unconnected 0.1" spaced through-holes, a couple 5V and GND busses, a reset button, and a 5mm green LED.</p><p>    The Screw terminal can be screwed directly to the terminal on the thread and is reliable and convenient. It can be plugged into the Arduino controller. You can use this shield to save yourself from the bad port connection. Feel secure with this arduino-compatible screw shield.</p><p>    In the case that you have a breadboard, the shield do not ship with breadboard. The best suitable breadboard is <a href="http://www.elecrow.com/basic-bread-board-with-slot-16555-cm-p-811.html">Basic Bread Board With Slot - 16.5*5.5 cm</a>.</p></div><div><h3>Package list</h3></div><div><ul><li>Arduino Proto Shield PCBA x1;</li></ul></div></div><div> </div></li><li></li></ul>',
+      type  : 'shields',
+      image : '/images/products/MCS01110.jpg'
+    },
+    {
+      id: 39,
+      title:'Dust Sensor GP2Y1010AU0F',
+      model: 'SGP2Y1010AU',
+      price: 658,
+      description: "Sharp's GP2Y1010AU0F is an optical air quality sensor, designed to sense dust particles. An infrared emitting diode and a phototransistor are diagonally arranged into this device, to allow it to detect the reflected light of dust in air. It is especially effective in detecting very fine particles like cigarette smoke, and is commonly used in air purifier systems.     The sensor has a very low current consumption (20mA max, 11mA typical), and can be powered with up to 7VDC. The output of the sensor is an analog voltage proportional to the measured dust density, with a sensitivity of 0.5V/0.1mg/m3.     This sensor is packaged with a 6-pin wires with JST connector to help connect it with your system.",
+      html: '<ul><li><br/><div>Sharps GP2Y1010AU0F is an optical air quality sensor, designed to sense dust particles. An infrared emitting diode and a phototransistor are diagonally arranged into this device, to allow it to detect the reflected light of dust in air. It is especially effective in detecting very fine particles like cigarette smoke, and is commonly used in air purifier systems.     The sensor has a very low current consumption (20mA max, 11mA typical), and can be powered with up to 7VDC. The output of the sensor is an analog voltage proportional to the measured dust density, with a sensitivity of 0.5V/0.1mg/m3.     This sensor is packaged with a 6-pin wires with JST connector to help connect it with your system.</div><div><h3>Download&amp; External Link</h3></div><div><ul><li><a href="http://www.elecrow.com/download/gp2y1010au_e.pdf">GP2Y1010AU0F Dust Sensor Datasheet</a></li><li><a href="http://sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y1010au_appl_e.pdf">Application Note.</a></li></ul></div></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SGP2Y1010AU.jpg'
+    },
+    {
+      id: 40,
+      title:'Water Proof Integrated Ultrasonic Ranging Module- JSN-SR04T',
+      model: 'SP0433JSN',
+      price: 1080,
+      description: "There are many ultrasonic ranger module on the market, but sometimes, these kind of sensor needs to work in conditions more than the Lab. This water proof ultrasonic sensor meets this requirement. It has a good performance and almost the same usage of HC-S04 module.",
+      html: '<ul><li><ul><li><div>There are many ultrasonic ranger module on the market, but sometimes, these kind of sensor needs to work in conditions more than the Lab. This water proof ultrasonic sensor meets this requirement. It has a good performance and almost the same usage of HC-S04 module. <div> </div></div><div><h3>Features</h3></div><div><ul><li>small size, easy to use</li><li>low voltage, low power consumption</li><li>high accuracy</li><li>strong anti-jamming</li><li>integrated with wire enclosed waterproof probe, suitable for wet, harsh measurement occasions</li></ul></div><div><h3>Specification</h3></div><div><ul><li>Working voltage: DC 5V</li><li>Static working current: 5mA</li><li>Working current: 30mA</li><li>Acoustic emission frequency:40KHz</li><li>Wiring:+5V(positive); Trig(control); 　　Echo(receive); 　　GND(cathode);</li></ul></div><div><h3>Application</h3></div><div><ul><li>Horizontal distance messurement</li><li>Obstacle avoidance, automatic control</li><li>Traffic control</li><li>Security, industrial control</li></ul></div><div><h3>Usage</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=Ultrasonic_Ranging_Sensor_Module">Manual/Wiki</a></li></ul></div></li></ul></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SP0433JSN.jpg'
+    },
+     {
+      id: 41,
+      title:'HC-SR04 Ultrasonic Ranging Sensor',
+      model: 'SOD00201S',
+      price: 158,
+      description: ' This HC-SR04 has stable performance and high ranging accuracy. Compared to the Shap IR ranging module , HC-SR04 is more inexpensive than it . But it has the same ranging accuracy and longer ranging distance.',
+      html: '<ul><li><ul><li><div><br/><div>This HC-SR04 has stable performance and high ranging accuracy. Compared to the Shap IR ranging module , HC-SR04 is more inexpensive than it . But it has the same ranging accuracy and longer ranging distance.</div><div><br/><img src="http://www.elecrow.com/images/Products/HC-SR04%20Ultrasonic%20Ranging%204.JPG" alt=""/></div><div><h3>Specification</h3></div><div><ul><li>Power supply: 5V DC</li><li>Effectual angle: &lt; 30 degrees</li><li>Ranging distance: 2cm to 500 cm</li><li>Resolution: 1 cm</li><li>Ultrasonic Frequency: 40k Hz</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=Ultrasonic_Ranging_Sensor_Module">Manual/Wiki</a></li><li><a href="http://www.elecrow.com/download/HC_SR04%20Datasheet.pdf">Datasheet</a></li><li><a href="http://www.elecrow.com/download/HC-SR04%20Ultrasonic.zip">Example code</a></li></ul></div></div><div> </div></li><li></li></ul></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SOD00201S.jpg'
+    },
+     {
+      id: 42,
+      title:'Sound Sensor',
+      model: 'SPM22101S',
+      price: 160,
+      description: "The Sound sensor module is a simple microphone. Based on the power amplifier LM386 and the electret microphone, it can be used to detect whether there is any sound that beyond the threshold. The threshold can be adjusted by the on-board potentiometer. Adjust the on-board potentiometer to adjust the sensitivity. The module output HIHG/LOW when the voice is Lower/higher than the threshold set by the potentiometer. Please note that this sensor can only outputs if there is sound that beyond the threshold, but not the loudness and frequency.",
+      html: '<div><h3>Description</h3></div><div><div> </div><p> The Sound sensor module is a simple microphone. Based on the power amplifier LM386 and the electret microphone, it can be used to detect whether there is any sound that beyond the threshold. The threshold can be adjusted by the on-board potentiometer.</p><p>    Adjust the on-board potentiometer to adjust the sensitivity. The module output HIHG/LOW when the voice is Lower/higher than the threshold set by the potentiometer.</p><p>Please note that this sensor can only outputs if there is sound that beyond the threshold, but not the loudness and frequency.</p></div><div><h3>Application Idea</h3></div><div><ul><li>Sound controlled Lamp;</li><li>Sound monitoring</li></ul></div><div><h3>Features</h3></div><div><ul><li>On-board LED indicator</li><li>Threshold adjustable</li><li>Working voltage: 3.3V-5V</li></ul></div>',
+      type  : 'sensors',
+      image : '/images/products/SPM22101S.jpg'
+    },
+     {
+      id: 43,
+      title:'Adjustable Infrared Sensor Switch 3 - 80cm',
+      model: 'SOD00380S',
+      price: 461,
+      description: "This is an infrared distance switch. It has an adjustable detection ranging from 3cm to 80cm. It is small, easy to use/assemble, and inexpensive. Useful for robotics, interactive media, industrial assembly line, etc.",
+      html: '<p>This is an infrared distance switch. It has an adjustable detection ranging from 3cm to 80cm. It is small, easy to use/assemble, and inexpensive. Useful for robotics, interactive media, industrial assembly line, etc. Specification Power supply: 5V Current: 100mA Range: 3-80cm adjustable Red: +5V Yellow: Signal Black: GND Wire length: 20cm Wiki &amp; External links Manual/Wiki</p><div>This is an infrared distance switch. It has an adjustable detection ranging from 3cm to 80cm. It is small, easy to use/assemble, and inexpensive. Useful for robotics, interactive media, industrial assembly line, etc.</div><div><h3>Specification</h3></div><div><ul><li>Power supply: 5V</li><li>Current: 100mA</li><li>Range: 3-80cm adjustable</li><li><ul><li>Red: +5V</li><li>Yellow: Signal</li><li>Black: GND</li></ul></li><li>Wire length: 20cm</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=Adjustable_Infrared_Sensor_Switch">Manual/Wiki</a></li></ul></div>',
+      type  : 'sensors',
+      image : '/images/products/SOD00380S.jpg'
+    },
+     {
+      id: 44,
+      title:'Opto Interrupter - ITR8104',
+      model: 'SPS81041S',
+      price: 250,
+      description: "This Opto interruptor detects if there is some thing between the IR emitter and the IR receiver. With the Holder, it will be very easy to intall this sensor into your application.",
+      html: '<ul><li><div>This Opto interruptor detects if there is some thing between the IR emitter and the IR receiver. With the Holder, it will be very easy to intall this sensor into your application.</div><div><h3>Application Idea</h3></div><div><ul><li>Mouse Copier</li><li>Switch Scanner</li><li>Floppy disk driver</li><li>Non-contact Switching</li><li>For Direct Board</li></ul></div><div><h3>Features</h3></div><div><ul><li>Fast response time</li><li>High analytic</li><li>High sensitivity</li><li>Remain within RoHS compliant version</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/ITR8104.pdf">ITR8104 Datasheet</a></li></ul></div></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SPS81041S.jpg'
+    },
+     {
+      id: 45,
+      title:'Reed Switch Module',
+      model: 'SMT07350R',
+      price: 130,
+      description: "This Reed switch module used a small device called a reed switch. When the device is exposed to a magnetic field, the two ferrous materials inside the switch pull together and the switch closes. When the magnetic field is removed, the reeds separate and the switch opens. This makes for a great non-contact switch. It can apply to PBX, photocopiers, washing machines, refrigerators, cameras, disinfection cabinets, doors, window magnetics, electromagnetic relays, electronic weighing, level meters, gas meters, water meters, etc.",
+      html: '<ul><li><div><br/><div><div>This Reed switch module used a small device called a <a href="http://en.wikipedia.org/wiki/Reed_switch">reed switch</a>. When the device is exposed to a magnetic field, the two ferrous materials inside the switch pull together and the switch closes. When the magnetic field is removed, the reeds separate and the switch opens. This makes for a great non-contact switch. It can apply to PBX, photocopiers, washing machines, refrigerators, cameras, disinfection cabinets, doors, window magnetics, electromagnetic relays, electronic weighing, level meters, gas meters, water meters, etc.</div><div><h3>Specification</h3></div><div><ul><li>Open reed switch</li><li>Working voltage: 3.3V~5V</li><li>Comparator output, clean signal, great waveform, and strong driving ability</li><li>digit switch output (0 and 1)</li><li>Fixed bolt hole for easy installation</li></ul></div><div><h3>Wiki &amp; External links</h3></div></div><div><ul><li><a href="http://www.elecrow.com/download/Reed%20Switch.pdf">datasheet</a></li></ul></div></div><div> </div></li><li></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SMT07350R.jpg'
+    },
+     {
+      id: 46,
+      title:'2-Channel Velocity Measurement Kit',
+      model: 'SPM6097VM',
+      price: 539,
+      description: "This Kit helps you monitoring the velocity speed of motors, it uses the sensor HC-020 to sense the rotation of circular grid board, and thus output square waves. So users can calculate the rotation velocity or speed via these outputs frequency.     There are 20 grids on the circular grid board, so each rising/falling edge standing an angle: 360/20= 18 degrees. Please uncover the yellow protect paper before your using.",
+      html: '<ul><li><br/><div>This Kit helps you monitoring the velocity speed of motors, it uses the sensor HC-020 to sense the rotation of circular grid board, and thus output square waves. So users can calculate the rotation velocity or speed via these outputs frequency.     There are 20 grids on the circular grid board, so each rising/falling edge standing an angle: 360/20=18 degrees. Please uncover the yellow protect paper before your using.<div><br/>    <img src="http://www.elecrow.com/images/Products/Velocity%20M_pro1.jpg" alt=""/></div></div><div><h3>Specification</h3></div><div><ul><li>Working Voltage: 4.5~5.5 VDC</li><li>Emitter Voltage Drop: 1.5V</li><li>Output Voltage: TTL</li><li>Max Output Frequency: 100Khz</li><li>Circular Grid Board Diameter: 24mm</li><li>Circular Grid Board Inner Diameter: 4mm</li></ul></div><div><h3>Partlist</h3></div><div><ul><li>HC-020 Sensor Board x2</li><li>Circular Grid Board x2</li><li>6 Pin Female to Female Wire x1</li></ul></div></li></ul>',
+      type  : 'robotics',
+      image : '/images/products/SPM6097VM.jpg'
+    },
+     {
+      id: 47,
+      title:'Light Controlled Relay Module',
+      model: 'SPM22001S',
+      price: 375,
+      description: "This is a light controlled relay, you can set the relay on/off when the luminance is higher/lower than the illuminance you set.The peak voltage capability is upto 250V at 10A when AC and 30V at 10A when DC. With this module, it will be much more easy to implement applications that needs auto power up/down with the illuminance varies.This module uses the photosensitive diode to detect the light, which has a more stable directivity than the ordinary photo resistance.",
+      html: '<div>This is a light controlled relay, you can set the relay on/off when the luminance is higher/lower than the illuminance you set.The peak voltage capability is upto 250V at 10A when AC and 30V at 10A when DC.<div> </div>    With this module, it will be much more easy to implement applications that needs auto power up/down with the illuminance varies.This module uses the photosensitive diode to detect the light, which has a more stable directivity than the ordinary photo resistance.<p>    Adjust the on-board potentiometer to adjust the sensitivity. The relay would ON/OFF when the luminance is higher/lower than the threshold set by the potentiometer.</p></div><div><h3>Application Idea</h3></div><div><ul><li>Streetlight auto on/off</li><li>Auto-mobile lamp control</li></ul></div><div><h3>Features</h3></div><div><ul><li>Luminance threshold adjustable;</li><li>LED indicator for relay;</li><li>Easy to use in application</li><li>Sensitivity adjustable</li></ul></div>',
+      type  : 'actuators',
+      image : '/images/products/SPM22001S.jpg'
+    },
+    {
+      id: 48,
+      title:'Finger Clip Heart Rate Sensor',
+      model: 'SOT00100F',
+      price: 160,
+      description: "This finger Clip Heart rate sensor uses an IR emitter and a receiver to detect pulse of finger. it can be used to monitor heart rate of patient and athlete. Note that the signal of this sensor is so small(about 100mv) that an amplifier maybe needed. The result can be sampled by Arduino and saved for analysis. The entire system has a high sensitivity, low power consumption and is very portable.",
+      html: '<div>This finger Clip Heart rate sensor uses an IR emitter and a receiver to detect pulse of finger. it can be used to monitor heart rate of patient and athlete. Note that the signal of this sensor is so small(about 100mv) that an amplifier maybe needed. The result can be sampled by Arduino and saved for analysis. The entire system has a high sensitivity, low power consumption and is very portable.</div><div><h3>Specification</h3></div><div><ul><li>Power Supply:5V</li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/SOT00100F.jpg'
+    },
+    {
+      id: 49,
+      title:'G1/4" Water Flow Sensor',
+      model: 'SOT80014WF',
+      price: 321,
+      description: "Water flow sensor consists of magnetic core, rotating impeller, external casing and sensor and a hall-effect sensor. When water flows through the rotor, rotor rolls, it activates the magnetic core to trigger switch action speed changes with different rate of flow. The hall-effect sensor outputs the corresponding pulse signals, users can get the flow speed via detecting the pulse. It is suitable to detect flow in water dispenser or coffee machine.",
+      html: '<div>Water flow sensor consists of magnetic core, rotating impeller, external casing and sensor and a hall-effect sensor. When water flows through the rotor, rotor rolls, it activates the magnetic core to trigger switch action speed changes with different rate of flow. The hall-effect sensor outputs the corresponding pulse signals, users can get the flow speed via detecting the pulse. It is suitable to detect flow in water dispenser or coffee machine.<div> </div>    There are also lots of other water flow sensors in other diameters for your choice.</div><p>The water flow sensor outputs pulse proportional to the water flow with: Pulse Frequency=Flow* 98.That is, if the output frequency is 48, then the water flow: 48/98=0.5(L/min)</p><div><br/>    <img src="http://www.elecrow.com/images/Products/G14_pro1.jpg" alt=""/></div><p>Connect the water flow sensor to microcontroller as belows:</p><div><br/>    <img src="http://www.elecrow.com/images/Products/waterflow_pro.jpg" alt=""/></div><div><h3>Specification</h3></div><div><ul><li>Mini. Wokring Voltage: DC 4.5V</li><li>Max. Working Current: 15mA (DC 5V)</li><li>Working Voltage: DC 5V~24V</li><li>Flow Rate Range: 0.3~6L/min</li><li>Load Capacity: ≤10mA (DC 5V)</li><li>Operating Temperature: ≤80℃</li><li>Liquid Temperature: ≤120℃</li><li>Operating Humidity: 35%～90%RH</li><li>Water Pressure: ≤2.0MPa</li><li>Storage Temperature: -25～+ 80℃</li><li>Storage Humidity: 25%～95%RH</li></ul></div><div><h3>Download</h3></div><div><ul><li><a href="http://www.elecrow.com/download/G14_Mechanic_Dimensions.jpg">Mechanic Dimensions</a></li><li><a href="http://www.elecrow.com/download/waterflow.zip">Using Flow sensors with Arduino</a></li><li><a href="http://www.chicagosensor.com/HowFloatSwitchesWork.html">How Magnetic Reed Liquid Level Sensors Work.</a></li></ul></div><p> </p>',
+      type  : 'sensors',
+      image : '/images/products/SOT80014WF.jpg'
+    },
+    {
+      id: 50,
+      title:'G1/2" Water Flow Sensor',
+      model: 'SOT80012WF',
+      price: 246,
+      description: "Water flow sensor consists of magnetic core, rotating impeller, external casing and sensor and a hall-effect sensor. When water flows through the rotor, rotor rolls, it activates the magnetic core to trigger switch action speed changes with different rate of flow. The hall-effect sensor outputs the corresponding pulse signals, users can get the flow speed via detecting the pulse. It is suitable to detect flow in water dispenser or coffee machine.     There are also lots of other water flow sensors in other diameters for your choice.",
+      html: '<div>Water flow sensor consists of magnetic core, rotating impeller, external casing and sensor and a hall-effect sensor. When water flows through the rotor, rotor rolls, it activates the magnetic core to trigger switch action speed changes with different rate of flow. The hall-effect sensor outputs the corresponding pulse signals, users can get the flow speed via detecting the pulse. It is suitable to detect flow in water dispenser or coffee machine.     There are also lots of other water flow sensors in other diameters for your choice.</div><div><br/>    <img src="http://www.elecrow.com/images/Products/12%20Dem1.png" alt=""/>     <img src="http://www.elecrow.com/images/Products/12%20Dem2.png" alt=""/></div><p>The water flow sensor outputs pulse proportional to the water flow with: Pulse Frequency=Flow *7.5. That is, if the output frequency is 48, then the water flow: 48/7.5=6.4(L/min) Connect the water flow sensor to microcontroller as belows:</p><div><br/>    <img src="http://www.elecrow.com/images/Products/waterflow_pro.jpg" alt=""/></div><div><h3>Specification</h3></div><div><ul><li>Mini. Wokring Voltage: DC 4.5V</li><li>Max. Working Current: 15mA(DC 5V)</li><li>Working Voltage: 5V～24V</li><li>Flow Rate Range: 1～30L/min</li><li>Load Capacity :≤10mA(DC 5V)</li><li>Operating Temperature: ≤80℃</li><li>Liquid Temperature :≤120℃</li><li>Operating Humidity: 35%～90%RH</li><li>Water Pressure: ≤2.0MPa</li><li>Storage Temperature: -25℃～+80℃</li><li>Storage Humidity: 25%～95%RH</li></ul></div><div><h3>Download</h3></div><div><ul><li><a href="http://www.elecrow.com/download/waterflow.zip">Using Flow sensors with Arduino</a></li><li><a href="http://www.chicagosensor.com/HowFloatSwitchesWork.html">How Magnetic Reed Liquid Level Sensors Work.</a></li></ul></div><p> </p>',
+      type  : 'sensors',
+      image : '/images/products/SOT80012WF.jpg'
+    },
+    {
+      id: 51,
+      title:'Eccentric motor(2x2mm)',
+      model: 'RMS04281R',
+      price: 138,
+      description: "This is a mini eccentric motor which is a Permanent Magnet coreless DC motor. It rotates and vibrates when the input is logic HIGH, often used as feedbacks of events or toys",
+      html: '<div>This is a mini eccentric motor which is a Permanent Magnet coreless DC motor. It rotates and vibrates when the input is logic HIGH, often used as feedbacks of events or toys.</div><div><h3>Application Idea</h3></div><div><ul><li>Feedback of inputs</li><li>Event reminds</li><li>Toys</li></ul></div><div><h3>Features</h3></div><div><ul><li>Digital inputs</li><li>Supply voltage:3.3V-5V</li></ul></div><p> </p>',
+      type  : 'actuators',
+      image : '/images/products/RMS04281R.jpg'
+    },
+    {
+      id: 52,
+      title:'28BYJ-48 High quality Stepper motor 12V',
+      model: 'RMS02812M',
+      price: 130,
+      description: "This 28BYJ48 stepper Mainly used in Air Conditioner Louver, Small Cooling/Heating Fan etc. It als can be used in accuracte control. Stable and all technic parameters are qualified for national electronic standard of SJ/T10689-95. You can control this motor easily by ULN2003 Stepper Motor Driver.",
+      html: '<div>This 28BYJ48 stepper Mainly used in Air Conditioner Louver, Small Cooling/Heating Fan etc. It als can be used in accuracte control. Stable and all technic parameters are qualified for national electronic standard of SJ/T10689-95. You can control this motor easily by <a href="http://www.elecrow.com/robotic-c-101/driver-c-101_104/uln2003-stepper-motor-driver-p-262.html">ULN2003 Stepper Motor Driver</a>.<p>    There is also the <a href="http://www.elecrow.com/actuators-c-148/motor-servo-c-148_105/28byj48-high-quality-stepper-motor-5v-p-264.html">5V version of 28BYJ-48 Stepper</a> for your selection.</p></div><div><h3>Specification</h3></div><div><ul><li>Rated voltage: 12VDC</li><li>Number of Pole: 4</li><li>Speed Variation Ratio :1/64</li><li>Stride Angle: 5.625x1/64</li><li>DC resistance : 200</li><li>Idle In-traction Frequency: &gt;600Hz</li><li>Idle Out-traction Frequency: &gt;1000Hz</li><li>In-traction Torque: &gt;34.3mN.m(120Hz)</li><li>Self-positioning Torquw: &gt;34.3mN.m</li><li>Insulated resistance: &gt;10M (500V)</li><li>Insulated electricity power: 600VAC/1mA/1s</li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/RMS02812M.jpg'
+    },
+    {
+      id: 53,
+      title:'28BYJ-48 High Quality Stepper Motor 5V',
+      model: 'RMS02805M',
+      price: 181,
+      description: "Mainly used in Air Conditioner Louver, Small Cooling/Heating Fan etc. It als can be used in accuracte control. Stable and all technic parameters are qualified for national electronic standard of SJ/T10689-95. You can control this motor easily by ULN2003 Stepper Motor Driver.     There is also the 12V version of 28BYJ-48 Stepper for your selection.",
+      html: '<div>Mainly used in Air Conditioner Louver, Small Cooling/Heating Fan etc. It als can be used in accuracte control. Stable and all technic parameters are qualified for national electronic standard of SJ/T10689-95. You can control this motor easily by <a href="http://www.elecrow.com/robotic-c-101/driver-c-101_104/uln2003-stepper-motor-driver-p-262.html">ULN2003 Stepper Motor Driver</a>.     There is also the <a href="http://www.elecrow.com/actuators-c-148/motor-servo-c-148_105/28byj48-high-quality-stepper-motor-12v-p-784.html">12V version of 28BYJ-48 Stepper</a> for your selection.</div><div><h3>Specification</h3></div><div><ul><li>Diameter: 28mm</li><li>Voltage: 5V</li><li>Step angle: 5.625 x 1 / 64</li><li>Reduction ratio: 1 / 64</li></ul></div><p> </p>',
+      type  : 'actuators',
+      image : '/images/products/RMS02805M.jpg'
+    },
+    {
+      id: 54,
+      title:'Audio Amplifier PAM8403 with Colume Control',
+      model: 'ASAA8403P',
+      price: 130,
+      description: "The PAM8403 is a 3W, class-D audio amplifier. It offers low THD+N, allowing it to achieve high quality sound reproduction. The new filter less architecture allows the device to drive the speaker directly, requiring no low-pass output filters, thus to save the system cost and PCB area.",
+      html: '<div>The PAM8403 is a 3W, class-D audio amplifier. It offers low THD+N, allowing it to achieve high quality sound reproduction. The new filter less architecture allows the device to drive the speaker directly, requiring no low-pass output filters, thus to save the system cost and PCB area.</div><div>     With the same numbers of external components, the efficiency of the PAM8403 is much better than that of class-AB cousins. It can extend the battery life, ideal for portable applications.</div><div><h3>Features</h3></div><div><ul><li>3W Output at 10% THD with a 4Ω Load and 5V Power Supply</li><li>Filterless, Low Quiescent Current and Low EMI</li><li>Low THD+N</li><li>Superior Low Noise</li><li>Efficiency up to 90%</li><li>Short Circuit Protection</li><li>Thermal Shutdown</li></ul><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/PAM8403-datasheet.pdf">Datasheet</a></li></ul></div></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/ASAA8403P.jpg'
+    },
+    {
+      id: 55,
+      title:'Plastic Water Solenoid Valve- 12V- 1/2" Nominal',
+      model: 'ASO1212GSV',
+      price: 355,
+      description: "This solenoid valve helps users control the flow of water. It would make a great addition to the robotic gardening projects. Normally, the valve is closed. When 12VDC is applied to the two terminals, the valve opens and water can push through. Notice that the liquid can only flow one direction. ",
+      html: '<div><div>This solenoid valve helps users control the flow of water. It would make a great addition to the robotic gardening projects. Normally, the valve is closed. When 12VDC is applied to the two terminals, the valve opens and water can push through. Notice that the liquid can only flow one direction. <br/>     There are 2 kinds of this solenoid valve for your selection. The “Inlet Valve” has working pressure 0.02 Mpa – 0.8 Mpa, used for water influent, while the “Drainage Valve” 0-0.2 Mpa, used for Drainage. Please select the right one you need.</div><div><h3>Specification</h3></div><div><ul><li>1/2" Nominal NPS</li><li>Material: Plastic</li><li>Working Pressure: Inlet Valve: 0.02 Mpa - 0.8 Mpa; Drainage Valve: 0-0.2 Mpa</li><li>Working Temperature: 1 ℃ - 75 ℃</li><li>Response time (open): ≤ 0.15 sec</li><li>Response time (close): ≤ 0.3 sec</li><li>Actuating voltage: 12VDC (but we found it would work down to 6V)</li><li>Actuating life: ≥ 50 million cycles</li><li>Weight: 4.3 oz</li><li>Dimensions: 3" x 2.25" x 2"</li></ul></div></div>',
+      type  : 'actuators',
+      image : '/images/products/ASO1212GSV.jpg'
+    },
+    {
+      id: 56,
+      title:'Tower Pro 9g SG-90 Mini Servo',
+      model: 'RMS09001S',
+      price: 297,
+      description: "Tower Pro SG90 is a high quality, low-cost servo for all your mechatronic needs. It comes with a 3-pin power and control cable, mounting hardware.",
+      html: '<div>Tower Pro SG90 is a high quality, low-cost servo for all your mechatronic needs. It comes with a 3-pin power and control cable, mounting hardware.</div><div><h3>Specification</h3></div><div><ul><li>Operating Voltage: 4.8 ~ 6.0V</li><li>Operating Speed: 0.12sec/60 degree(4.8V)~0.1sec/60 degree(6.0V)</li><li>Torque: 1.6kg/cm(4.8V)</li><li>Dead Band Width: 5usec</li><li>Temperature Range: -30~+60鈩?/li&gt;</li><li>Cable Length: 25cm</li><li>Brand name: Tower Pro</li><li>location of each pin: red (+), brown (-), yellow (signal).</li></ul></div><p> </p>',
+      type  : 'actuators',
+      image : '/images/products/RMS09001S.jpg'
+    },
+    {
+      id: 57,
+      title:'1-Channel Solid State Relay Module',
+      model: 'ARE00201SL',
+      price: 355,
+      description: "Compares with the traditional mechanical relay, the Solid State Relay (SSR) has many advantages: it has a longer life, with a much higher turn on/off speed and no noise. Besides, it also has better resistance to vibration and mechanical shock, and better moisture proof performance.  ",
+      html: '<div>Compares with the traditional mechanical relay, the Solid State Relay (SSR) has many advantages: it has a longer life, with a much higher turn on/off speed and no noise. Besides, it also has better resistance to vibration and mechanical shock, and better moisture proof performance.  <br/>      This Solid State Relay Module is based on Omron G3MB, to control current upto 2A@240VAC, can be widely used in various areas such as computer peripheral interfaces, temperature/speed light adjustment, servo control, petrochemical, medical instrumentations, financial devices, coal, meters, traffic signals, etc.<br/>        There are also modules with <a href="http://www.elecrow.com/2channel-solid-state-relay-module-p-1155.html">2 channels</a>, <a href="http://www.elecrow.com/4channel-solid-state-relay-module-p-1156.html">4 channels</a> and even <a href="http://www.elecrow.com/8channel-solid-state-relay-module-p-1157.html">8 channels</a> for your choice.</div><div><h3>Features</h3></div><div><ul><li>Control Voltage:5V</li><li>Static Current:0mA</li><li>Working Current:12.5mA</li><li>Trigger Voltage：0-1.5V</li><li>Trigger Current：2mA</li></ul></div><div><h3>Instructions</h3></div><div><ul><li>DC+:Connect power positive</li><li>DC-:Connect power negative</li><li>CH:Relay module signal trigger end(Low level trigger is effective)</li><li>Wiring: When the triggered by low voltage, current will get through.</li></ul></div><div><h3>Usage</h3></div><div><ul><li><a href="http://www.audiowind.com/pdf/g3mb-ssr-datasheet.pdf">datasheet</a></li></ul></div><p> </p>',
+      type  : 'actuators',
+      image : '/images/products/ARE00201SL.jpg'
+    },
+    {
+      id: 58,
+      title:'Mini Water Pump',
+      model: 'AMS36001A',
+      price: 254,
+      description: "Have you ever want to DIY an Aquarium controllers to help you Changing the water for the fish tank. This mini pump really sucks! This pump operates at 3V~9V and has enough suction for most small projects. Use this pump to make a fountain or waterfall, even water your plants!",
+      html: '<div>Have you ever want to DIY an Aquarium controllers to help you Changing the water for the fish tank. This mini pump really sucks! This pump operates at 3V~9V and has enough suction for most small projects. Use this pump to make a fountain or waterfall, even water your plants!</div><div><br/>  </div><div><h3>Features:</h3></div><div><ul><li>3V~9V operation;</li><li>Weight:70g</li><li>Diameterof Inlet: 4mm</li><li>Net lift: 1.2m@9V</li></ul></div><p> </p>',
+      type  : 'actuators',
+      image : '/images/products/AMS36001A.jpg'
+    },
+    {
+      id: 59,
+      title:'L9110 Dual-Channel H-Bridge Motor Driver Module - 12V 800mA',
+      model: 'AML9110DM',
+      price: 160,
+      description: "The L9110S Dual Channel Motor Driver Module is a compact board that can be used to drive very small robots. This tiny module has two independent L9110Smotor driver chips which can each drive up 800mA of continuous current. The boards can be operated from 2.5V to 12V enabling this module to be used with both 3.3V and 5V microcontrollers. ",
+      html: '<div>The L9110S Dual Channel Motor Driver Module is a compact board that can be used to drive very small robots. This tiny module has two independent L9110Smotor driver chips which can each drive up 800mA of continuous current. The boards can be operated from 2.5V to 12V enabling this module to be used with both 3.3V and 5V microcontrollers. A set of male header pins is used to connect this module to your robots microcontroller brain. The motors are attached via two sets of screw terminals. A PWM Pulse Width Modulation signal is used to control the speed of a motor and a digital output is used to change its direction. This module can also be used to drive a single four line two phase stepper motor. Four holes make this board easy to mount onto your robot or other project.</div><div><h3>Specification</h3></div><div><ul><li>Motor Voltage: 2.5 ~12V</li><li>Motor channels: 2</li><li>Max Continuous Current per Channel: 800mA</li><li>Size: 31mm x 22mm x 12mm</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/datasheet-l9110.pdf">L9110 Datasheet</a></li><li><a href="http://www.bajdi.com/l9110-h-bridge-module/">L9110 Dual-Channel Driver Usage</a></li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/AML9110DM.jpg'
+    },
+      {
+      id: 60,
+      title:'2WD Mobile platform Kit',
+      model: 'RKT00100M',
+      price: 949,
+      description: "This a well designed,2WDmobile robot development platform,you can build it and program it easily with tons of published free codes. Compare with the other mobile platform, this platform has 2gear motor with encoder disk, which makes it easy to control the speed, with acrylic board and mounting holes, you can add Variety of sensors to make it more interesting.The Crowduino, and elecrow motor shield , would be perfect to control&drive this platform to make your own mobile car.",
+      html: '<ul><li><br/><div>This a well designed,2WDmobile robot development platform,you can build it and program it easily with tons of published free codes. Compare with the other mobile platform, this platform has 2gear motor with encoder disk, which makes it easy to control the speed, with acrylic board and mounting holes, you can add Variety of sensors to make it more interesting.The <a href="http://www.elecrow.com/arduino-compatiable-c-109/micro-controller-c-109_117/crowduino-with-atmega-328-v11-p-338.html">Crowduino,</a> and <a href="http://www.elecrow.com/arduino-compatiable-c-109/shield-c-109_110/motor-shield-for-arduino-p-326.html">elecrow motor shield ,</a> would be perfect to control&amp;drive this platform to make your own mobile car.<br/>This kit is easy to assembling. with the user guide, you can assemble all the parts with a few minutes.</div><div><h3>Specification</h3></div><div><ul><li>2WD Arduino compatible mobile robot development platform</li><li>2 high-quality micro-speed motor</li><li>Tough PMMA body with mounting holes</li><li>Variety of sensors can be added</li><li>2WD Mobile platform Motors: 3-6V DC</li><li>With <a href="http://www.elecrow.com/sensors-c-111/proximity-c-111_113/opto-interrupter-with-holder-p-518.html">Opto Interrupter With Holder,</a> you can get the speed easily.</li></ul></div><div><h3>Packing List</h3></div><div><ul><li>3D manual: x1</li><li>Backplane: x1</li><li>Gear motor: x2</li><li>Wheel: x2</li><li>Encoder disk: x2</li><li>Universal wheel: x1</li><li>Battery box: x1</li><li>And other mechanical parts</li></ul></div></li><li></li></ul>',
+      type  : 'robotics',
+      image : '/images/products/RKT00100M.jpg'
+    },
+      {
+      id: 61,
+      title:'Dorado- 4WD Utility Mobile Platform',
+      model: 'RPL11304WD',
+      price: 1748,
+      description: "his 4WD Utility Mobile Platform – Dorado is easy to build and cheap, it is the best platform for you to build your first mobile application.     The Dorado platform consists of Dorado skeleton that made of Acrylic board, gear motor, wheel etc. Besides, there are also 4 circular grid board made by Acrylic, with a laser or infrared emitter and sensor, it would be possible to measure the speed of the platform. ",
+      html: '<div>This 4WD Utility Mobile Platform – Dorado is easy to build and cheap, it is the best platform for you to build your first mobile application.     The Dorado platform consists of Dorado skeleton that made of Acrylic board, gear motor, wheel etc. Besides, there are also 4 circular grid board made by Acrylic, with a laser or infrared emitter and sensor, it would be possible to measure the speed of the platform.     There are also 2 kinds of motors for your different requirements, you can select the 50 r/min and 125 r/min version in your order, the default would be the 50 r/min. Note that the Dorado Skeleton board is black acrylic, remove the yellow protect paper before your installing.<div><br/>    <img src="http://www.elecrow.com/images/Products/RPL11304WD_pro1.jpg" alt=""/></div><div><br/>    <img src="http://www.elecrow.com/images/Products/RPL11304WD_pro2.jpg" alt=""/></div><div><br/>    <img src="http://www.elecrow.com/images/Products/RPL11304WD_pro3.jpg" alt=""/></div></div><div><h3>Partlist</h3></div><div><ul><li>Dorado Skeleton;</li><li>High Quality Wheel x4;</li><li>Motors x4;</li><li>Battery Holder x1;</li><li>Wheel Coupler x4;</li><li>Standby x4;</li><li>Circular Grid Board x4;</li><li>Screws, Nuts and Wires</li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/RPL11304WD.jpg'
+    },
+      {
+      id: 62,
+      title:'Line Laser Emitter',
+      model: 'TEL2563L',
+      price: 170,
+      description: "Such a little Laser emitter module is popular used in teaching, horizontal measurement and so on, the laser effective transmission distance can be upto 1km when drive current is 20 mA There are also laser emitters with cross spot or dot spot.",
+      html: '<div>   Such a little Laser emitter module is popular used in teaching, horizontal measurement and so on, the laser effective transmission distance can be upto 1km when drive current is 20 mA There are also laser emitters with <a href="http://www.elecrow.com/tools-c-71/electric-tool-c-71_97/cross-laser-emitter-p-650.html">cross spot </a>or <a href="http://www.elecrow.com/tools-c-71/electric-tool-c-71_97/dot-laser-emitter-p-651.html">dot spot.</a></div><div><h3>Specification</h3></div><div><ul><li>Diameter: 9mm</li><li>Max power: 50 mW</li><li>Life: &gt;1,000 h</li><li>Current&amp;Voltage: 20mA@3V</li><li>Spot: Line</li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/TEL2563L.jpg'
+    },
+      {
+      id: 63,
+      title:'Ardumoto- Motor Driver Shield',
+      model: 'AMS00298SP',
+      price: 880,
+      description: "This is a motor shield for Arduino that will control two DC motors. Based on the L298 H-bridge, the Ardumoto can drive up to 2 amps per channel. The board takes its power from the same Vin line as the Arduino board, includes blue and yellow LEDs to indicate active direction, and all driver lines are diode protected from back EMF. ",
+      html: '<div>This is a motor shield for Arduino that will control two DC motors. Based on the L298 H-bridge, the Ardumoto can drive up to 2 amps per channel. The board takes its power from the same Vin line as the Arduino board, includes blue and yellow LEDs to indicate active direction, and all driver lines are diode protected from back EMF. The new version of this shield allows for either 3.3 or 5v logic, a separate and more robust VIN connection, and the PWM input has moved to pin 3.     Control for motor attached to OUT1/2 is connected to digital line 12 (direction A) and digital line 3 (PWM A). Control for motor attached to OUT3/4 is connected to digital line 13 (direction B) and digital line 11 (PWM B).</div><div><h3>Specification</h3></div><div><ul><li>The Logic Control Voltage: 4.5~5.5V</li><li>Motor Supply Voltage: 6~15V</li><li>Max Drive Current: 2A</li><li>Maximum Power Dissipation: 25W (T=75 degree Celsius)</li><li>Operating Temperature: -25 degree Celsius ~ +130 degree Celsius</li><li>Output Duty Range: 0%~100%</li></ul></div><div><h3>Download&amp; External Link</h3></div><div><ul><li><a href="http://dlnmh9ip6v2uc.cloudfront.net/downloads/Ardumoto/ardumoto_example.ino">Example Arduino sketch</a></li><li><a href="http://www.elecrow.com/download/Ardumoto_v13.pdf">Schematic</a></li></ul></div><p> </p>',
+      type  : 'shields',
+      image : '/images/products/AMS00298SP.jpg'
+    },
+      {
+      id: 64,
+      title:'Adjustable DC-DC Booster- LM2577',
+      model: 'PCH2577S',
+      price: 343,
+      description: "Arduino LM2577 DC-DC Adjustable Step-up Power Converter Module . The LM2577 series of regulators are monolithic integrated circuits that provide all the active functions for a step-up(buck) switching regulator, capable of driving a 3A load withexcellent line and load regulation. ",
+      html: '<div>Arduino LM2577 DC-DC Adjustable Step-up Power Converter Module . The LM2577 series of regulators are monolithic integrated circuits that provide all the active functions for a step-up(buck) switching regulator, capable of driving a 3A load withexcellent line and load regulation. This module uses the adjustable output version, it would facilitate your application and be your good assistant in your debugging.</div><div><br/>    <img src="http://www.elecrow.com/images/Products/LM2577%20Test.jpg" alt=""/></div><div><h3>Features</h3></div><div><ul><li>Module Properties: Non-isolated buck Module</li><li>Rectification: Non-synchronous rectification</li><li>Input voltage: 3V-34V</li><li>Output voltage: 4-35V(The output voltge must be higher than the input votage)</li><li>Input Current: 3A (MAX)</li><li>Output Current: 2.5A (MAX)</li><li>Module size: 49 (mm) x26 (mm)</li><li>Input: IN+ input is Positive, IN- type negative</li><li>Output: OUT+ output is Positive, OUT- type negative</li></ul></div><div><h3>Download</h3></div><div><ul><li><a href="http://www.elecrow.com/download/LM2577.pdf">LM2577 Datasheet</a></li><li><a href="http://www.elecrow.com/download/LM2577-Schematic.pdf">LM2577 Module Schematic</a></li></ul></div><p> </p>',
+      type  : 'robotics',
+      image : '/images/products/PCH2577S.jpg'
+    },
+      {
+      id: 65,
+      title:'Vibration Sensor Module - SW-420',
+      model: 'SMS10221S',
+      price: 134,
+      description: "    The Vibration module based on the vibration sensor SW-420 and Comparator LM393 to detect if there is any vibration that beyond the threshold. The threshold can be adjusted by the on-board potentiometer.",
+      html: '<div><p>The Vibration module based on the vibration sensor SW-420 and Comparator LM393 to detect if there is any vibration that beyond the threshold. The threshold can be adjusted by the on-board potentiometer.</p><p>    When this no vibration, this module output logic LOW the signal indicate LED light,And vice versa.</p></div><div><h3>Application Idea</h3></div><div><ul><li>Vibration detecting</li><li>Burglary protection system</li></ul></div><div><h3>Features</h3></div><div><ul><li>The default state of the swith is close</li><li>Digital output</li><li>Supply voltage:3.3V-5V</li><li>On-board indicator LED to show the results</li><li>On-board LM393 chip</li><li>Dimension of the board: 3.2cm x 1.4cm</li></ul></div><p> </p>',
+      type  : 'sensors',
+      image : '/images/products/SMS10221S.jpg'
+    },
+      {
+      id: 66,
+      title:'EB - Infrared Receiver',
+      model: 'EBR00058I',
+      price: 263,
+      description: "TThe 315MHz RF link kit is consisted of transmitter and receiver, popular used for remote control. We suggest you use the Arduino VirtualWire library to use this kit.Please refer to the wiki for more details.",
+      html: '<div>The Infrared Receiver is used to receive infrared signals and also used for remote control detection. There is a IR detector on the Infrared Receiver which is particularly sensitive to the infrared signal,and it can receive the infrared signal very swiftly .The Infrared Receiver can receive signals well within 10 meters. We suggest you using the <a href="http://www.elecrow.com/communication-c-78/infrared-c-78_141/infrared-remote-control-p-608.html">Infrared Remote Control </a>or any infrared emitter to make your own remote control projects. <br/>    You can download the <a href="http://www.elecrow.com/electronic-bricks-c-151/eb-starter-kit-p-623.html">Starter Kit Guidebook</a> experiment 13 - infrared remote control and related source code to learn how to use this module.</div><div><h3>Useful Links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/EB-Infrared%20Receiver%20v1.0%20r1.pdf">Infrared Receiver Schematic</a></li></ul></div>',
+      type  : 'communications',
+      image : '/images/products/EBR00058I.jpg'
+    },
+      {
+      id: 67,
+      title:'315Mhz RF Transmitting Module',
+      model: 'WRF31501R',
+      price: 123,
+      description: "Some of the most common applications with Arduino are: Home lighting, electrical appliances of high power and other equipments. The modular design makes it easy to integrate with a controller board. The Relay integrates a status LED, in order to acknoledge visually it's status ON or OFF. It can be controlled through the digital IO port, with a simple HIGH or LOW on Arduino compatible boards. Other boards will work requiring same voltage level. Other usages include control of solenoid valves, lamps, motors and other high current or high voltage devices.",
+      html: '<ul><li><div>The 315MHz RF link kit is consisted of transmitter and receiver, popular used for remote control. We suggest you use the Arduino VirtualWire library to use this kit.Please refer to the wiki for more details.</div><div><br/>    <img src="http://www.elecrow.com/images/Products/315433RF.jpg" alt=""/></div><div><h3>Specification</h3></div><div><ul><li>Frequency: 315Mhz</li><li>Modulation: ASK</li><li>Receiver Data Output: High - 1/2 Vcc, Low - 0.7v</li><li>Transmitor Input Voltage: 3-12V (high voltage=more transmitting power)</li></ul></div><div><h3>Package list</h3></div><div><ul><li>315MHz RF Transmitter x1</li><li>315MHz RF Receiver x1</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=315/433Mhz_RF_Transmitting_Module&amp;action=edit&amp;redlink=1">Manual &amp; Wiki link</a></li></ul></div></li></ul>',
+      type  : 'communications',
+      image : '/images/products/WRF31501R.jpg'
+    },
+      {
+      id: 68,
+      title:'433Mhz Serial RF Module HC-12 (1000M)',
+      model: 'WHC0012RF',
+      price: 112,
+      description: "HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels. The maximum transmitting power of module is 100mW (20dBm), the receiving sensitivity is -117dBm at baud rate of 5,000bps in the air, and the communication distance is 1,000m in open space.",
+      html: '<ul><li><div><br/><div>HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels. The maximum transmitting power of module is 100mW (20dBm), the receiving sensitivity is -117dBm at baud rate of 5,000bps in the air, and the communication distance is 1,000m in open space.<div> </div>    There is MCU inside the module, and user don’t need to program the module separately, and all transparent transmission mode is only responsible for receiving and sending serial port data, so it is convenient to use. The module adopts multiple serial port transparent transmission modes, and user could select them by AT command according to use requirements. The average working current of three modes FU1, FU2 and FU3 in idle state is 80μa, 3.6mA an 16mA respectively, and the maximum working current is 100mA (in transmitting state).     This module can not work individually, at least 2 pcs would be needed to create the communication. Please also note that this module do not work with the <a href="http://www.elecrow.com/communication-c-78/rfism-c-78_122/434mhz-serial-rf-module-hc11-140m-p-873.html">434Mhz Serial RF Module HC-11.</a><div> </div>     Please solder the Antenna as below:<div><br/>    <img src="http://www.elecrow.com/images/Products/HC12%20ata.jpg" alt=""/></div></div><div><h3>Features</h3></div><div><ul><li>Long-distance wireless transm',
+      type  : 'communications',
+      image : '/images/products/WHC0012RF.jpg'
+    },
+      {
+      id: 69,
+      title:'NRF24L01+PA+LNA Wireless Module - 1100 Meters',
+      model: 'WRW24015R',
+      price: 761,
+      description: "NRF24L01P + PA + LNA wireless module operates in Free license 2.4G ISM band, you can do point to point application and can also be composed of star network. The Data transmission chip NRF24L01+, and match with the department's professional design, Add the the chip of power PA and LNA, RF switch, band pass filter composed of a professional full two-way RF power amplifier,",
+      html: '<ul><li><br/><div>NRF24L01P + PA + LNA wireless module operates in Free license 2.4G ISM band, you can do point to point application and can also be composed of star network. The Data transmission chip NRF24L01+, and match with the departments professional design, Add the the chip of power PA and LNA, RF switch, band pass filter composed of a professional full two-way RF power amplifier, making the effective communication distance has been greatly expanded. Small size: 45.54mm x 16.46mm, easy to embed in any space-constrained products, customers can use the SPI port of Arduino or any other MCU to control NRF24L01P + PA + LNA, Wireless module to complete long distance wireless data transmission system desige.</div><div><h3>Features</h3></div><div><ul><li>It uses 2.4G global open ISM band, with license free.</li><li>Transmit power is greater than +20 dbm.Support six-channel data reception. 2Mbit/s speed makes high-quality VoIP possible Low</li><li>operating voltage: 2.7 to 3.6V</li><li>Multi-frequency points: 125 frequency points meet the needs of multi-point communications and frequency hopping.</li><li>Low cost: integrated with high-speed signal processing parts associated with RF protocol, such as: automatically re-send lost packets and generate acknowledge signal; SPI interface facilitates the communication with MCU I/O port.</li><li>Facilitate the development for customers, without development RF part.</li><li>Software programming is fully compatible with NRF24L01 modules.Size: 37.4mm * 16.6mm</li><li>Applications: remote control, telemetry, wireless meter reading, access control systems, residential paging, industrial data acquisition systems, wireless tags, identification, contactless RF smart card, small wireless data terminal, fire safety systems, wireless remote control systems, bio-signal acquisition, wireless 232, wireless 422/485 data communications.</li></ul></div><div><h3>Pin Definition</h3></div><br/><div><table border="1"><tbody><tr><td>PIN</td><td> </td><td>Function</td><td>Direction</td></tr><tr><td>Pin1</td><td>GND</td><td>Ground</td><td> </td></tr><tr><td>Pin2</td><td>VCC</td><td>VCC, 1.9~3.6V</td><td> </td></tr><tr><td>Pin3</td><td>CE</td><td>Operating Mode,RX/TX</td><td>In</td></tr><tr><td>Pin4</td><td>CSN</td><td>SPI chip select</td><td>In</td></tr><tr><td>Pin5</td><td>SCK</td><td>SPI clock</td><td>In</td></tr><tr><td>Pin6</td><td>MOSI</td><td>SPI Input</td><td>In</td></tr><tr><td>Pin7</td><td>MISO</td><td>SPI Output</td><td>Out</td></tr><tr><td>Pin8</td><td>IROAM</td><td>Interrupt Output</td><td>Out</td></tr></tbody></table></div><br/><div><h3>Specification</h3></div><div><ul><li>Operating Frequency: 2400MHz ~ 2524MHz</li><li>Modulation: GMSK</li><li>Transmit power: more than +20 dbm, 50Ω</li><li>Receiver sensitivity:-95dbm</li><li>Operating voltage: 2.7V ~ 3.6V</li><li>Max Emission current: 115mA</li><li>Max Receive current: 45mA</li><li>Operating temperature: -45 degrees to +85 degrees</li><li>Storage temperature: -45 degrees to +125 degrees</li><li>Gain Of PA: 20 dB</li><li>Gain Of LNA: 10 dB</li></ul></div><br/><br/></li></ul><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      type  : 'communications',
+      image : '/images/products/WRW24015R.jpg'
+    },
+      {
+      id: 70,
+      title:'Arduino FM Receiver- TEA5767',
+      model: 'CI5767TEA',
+      price: 683,
+      description: "The TEA5767HN is a single-chip electronically tuned FM stereo radio for low-voltage applications with fully integrated Intermediate Frequency (IF) selectivity and demodulation. There are many projects and shares such as the simtronyx and electronics-lab for the Arduino users. This Arduino FM Receiver is based on the chip TEA5767HN, ",
+      html: '<ul><li></li></ul><div>The TEA5767HN is a single-chip electronically tuned FM stereo radio for low-voltage applications with fully integrated Intermediate Frequency (IF) selectivity and demodulation. There are many projects and shares such as the <a href="http://blog.simtronyx.de/en/simple-fm-stereo-radio-with-a-tea5767-breakout-module-and-an-arduino/">simtronyx</a> and <a href="http://www.electronics-lab.com/blog/?p=17494">electronics-lab</a> for the Arduino users. This Arduino FM Receiver is based on the chip TEA5767HN, it incorporated all the necessary circuit includes power circuit, antenna, amplifier and AGC circuit, to help the users build their own Arduino FM receiver easily. We have also prepared 2 kinds of antennas for you, to ensure you get the best results.</div><div><h3>Features</h3></div><div><ul><li>High sensitivity(low noise RF input amplifier)</li><li>Frequency range: 76-108MHZ</li><li>High power auto gain control AGC circuit</li><li>LC harmonic oscillator use low cost fixed chip</li><li>No need to adjust Intermediate frequency</li><li>Soft mute</li></ul></div><div><h3>Specifications</h3></div><div><ul><li>Power: 5V</li><li>PCB size: 31*30mm</li><li>With reverse polarity protection diode</li><li>With power output filtering sensor</li><li>Multi capacitor combined filter</li><li>Blue LED power indicator</li><li>Directly plug antenna interface</li><li>I2C bus communication</li><li>FM chip module TEA5767</li><li>Onboard 3.5mm audio interface</li><li>If connects with singlechip, only connect the Power Ground and two I2C communication cable.</li></ul></div><div><h3>Partlist</h3></div><div><ul><li>FM Receiver Module x1</li><li>Wire Antenna x1</li><li>Rod Antenna</li></ul></div><div><h3>Download</h3></div><div><ul><li><a href="http://www.elecrow.com/download/TEA5767%20Datasheet.pdf">TEA5767 Datasheet.pdf</a></li><li><a href="http://www.elecrow.com/download/tea5767%20amplication%20note-8.pdf">TEA5767 Amplication Note</a></li><li><a href="http://www.elecrow.com/download/ARDUINO%20FM%20Receiver%20Hardware%20and%20Soucecode.zip">Arduino FM Receiver Source code and hardware</a></li><li><a href="https://github.com/andykarpov/TEA5767">andykarpov code on github</a></li></ul></div><p> </p>',
+      type  : 'communications',
+      image : '/images/products/CI5767TEA.jpg'
+    },
+      {
+      id: 71,
+      title:'315M RF Controller Kit',
+      model: 'WRF315KIT',
+      price: 333,
+      description: "This wireless controller kit uses the SC2273-L4 SC2272-M4 to encode& decode, very suit for simple wireless controls. It is consist of a keyfob 4-Button RF remote controller and a simple RF M4 receiver, There's no programming, configuring or addressing - simply power the receiver with 5VDC and press the buttons on our matching RF keyfob remote. ",
+      html: '<ul><li><div>This wireless controller kit uses the SC2273-L4 SC2272-M4 to encode&amp; decode, very suit for simple wireless controls. It is consist of a keyfob 4-Button RF remote controller and a simple RF M4 receiver, There is no programming, configuring or addressing - simply power the receiver with 5VDC and press the buttons on our matching RF keyfob remote. When the A button is pressed, it activates the first pin, when the B button is pressed, it activates the second one, and so forth for all four buttons. There is no microcontroller required, it’s just a simple one-to-one link.<p>    The voltage of corresponding outputs pins of the receiver will change to HIHG while related button on the keyfob pressed, and thus to change to LOW while the button released.</p></div><div><h3>Specification</h3></div><div><ul><li>Modulation schemes: amplitude modulation (AM)</li><li>Standard Current: 4.5mA</li><li>Keyfob Battery voltage: DC12V</li><li>Receiver Voltage：DC5V</li><li>Operating temperature: -10 ℃ ~ +70 ° C</li></ul></div></li></ul>',
+      type  : 'communications',
+      image : '/images/products/WRF315KIT.jpg'
+    },
+      {
+      id: 72,
+      title:'Pulse Sensor',
+      model: 'SO00837PS',
+      price: 706,
+      description: "The Pulse Sensor is a plug-and-play heart-rate sensor for Arduino. It can be used by students, artists, athletes, makers, and game & mobile developers who want to easily incorporate live heart-rate data into their projects.",
+      html: '<ul><li><div>The Pulse Sensor is a plug-and-play heart-rate sensor for Arduino. It can be used by students, artists, athletes, makers, and game &amp; mobile developers who want to easily incorporate live heart-rate data into their projects.Essence it is an integrated optical amplifying circuit and noise eliminating circuit sensor. Clip the Pulse Sensor to your earlobe or finger tip and plug it into your Arduino ,you can ready to read heart rate. Also it have an Arduino demo code that make it easy to use.</div><div><br/>    <img src="http://www.elecrow.com/download/SO00837PS_pro1.jpg" alt=""/> <img src="http://www.elecrow.com/download/SO00837PS_pro2.jpg" alt=""/></div><div><h3>Features</h3></div><div><ul><li>Working voltage: 5V</li><li>Working current: 4mA</li></ul></div><div><h3>Wiki &amp; External links</h3></div><ul><li><a href="http://v.youku.com/v_show/id_XNjM2ODI0NTg4.html">Demo</a></li><li><a href="http://www.elecrow.com/download/PulseSensorAmpd%20-%20Schematic.pdf">Schmatic</a></li><li><a href="http://www.elecrow.com/download/PulseSensorAmpedHardware.zip">Design Files</a></li><li><a href="http://pulsesensor.com/pages/pulse-sensor-amped-arduino-v1dot1">Arduino Code Walkthrough</a></li><li><a href="http://pulse-sensor.googlecode.com/files/PulseSensorAmpd_Processing_1dot1.zip">Processing Demo file</a></li></ul></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SO00837PS.jpg'
+    },    
 	]
 });
 

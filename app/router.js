@@ -10,6 +10,9 @@ Router.map(function() {
 	    this.route('boards');
 	    this.route('sensors');
 	    this.route('robotics');
+	    this.route('communications');
+	    this.route('actuators');
+	    this.route('shields');
 		this.resource('product', { path: '/:product_slug' });
   	});
   	

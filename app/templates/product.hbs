@@ -1,8 +1,8 @@
 {{#document-title}}{{title}}{{/document-title}}
 <div class="row" id="product_specific_container">
 
-	<div class="fixed_component"> 
-		<div class="col l5 space_on_top">
+	<div class="col l4 fixed_component"> 
+		<div class=" space_on_top">
 
 			
 			<div class="row">
@@ -15,18 +15,18 @@
 		 		<div class="col m6 s6 ">
 		 			<div class="prod_cart_buttons row">
 						{{#if itemsCount}}
-							{{md-btn text='-' action='minusItem'  class='col m4'
+							{{md-btn text='-' action='minusItem'  class='col m4 s4'
 								isDisabled = false iconPosition='center'}} 
 
 						{{else}}
-							{{md-btn text='-' action='minusItem' class='col m4' isDisabled = true iconPosition='center'}} 
+							{{md-btn text='-' action='minusItem' class='col m4 s4' isDisabled = true iconPosition='center'}} 
 						{{/if}}
 						<div class="col m4 s4 center-align prod_cart_button_text">
 
 							{{itemsCount}}
 						</div>
 						<div {{action 'itemAnimation' this target=view}}>
-							{{md-btn text='+' iconPosition='center' class='col m4 add_button'}}
+							{{md-btn text='+' iconPosition='center' class='col m4 s4 add_button'}}
 
 						</div>
 					</div>
@@ -47,56 +47,34 @@
 			 	</div>
 		 	</div>
 		 	<div class="row">
-		 		<div class="col m4 ">
-		 			
-                <!-- <div class="iconmelon svg_icon" >
-                  <svg class="" viewBox="0 0 32 32">
-                    <use xlink:href="/icons.svg#facebook1"></use>
-                  </svg> 
-                </div> -->
-
-      				<button class="social_box facebook">
-						<div class="iconmelon svg_icon" >
-							<svg class="" viewBox="0 0 32 32">
-								<use xlink:href="/icons.svg#facebook1"></use>
-							</svg>
-						</div>
-					</button>
-
+		 		<div class="col s4 m4 l4 social_box facebook"> 
+					<div class="iconmelon svg_icon" >
+						<svg class="" viewBox="0 0 600 600">
+							<use xlink:href="/icons.svg#facebook"></use>
+						</svg>
+					</div>  
 		 		</div>
-		 		<div class="col m4">
-	 
-      				<button class="social_box  twitter">
-						<div class="iconmelon svg_icon" >
-							<svg class="" viewBox="0 0 32 32">
-								<use xlink:href="/icons.svg#twitter1"></use>
-							</svg>
-						</div>
-					</button>
-
-		 		</div>
-
-		 		<div class="col m4 ">
-	 
-      				<button class="social_box  google">
-						<div class="iconmelon svg_icon" >
-							<svg class="" viewBox="0 0 32 32">
-								<use xlink:href="/icons.svg#google-plus1"></use>
-							</svg>
-						</div>
-					</button>
-
-		 		</div>
-
-
-		 	</div>
-		 	
+		 		<div class="col s4 m4 l4 social_box  twitter"> 
+					<div class="iconmelon svg_icon" >
+						<svg class="" viewBox="0 0 500 500">
+							<use xlink:href="/icons.svg#twitter"></use>
+						</svg>
+					</div>  
+		 		</div> 
+		 		<div class="col s4 m4 l4 social_box  google"> 
+					<div class="iconmelon svg_icon" >
+						<svg class="" viewBox="0 0 120 120">
+							<use xlink:href="/icons.svg#google"></use>
+						</svg>
+					</div> 
+		 		</div> 
+		 	</div> 
 	 	</div>
 	</div>
 
-	<div class="content_of_fixed_bar col l7">
+	<div class="content_of_fixed_bar product_specific col l8">
 		<div class="row"> 
-			<div class=" col l6 space_on_top footer product_specific_text">
+			<div class=" col l8 space_on_top footer product_specific_text">
 				<div class="product_title">
 			 		{{title}}
 			 	</div>

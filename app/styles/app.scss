@@ -504,35 +504,56 @@ div.product_specific_choices > div.header{
   font-weight: bolder;
 }
 
+div.social_box > div.iconmelon.svg_icon {
+  top: -8px;
+}
+.content_of_fixed_bar.product_specific{
+    position: absolute;
+  right: 0;
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
+}
+
+.space_on_top.footer.product_specific_text, .space_on_top.footer.product_specific_choices{
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 
 .product_specific_text{
   padding-top:20px !important;
   position: absolute;
-  right: 20%;
-  padding-right: 5% !important;
+  //right: 20%;
+  //padding-right: 5% !important;
 }
 
 .product_specific_choices{
   position: absolute;
   right: 0;
-  padding-left: 35px !important;
+  //padding-left: 35px !important;
 
   &.inner{
     overflow-y: scroll;
     position: absolute;
     height: 100vh;
   }
+
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
+
 }
 .product_specific_choice{
   height: 80px;
 }
 
-button.social_box {
+.social_box {
   border: none;
-  width: 115px;
-  height: 32px;
-  padding: 14px;
-  padding-left: 43px;
+  height: 32px; 
+  padding: 13px 13% !important;
 
   &.facebook{
     background-color: #3b5998;
@@ -648,6 +669,10 @@ footer{
 
 .fixed_component{
   position: fixed;
+
+  &.col{
+    position:relative;
+  }
 }
 
 .title{

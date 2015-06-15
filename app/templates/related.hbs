@@ -1,5 +1,5 @@
 
-<div class="hidden-xs hidden-s col l3 space_on_top footer product_specific_choices">
+<div class="col s12 l4 space_on_top footer product_specific_choices">
 
 <div class="header ">
   You might also want to look at:
@@ -8,18 +8,16 @@
 <div class="">
 <ul>
         {{#each model as |item|}}
-    <li>
+    <li class="col s12 m2 l12">
 
       <div>
-
       {{#link-to 'product' item.slug}}
-
         <div class="product_specific_choice row">
-        <div class="col l4">
+        <div class="col row s4 m12 l4">
         <img {{bind-attr src='item.image'}} height="70px" width="70px">
         </div>
         
-        <div class="col l8">
+        <div class="col s8 m12 l8">
           {{item.title}}
         </div>
         </div>

@@ -2,7 +2,7 @@
 @import 'components/variables';
  
 
-$break-small: 320px;
+$break-small: 400px;
 $break-medium: 1000px;
 $break-large: 1200px;
 
@@ -53,6 +53,13 @@ body {
   }
 
 }
+
+
+/** side nav**/
+.side-nav{
+  background-color: #333;
+}
+
 span.card-title.activator.black-text {
   line-height: 30px;
   font-size: 20px;
@@ -104,6 +111,12 @@ a.contact_us.active, a.contact_us:hover{
   -webkit-transition-property: left;
   transition-property: left;
   transition: .3s ease-in-out;
+
+
+
+  @media screen and (max-width: $break-small) {
+    margin-top: 110px !important;
+  }
 }
 
 .nav_indicator:after{
@@ -116,6 +129,19 @@ a.contact_us.active, a.contact_us:hover{
   width: 0;
   top: -5px;
   right: 50%;
+}
+
+.main.container{
+
+  @media #{$small-and-down} {
+    
+    max-width: none !important;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .container.whole{
@@ -191,6 +217,7 @@ a.contact_us.active, a.contact_us:hover{
 
 .hide_opacity{
   margin-top:-66px;
+  display:none;
 }
 
 
@@ -322,6 +349,11 @@ div.navbar_custom > div.nav-wrapper > div.container {
   width: 100% !important;
 }
 
+
+#nav-mobile > li{
+  border: none
+}
+
 li.navbar_border {
   border-right: 1px rgba(250,250,250,0.2) solid;
 }
@@ -406,6 +438,13 @@ footer.hidden-md.hidden-lg {
 .checkout_order{
     margin-left: 20px !important;
     background-color: #eeeeee;
+}
+
+.checkout_order.fixed_component {
+
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
 }
 
 .checkout_order_list{
@@ -504,35 +543,56 @@ div.product_specific_choices > div.header{
   font-weight: bolder;
 }
 
+div.social_box > div.iconmelon.svg_icon {
+  top: -8px;
+}
+.content_of_fixed_bar.product_specific{
+    position: absolute;
+  right: 0;
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
+}
+
+.space_on_top.footer.product_specific_text, .space_on_top.footer.product_specific_choices{
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 
 .product_specific_text{
   padding-top:20px !important;
   position: absolute;
-  right: 20%;
-  padding-right: 5% !important;
+  //right: 20%;
+  //padding-right: 5% !important;
 }
 
 .product_specific_choices{
   position: absolute;
   right: 0;
-  padding-left: 35px !important;
+  //padding-left: 35px !important;
 
   &.inner{
     overflow-y: scroll;
     position: absolute;
     height: 100vh;
   }
+
+  @media screen and (max-width: $break-medium) {
+    position: inherit;
+  }
+
 }
 .product_specific_choice{
   height: 80px;
 }
 
-button.social_box {
+.social_box {
   border: none;
-  width: 115px;
-  height: 32px;
-  padding: 14px;
-  padding-left: 43px;
+  height: 32px; 
+  padding: 13px 13% !important;
 
   &.facebook{
     background-color: #3b5998;
@@ -569,8 +629,17 @@ nav ul a {
     min-height: 40px;
   
     .nav_text{
-    font-size: 16px;
-    color:#23527c;
+      font-size: 10px;
+      color:#23527c;
+      
+      @media #{$small-and-down} { 
+        font-size: 8px;
+      }
+
+      @media #{$large-and-up} { 
+        font-size: 12px;
+      }
+
     }
   }
 }
@@ -648,6 +717,10 @@ footer{
 
 .fixed_component{
   position: fixed;
+
+  &.col{
+    position:relative;
+  }
 }
 
 .title{
@@ -743,15 +816,13 @@ footer.fixed_component:hover{
 }
 
 .navigation{
-  margin-top: 65px;
-  width: 100%;
-  border-right: 1px #eee solid;
+  margin-top: 65px; 
   z-index: 800;
   right: 0;
   left: 0;
-  margin-right: auto;
+  padding-right: 20px !important;
   margin-left: auto;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hide{
@@ -778,7 +849,11 @@ p > div.materialize-selectable-item {
 
 .contact_us_links.center-align.row.container {
   margin-top: 130px;
+  @media screen and (max-width: $break-medium) {
+    width: 100% !important;
+  }
 }
+
 .btn-intro{
   background-color: transparent;
   border: 5px #fff solid;
@@ -798,7 +873,7 @@ p > div.materialize-selectable-item {
 }
 
 .contact_underline{
-  min-height: 46px;
+  height: 3rem;
   border-bottom: 1px #9e9e9e solid; 
 }
 

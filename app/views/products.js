@@ -16,10 +16,11 @@ export default Ember.View.extend({
     
       imgtodrag = this.$(imgtodrag);
       if (imgtodrag) {
+        debugger;
           var imgclone = imgtodrag.clone()
               .offset({
-              top: event.target.offsetTop,
-              left: event.target.offsetLeft
+              top: event.pageY,//screenY,//offsetTop,
+              left: event.pageX//screenX//offsetLeft
           });
           imgclone.css({
               'opacity': '0.5',

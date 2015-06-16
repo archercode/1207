@@ -545,7 +545,7 @@ Product.reopenClass({
       price: 160,
       description: "This finger Clip Heart rate sensor uses an IR emitter and a receiver to detect pulse of finger. it can be used to monitor heart rate of patient and athlete. Note that the signal of this sensor is so small(about 100mv) that an amplifier maybe needed. The result can be sampled by Arduino and saved for analysis. The entire system has a high sensitivity, low power consumption and is very portable.",
       html: '<div>This finger Clip Heart rate sensor uses an IR emitter and a receiver to detect pulse of finger. it can be used to monitor heart rate of patient and athlete. Note that the signal of this sensor is so small(about 100mv) that an amplifier maybe needed. The result can be sampled by Arduino and saved for analysis. The entire system has a high sensitivity, low power consumption and is very portable.</div><div><h3>Specification</h3></div><div><ul><li>Power Supply:5V</li></ul></div><p> </p>',
-      type  : 'robotics',
+      type  : 'sensors',
       image : '/images/products/SOT00100F.jpg'
     },
     {

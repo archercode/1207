@@ -87,7 +87,7 @@ Product.reopenClass({
       price: 150,
       model:'DFR0026',
       description: 'This module help you to detect the light density and reflect the analog voltage signal back to Arduino controller. You can set the threshold of voltage level to trig other unit on Arduino project.',
-      html: '<section><section><section><ul><li><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><div>While there are many types of temperature sensors available in the market, the DS18B20 Temperature Sensor form DALLAS is the best choice in applications which require high accuracy and high reliability. Its ultra-small size, low hardware overhead, strong anti-interference capability and high accuracy, together with other additional features makes DS18B20 even more popular among users. For electronic enthusiasts and hobbyists, the DS18B20 is a good start for learning and developing temperature-dependent prototypes. </div><p>This sensor can be directly plugged and used with our new <a href="http://www.dfrobot.com/index.php?route=product/product&amp;filter_name=IO%20Expansion&amp;product_id=1009#.UsYrkvQW2So">IO expansion shield</a>.</p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Digital temperature conversion and output</li><li>Advanced single-bus data communication</li><li>Maximum 12-bit resolution, accuracy up to ±0.5 degrees Celsius</li><li>Parasitic mode available</li><li>Temperature detection range: -55 ° C ~ +125 ° C (-67 ° F ~ +257 ° F)</li><li>Built-in EEPROM and temperature limit</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Temperature range :-55 °C ~  +125 °C</li><li>Interface: Digital</li><li>Size:22x32mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/18B20_Temperature_Sensor_V2_SKU:_DFR0024">Wiki Doc</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DFR0024_Schematic_V2.pdf">Schematics</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DFR0024_18B20_Datasheet.pdf">DS18B20 Datasheet</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/OneWire.zip">One Wire Library for 18B20</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DS18B20%20for%20Arduino%201.0.zip">DFR0024_SampleCode_V1</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>18B20 Temerature Sensor V2 x1 </li><li>Digital Cable x1</li></ul></div></div></div></section></section></section></li></ul></section></section></section><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<section><section><section><ul><li><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><div>While there are many types of temperature sensors available in the market, the DS18B20 Temperature Sensor form DALLAS is the best choice in applications which require high accuracy and high reliability. Its ultra-small size, low hardware overhead, strong anti-interference capability and high accuracy, together with other additional features makes DS18B20 even more popular among users. For electronic enthusiasts and hobbyists, the DS18B20 is a good start for learning and developing temperature-dependent prototypes. </div><p>This sensor can be directly plugged and used with our new <a href="http://www.dfrobot.com/index.php?route=product/product&amp;filter_name=IO%20Expansion&amp;product_id=1009#.UsYrkvQW2So">IO expansion shield</a>.</p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Digital temperature conversion and output</li><li>Advanced single-bus data communication</li><li>Maximum 12-bit resolution, accuracy up to ±0.5 degrees Celsius</li><li>Parasitic mode available</li><li>Temperature detection range: -55 ° C ~ +125 ° C (-67 ° F ~ +257 ° F)</li><li>Built-in EEPROM and temperature limit</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Temperature range :-55 °C ~  +125 °C</li><li>Interface: Digital</li><li>Size:22x32mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/18B20_Temperature_Sensor_V2_SKU:_DFR0024">Wiki Doc</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DFR0024_Schematic_V2.pdf">Schematics</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DFR0024_18B20_Datasheet.pdf">DS18B20 Datasheet</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/OneWire.zip">One Wire Library for 18B20</a></li><li><a href="http://www.dfrobot.com/image/data/DFR0024/DS18B20%20for%20Arduino%201.0.zip">DFR0024_SampleCode_V1</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>18B20 Temerature Sensor V2 x1 </li><li>Digital Cable x1</li></ul></div></div></div></section></section></section></li></ul></section></section></section>',
       type: 'sensors',
       image: '/images/products/DFR0026.jpg',
     },
@@ -144,7 +144,7 @@ Product.reopenClass({
       price: 200,
       model: 'DFR0030',
       description: 'This little sensor can "feel" people and metal touch and feedback a high/low voltage level. Even isolated by some cloth and paper, it still can feel the touch. And the sensetivity well decrease as isolation get thick.',
-      html: '<section><section><section><ul><li><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><p>Are you tired with clicking mechanic button? Try our capacitive touch sensor. Right now we can find touch sensor on most electronic device. So uprade your Arduino project with our new version touch sensor and make it cool!!</p><div>This little sensor can "feel" people and metal touch and feedback a high/low voltage level. Even isolated by some cloth and paper, it still can feel the touch. And the sensetivity well decrease as isolation get thick. For detail of usage, please check our wiki. To exetreme user experience of our sensor module, we made following improvement. We can feel our care for customers.</div><div> </div><div><img src="http://www.dfrobot.com/image/data/DFR0030/V2.0/touch1.jpg" alt=""/></div><p> </p><div><strong>With this sensor Arduino can feel your touch</strong></div><p> </p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling structure (two 3mm holes with multiple of 5cm as interval)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li><li>Specification</li><li>Supply Voltage: 3.3V to 5V</li><li>Interface: Digital</li><li>Size:22x30mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/DFRobot_Capacitive_Touch_Sensor_SKU:DFR0030">Wiki Doc</a>     </li><li><a href="http://www.dfrobot.com.cn/images/upload/File/DFR0030/20140825132741ztc9n2.pdf">Schematic</a>    </li></ul><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Capacitive Touch Sensor x1</li><li>Digital cable x1</li></ul></div></div></div></section></section></section></section></section></section></li></ul></section></section></section><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<section><section><section><ul><li><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><p>Are you tired with clicking mechanic button? Try our capacitive touch sensor. Right now we can find touch sensor on most electronic device. So uprade your Arduino project with our new version touch sensor and make it cool!!</p><div>This little sensor can "feel" people and metal touch and feedback a high/low voltage level. Even isolated by some cloth and paper, it still can feel the touch. And the sensetivity well decrease as isolation get thick. For detail of usage, please check our wiki. To exetreme user experience of our sensor module, we made following improvement. We can feel our care for customers.</div><div> </div><div><img src="http://www.dfrobot.com/image/data/DFR0030/V2.0/touch1.jpg" alt=""/></div><p> </p><div><strong>With this sensor Arduino can feel your touch</strong></div><p> </p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling structure (two 3mm holes with multiple of 5cm as interval)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li><li>Specification</li><li>Supply Voltage: 3.3V to 5V</li><li>Interface: Digital</li><li>Size:22x30mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/DFRobot_Capacitive_Touch_Sensor_SKU:DFR0030">Wiki Doc</a>     </li><li><a href="http://www.dfrobot.com.cn/images/upload/File/DFR0030/20140825132741ztc9n2.pdf">Schematic</a>    </li></ul><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Capacitive Touch Sensor x1</li><li>Digital cable x1</li></ul></div></div></div></section></section></section></section></section></section></li></ul></section></section></section>',
       type: 'sensors',
       image: '/images/products/DFR0030.jpg',
     },
@@ -196,7 +196,7 @@ Product.reopenClass({
       price: 100,
       model: 'DFR0029',
       description: 'Press to release pleasure! Our redesigned digital push buttons come with LED, immersion gold surface, and bright colored hats. A captital D at left corner indicates that it is a digital sensor. An illustration of button painted in the back notifying its function. Pressing it is a real fun, especially with the plastic cap off. The long pressable life also ensures its durability.',
-      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><div><div><div><div>Press to release pleasure! Our redesigned digital push buttons come with LED, immersion gold surface, and bright colored hats. A captital D at left corner indicates that it is a digital sensor. An illustration of button painted in the back notifying its function. Pressing it is a real fun, especially with the plastic cap off. The long pressable life also ensures its durability.</div><p> </p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling structure (two 3mm diameter holes with multiple of 5mm as distance from center)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Indicator LED on board</li><li>Easy to plug and play</li><li>Large button keypad and high-quality first-class hat</li><li>Able to achieve very interesting and an interactive work</li><li>Interface: Digital</li><li>Size:22x30mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/DFRobot_Digital_Push_Button_SKU:DFR0029#Sample_Code">Wiki Doc</a>     </li><li><a href="http://www.dfrobot.com/image/data/DFR0029/V2.0/Digital%20Push%20Button%20SCH.pdf">Schematic</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Digital Push Button x1</li><li>Digital cable x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><div><div><div><div>Press to release pleasure! Our redesigned digital push buttons come with LED, immersion gold surface, and bright colored hats. A captital D at left corner indicates that it is a digital sensor. An illustration of button painted in the back notifying its function. Pressing it is a real fun, especially with the plastic cap off. The long pressable life also ensures its durability.</div><p> </p></div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling structure (two 3mm diameter holes with multiple of 5mm as distance from center)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Indicator LED on board</li><li>Easy to plug and play</li><li>Large button keypad and high-quality first-class hat</li><li>Able to achieve very interesting and an interactive work</li><li>Interface: Digital</li><li>Size:22x30mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/DFRobot_Digital_Push_Button_SKU:DFR0029#Sample_Code">Wiki Doc</a>     </li><li><a href="http://www.dfrobot.com/image/data/DFR0029/V2.0/Digital%20Push%20Button%20SCH.pdf">Schematic</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Digital Push Button x1</li><li>Digital cable x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
       type: 'robotics',
       image: '/images/products/DFR0029.jpg',
     },
@@ -261,7 +261,7 @@ Product.reopenClass({
       model: 'SEN0098',
       price: 500,
       description: "This is a breakout board for the fully integrated Hall Effect based linear ACS758 current sensor. The sensor gives precise current measurement for both AC and DC signals.The thickness of the copper conductor allows survival of the device at high overcurrent conditions.",
-      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><div>Line tracking is the most basic function of smart mobile robot. As you can see line tracking robot one of the easiest ways for a robot to successfully and accurately navigate. We designed this new generation of line tracking sensor to be your robots powerful copilot all the way. It will guide your robot by telling white from black quickly and accurately, via TTL signal. With a drawed path and good programming can ensure results that are far more consistent than if the robot was simply told where to go without any reference.</div> <div>To improve its sensitivity we have replaced the old opto interrupt with high quality one on our latest version. Now the sensor is more accurate and Its simplified design make it compatible with most mobile platforms. You can combine several line following sensors with other ranged sensors, making mobile robots complete. With a sensor aiming the floor, not only you can detect lines, but often, floor with low reflectance and dark color can be used to distinguish different areas. For example, a kitchen with a dark floor and a living room with a light or white floor, given this information to your robot you can keep it enclosed to a specific area or even let the robot know the area to change its behaviour. Weve seen it also for stairs detector, when the sensor is triggered by the lack of reflectance when high altitude is detected.</div><br/>Version Update: Adds a variable resistor, now it can change the detecting range. 2012/12/24</div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling struct (Times-of-5mm Center distance between two 3mm mounting holes)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Interface:Digital</li><li>Operating current: 20mA @ 5V</li><li>Operating temperature range: 0°C ~ + 50°C</li><li>Output: TTL(Black for LOW output, White for HIGH output)</li><li>Size:28x10mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/Line_Tracking_Sensor_for_Arduino_V4_SKU:SEN0017">Wiki Doc</a>           </li><li><a href="https://github.com/Arduinolibrary/DFRobot_line_tracking/blob/master/Tracker%20V4.0%20R2%20Sch.pdf?raw=true">Schematic</a>    </li><li><a href="http://www.dfrobot.com/image/data/SEN0017/V2.0/ITR20001-T.pdf">Datasheet</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Line Tracking Sensor for Arduino V4 x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION</strong></p></div><div><div>Line tracking is the most basic function of smart mobile robot. As you can see line tracking robot one of the easiest ways for a robot to successfully and accurately navigate. We designed this new generation of line tracking sensor to be your robots powerful copilot all the way. It will guide your robot by telling white from black quickly and accurately, via TTL signal. With a drawed path and good programming can ensure results that are far more consistent than if the robot was simply told where to go without any reference.</div> <div>To improve its sensitivity we have replaced the old opto interrupt with high quality one on our latest version. Now the sensor is more accurate and Its simplified design make it compatible with most mobile platforms. You can combine several line following sensors with other ranged sensors, making mobile robots complete. With a sensor aiming the floor, not only you can detect lines, but often, floor with low reflectance and dark color can be used to distinguish different areas. For example, a kitchen with a dark floor and a living room with a light or white floor, given this information to your robot you can keep it enclosed to a specific area or even let the robot know the area to change its behaviour. Weve seen it also for stairs detector, when the sensor is triggered by the lack of reflectance when high altitude is detected.</div><br/>Version Update: Adds a variable resistor, now it can change the detecting range. 2012/12/24</div></div></div></section><section><div><div><div><p><strong>FEATURES</strong></p></div><div><ul><li>Wide voltage range from 3.3V to 5V</li><li>Standard assembling struct (Times-of-5mm Center distance between two 3mm mounting holes)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Supply Voltage: 3.3V to 5V</li><li>Interface:Digital</li><li>Operating current: 20mA @ 5V</li><li>Operating temperature range: 0°C ~ + 50°C</li><li>Output: TTL(Black for LOW output, White for HIGH output)</li><li>Size:28x10mm</li></ul></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php/Line_Tracking_Sensor_for_Arduino_V4_SKU:SEN0017">Wiki Doc</a>           </li><li><a href="https://github.com/Arduinolibrary/DFRobot_line_tracking/blob/master/Tracker%20V4.0%20R2%20Sch.pdf?raw=true">Schematic</a>    </li><li><a href="http://www.dfrobot.com/image/data/SEN0017/V2.0/ITR20001-T.pdf">Datasheet</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Line Tracking Sensor for Arduino V4 x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
       type  : 'sensors',
       image : '/images/products/SEN0098.jpg'
     },
@@ -315,7 +315,7 @@ Product.reopenClass({
       model: 'SEN0129',
       price: 300,
       description: "The MQ4 is used in gas leakage detecting equipment in consumer and industry markets,this sensor is suitable for detecting CH4,Natural gas, LNG, avoid exposure to alcohol, cooking fumes, and cigarette smoke. The sensitivity can be adjusted by the potentiometer.",
-      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION<br/></strong></p></div><div><div>The MQ4 is used in gas leakage detecting equipment in consumer and industry markets,this sensor is suitable for detecting CH4,Natural gas, LNG, avoid exposure to alcohol, cooking fumes, and cigarette smoke. The sensitivity can be adjusted by the potentiometer.</div> <div><div>Notice:The new version of analog sensor port pin mapping has been changed as the following two features.Please check the <a href="http://www.dfrobot.com/community/trick-for-changing-sensor-cable-pin-mapping.html">tips for changing sensor cable pin mapping</a> while using the I/O Expansion shield. We will continue to update. For the inconvenience caused, please understand.</div><div><img src="http://www.dfrobot.com/image/data/SEN0127/pin%20mapping%20comparison.jpg" alt=""/></div></div> <div><div> </div>Improvement List<ul><li>Standard assembling structure (Times-of-5mm Center distance between two 3mm mounting holes)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Power supply: 5V</li><li>Interface type: Analog</li><li>Pin Definition:  1-Output  2-GND  3-VCC</li><li>High sensitivity to CH4，Natural gas</li><li>Small sensitivity to alcohol, smoke</li><li>Fast response</li><li>Stable and long life</li><li>Simple drive circuit</li><li>Size: 40x20mm</li></ul> <div> </div></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php?title=Analog_Gas_Sensor(MQ4)_(SKU:SEN0129)">Wiki Doc</a></li><li><a href="http://www.dfrobot.com/image/data/SEN0129/MQ-4.pdf">MQ4 datasheet</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Analog Gas sensor (MQ4) x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<section><section><section><ul><li><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><section><div><div><div><p><strong>INTRODUCTION<br/></strong></p></div><div><div>The MQ4 is used in gas leakage detecting equipment in consumer and industry markets,this sensor is suitable for detecting CH4,Natural gas, LNG, avoid exposure to alcohol, cooking fumes, and cigarette smoke. The sensitivity can be adjusted by the potentiometer.</div> <div><div>Notice:The new version of analog sensor port pin mapping has been changed as the following two features.Please check the <a href="http://www.dfrobot.com/community/trick-for-changing-sensor-cable-pin-mapping.html">tips for changing sensor cable pin mapping</a> while using the I/O Expansion shield. We will continue to update. For the inconvenience caused, please understand.</div><div><img src="http://www.dfrobot.com/image/data/SEN0127/pin%20mapping%20comparison.jpg" alt=""/></div></div> <div><div> </div>Improvement List<ul><li>Standard assembling structure (Times-of-5mm Center distance between two 3mm mounting holes)</li><li>Easily recognitive interfaces of sensors ("A" for analog and "D" for digital)</li><li>Icons to simplely illustrate sensor function </li><li>High quality connector</li><li>Immersion gold surface</li></ul></div></div></div></div></section><section><div><div><div><p><strong>SPECIFICATION</strong></p></div><div><ul><li>Power supply: 5V</li><li>Interface type: Analog</li><li>Pin Definition:  1-Output  2-GND  3-VCC</li><li>High sensitivity to CH4，Natural gas</li><li>Small sensitivity to alcohol, smoke</li><li>Fast response</li><li>Stable and long life</li><li>Simple drive circuit</li><li>Size: 40x20mm</li></ul> <div> </div></div></div></div></section><section><div><div><div><p><strong>DOCUMENTS</strong></p></div><div><ul><li><a href="http://www.dfrobot.com/wiki/index.php?title=Analog_Gas_Sensor(MQ4)_(SKU:SEN0129)">Wiki Doc</a></li><li><a href="http://www.dfrobot.com/image/data/SEN0129/MQ-4.pdf">MQ4 datasheet</a></li></ul><br/><div> </div></div></div></div></section><section><div><div><div><p><strong>SHIPPING LIST</strong></p></div><div><ul><li>Analog Gas sensor (MQ4) x1</li></ul></div></div></div></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></section></li></ul></section></section></section>',
       type  : 'sensors',
       image : '/images/products/SEN0131.jpg'
     },
@@ -407,9 +407,78 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/DFR0017.jpg'
     },
-    ///ELECROW/////////////////////
+    ///Jake/////////////////////
+    /*
     {
       id: 35,
+      title:'NFC Shield',
+      model: 'ACS53201S',
+      price: 1228,
+      description: "This NFC shield is based on the NXP PN532. The built-in NFC Antenna works on ISM band of 13.56MHz, with a communication range of approximately two cm.You can read and write 13.56MHz NFC tags and communicate with other NFC enabled devices with this shield.",
+      html: '<div><p> NFC(Near Field Communication) is a set of standards for smartphones and similar devices to establish radio communication with each other by touching them together or bringing them into close proximity , it builds upon RFID systems by allowing two-way communication between endpoints. Compared with the Bluetooth, which is also short-range communication technology, NFC operates at slower speeds, but consumes far less power and doesn&rsquo;t require pairing.</p><p> This NFC shield based on the PN532 from NXP, it works on ISM band of 13.56MHz, with the built-in NFC Antenna, the communication range would be about 2cm.You can read and write a 13.56MHz tag with this shield, and communicate with each other or smartphone with the P2P(peer-to-peer) communication.</p></div><div><h3>Features</h3></div><div><ul><li>5cm max effective range</li><li>SPI interface with Arduino/Crowduino</li><li>Supports P2P communication</li><li>Support ISO14443 Type A and Type B protocals</li></ul></div><div><h3>Package list</h3></div><div><ul><li>NFC Shield PCBA x1</li><li>13.56MHz Tag(Clear Diamond) x1</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=NFC_Shield">Manual &amp; Wiki link</a></li></ul></div>',
+      type  : 'communications',
+      image : '/images/products/ACS53201S.jpg'
+    },
+
+
+    {
+      id: 36,
+      title:'Triple Axis Gyro',
+      model: 'SMS34200D',
+      price: 683,
+      description: "This is a breakout board for the L3G4200D. The L3G4200D has a full scale of +/-250 / +/-500 / +/-2000 dps and is capable of measuring rates with a user-selectable bandwidth.These work great in gaming and virtual reality input devices, GPS navigation systems and robotics. It includes a sensing element and an IC interface capable of providing the measured angular rate to the external world through a digital interface (I2C/SPI).",
+      html: '<ul><li><div><p>This is a breakout board for the L3G4200D. the L3G4200D is a low-power three-axis angular rate sensor able to provide unprecedented stablility of zero rate level and sensitivity over temperature and time. It includes a sensing element and an IC interface capable of providing the measured angular rate to the external world through a digital interface (I2C/SPI).</p><p>The L3G4200D has a full scale of +/-250 / +/-500 / +/-2000 dps and is capable of measuring rates with a user-selectable bandwidth.These work great in gaming and virtual reality input devices, GPS navigation systems and robotics.With the given Arduino library, you can easliy setup your project as you get this product.</p></div><div><h3>Features</h3></div><div><ul><li>Three selectable full scales (250/500/2000 dps)</li><li>I2C/SPI digital output interface</li><li>16 bit-rate value data output</li><li>8-bit temperature data output</li><li>Wide supply voltage: 2.4 V to 3.6 V</li><li>Low voltage-compatible IOs (1.8 V)</li><li>Embedded power-down and sleep mode</li><li>Embedded temperature sensor</li><li>High shock survivability</li></ul></div><div><br/> <img src="http://www.elecrow.com/images/Products/GY-50-L3G4200.JPG" alt=""/></div><div><br/> <img src="http://www.elecrow.com/images/Products/GY-50-SCH.jpg" alt=""/></div><div><br/> <img src="http://www.elecrow.com/images/Products/Dimension%20of%20the%20L3G4200D.jpg" alt=""/></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/L3G4200D_Example.zip">Arduino library</a></li><li><a href="http://www.elecrow.com/download/L3G4200D.pdf">L3G4200D Datasheet</a></li><li><a href="http://www.elecrow.com/download/TA0343.pdf">TA0343.pdf</a></li><li><a href="http://www.elecrow.com/download/L3G4200_AN3393.pdf">L3G4200_AN3393.pdf</a></li></ul></div></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SMS34200D.jpg'
+    },
+    {
+      id: 37,
+      title:'Luminosity Sensor- TSL2561 Breakout',
+      model: 'SM2561TSL',
+      price: 316,
+      description: "The TSL2561 Luminosity Sensor measures both infrared and visible light for better gather the approximate response of the human eye. Because the TSL2561 is an integrating sensor (it gathers light for a predetermined amount of time), it is capable of measuring both small and large amounts of light by changing the integration time.",
+      html: '<ul><li><div><div>The TSL2561 Luminosity Sensor Breakout is a sophisticated light sensor which has a flat response across most of the visible spectrum. Unlike simpler sensors, the TSL2561 measures both infrared and visible light to better approximate the response of the human eye. And because the TSL2561 is an integrating sensor (it soaks up light for a predetermined amount of time), it is capable of measuring both small and large amounts of light by changing the integration time.</div><div>The TSL2561 is capable of direct I2C communication and is able to conduct specific light ranges from 0.1 - 40k+ Lux easily. Additionally, the TSL12561 contains two integrating analog-to-digital converters (ADC) that integrate currents from two photodiodes, simultaneously.</div><div><h3>Feature</h3></div><div><ul><li>I2C interfaces</li><li>Power supply:3.3v ~ 5v</li><li>a low supply current max of 0.6mA</li></ul><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/download/datasheet%20and%20arduino%20code.zip">Datasheet and Arduino code</a></li></ul></div></div></div></li><li></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/SM2561TSL.jpg'
+    },
+
+{
+      id: 38,
+      title: 'Single Wire Waterproof Temperature Sensor',
+      model: 'STH01102S',
+      price: 203,
+      description: "This is a waterproofed version of the DS18B20 Temperature sensor. Handy for when you need to measure something far away, or in wet conditions. While the sensor is good from -55 degrees celsius up to 125 degrees celsius, the cable is jacketed in PVC so we suggest keeping it under 100 degrees celsius. Because they are digital, There is minimal signal degradation over long distances. The DS18B20 provides 9 to 12-bit (configurable) temperature readings over a 1-Wire interface, so that only one wire (and ground) needs to be connected from a central microprocessor.",
+      html: '<ul><li><div><p>This is a waterproofed version of the DS18B20 Temperature sensor. Handy for when you need to measure something far away, or in wet conditions. While the sensor is good up to 125 degree, the cable is jacketed in PVC so we suggest keeping it under 100 degree. Because they are digital, you do not get any signal degradation even over long distances! The DS18B20 provides 9 to 12-bit (configurable) temperature readings over a 1-Wire interface, so that only one wire (and ground) needs to be connected from a central microprocessor.Usable with 3.0-5.5V systems.</p><p>Because each DS18B20 contains a unique silicon serial number, multiple DS18B20s can exist on the same 1-Wire bus. This allows for placing temperature sensors in many different places. Applications where this feature is useful include HVAC environmental controls, sensing temperatures inside buildings,equipment or machinery, and process monitoring and control.</p></div><div><h3>Features</h3></div><div><ul><li>9 to 12 bit selectable resolution</li><li>one digital pin for communication</li><li>Multiple sensors can share one pin</li><li>Query time is less than 750ms</li></ul></div><div><h3>Specification</h3></div><div><ul><li>3.0V to 5.5V input</li><li>Temperature range: -55 to +125 degree</li><li>0.5 degree Accuracy from -10 to +85 degree</li><li>3 wires interface:<ul><li>Red wire - VCC</li><li>Black wire - GND</li><li>Yellow wire - DATA</li></ul></li><li>Stainless steel tube 6mm diameter by 30mm long</li><li>Cable length: 90cm</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=One_Wire_Waterproof_Temperature_Sensor">Manual/Wiki</a></li><li><a href="http://www.elecrow.com/download/DS18B20.pdf">DS18B20 datasheet</a></li><li><a href="http://www.elecrow.com/download/DS18B20%20for%20Arduino%201.0.zip">Sample code for Arduino 1.0</a></li><li><a href="http://www.elecrow.com/download/DS18B20%20sketch%20for%20Arduino%20IDE%20under%201.0.zip">Sample code for IDE under 1.0</a></li><li><a href="http://playground.arduino.cc/Learning/OneWire">One Wire library</a></li><li><a href="http://www.elecrow.com/blog/?p=52">How the DS18B20 and Arduino works锛?</a></li></ul></div></li></ul>',
+      type  : 'sensors',
+      image : '/images/products/STH01102S.jpg'
+    },
+
+    {
+      id: 39,
+      title:'MPU-6050 Triple Axis Accelerometer & Gyro Breakout Board ',
+      model: 'SPS06050S',
+      price: 448,
+      description: "The MPU-6050 is a motion sensor combining a triple-axis gyroscope and a triple-axis accelerometer on the same silicon die  with an onboard Digital Motion Processor(DMP) capable of processing complex 9-axis Motion Fusion algorithms, the MPU-6050 does away with the cross-axis alignment problems that can appear on discrete parts.",
+      html:'<div> The MPU-6050 is a serious little piece of motion processing tech! By combining a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die together with an onboard Digital Motion Processor(DMP) capable of processing complex 9-axis MotionFusion algorithms, the MPU-6050 does away with the cross-axis alignment problems that can creep up on discrete parts.</div><div><h3>Specification</h3></div><div><ul><li>I2C Digital-output of 6 or 9-axis MotionFusion data in rotation matrix, quaternion, Euler Angle, or raw data format</li><li>Input Voltage: 3V-5V</li><li>Selectable Solder Jumpers on CLK, FSYNC and AD0</li><li>Tri-Axis angular rate sensor (gyro) with a sensitivity up to 131 LSBs/dps and a full-scale range of 250, 500, 1000, and 2000dps</li><li>Tri-Axis accelerometer with a programmable full scale range of +-2g, +-4g, +-8g and 16g</li><li>Digital Motion Processing(DMP engine offloads complex MotionFusion, sensor timing synchronization and gesture detection</li><li>Embedded algorithms for run-time bias and compass calibration. No user intervention required</li><li>Digital-output temperature sensor</li><li>Dimensions: 20 * 15 * 1.6mm</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=MPU-6050">Manual/Wiki</a></li><li><a href="http://www.elecrow.com/download/PS-MPU-6000A.pdf">Datasheet (MPU-6050)</a></li><li><a href="http://www.elecrow.com/download/i2cdevlib-master.zip">Example Code</a></li></ul></div>',
+      type  : 'sensors',
+      image : '/images/products/SPS06050S.jpg'
+    },
+
+    { 
+      id: 40,
+      title:'Relay Shield v1.1 ',
+      model: 'MCS01584R',
+      price: 515,
+      description: "The Relay Shield v1.1 is an Arduino compatible module with 4 mechanical relays. It provides an easy way to control high voltages. The max switching power is 35VDC 70W per channel. It can be directly controlled by Arduino/Crowduino through digital IOs with an external 9V DC supply. Compared to the Relay shield v1.0, the v1.1 version use 4 selectors instead of push buttons on the version1.0, to make it more convenient to control the relays manually. Please note that the pins on relay shield should not touch the USB connector of Arduino UNO while connected.",
+      html: '<div><p> The Relay Shield v1.1&nbsp;is an Arduino compatible smart module with 4 mechanical relays providing an easy way to control high voltage. The max switching power is 35VDC 70W for each channel. It can be directly controlled by Arduino/Crowduino through digital IOs with external 9V DC supply. Compared to the Relay shield1.0, the v1.1 version use 4 selector instead of those push buttons used on version1.0, to make it more convenient to control the relays manually.</p><p> Note: Please note that the pins on relay shield should not touch the USB connector of Arduino UNO when they are connected.</p></div><div><h3>Features</h3></div><div><ul><li>Arduino,Crowduino, Arduino Mega compatible</li><li>Automatic control and manual control</li><li>4 mechanical relays with photo-coupled circuit</li><li>Equipped with screw holes for easy installation</li><li>Light weight</li><li>Small form factor</li><li>Extendible</li></ul></div><div><h3>Specification</h3></div><div><ul><li>Voltage: 7~12V</li><li>Current: 8~250mA</li><li>Switching Voltage: Max 35V</li><li>Switching Current : Max 2A</li><li>Frequency Response: -1~1dB</li><li>Switching Power: Max 70W</li><li>Relay Life: &gt; 100000</li></ul></div><div><h3>Caution</h3></div><div> Placing 2 layers of electrical tape on the top of the Arduinos usb connector will prevent the relay shield from making contact. Do not operate voltage more than 35V DC.</div><div><h3>Package list</h3></div><div><ul><li>Relay shield PCBA x1</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=Relay_Shield">Wiki</a></li></ul></div>',
+      type  : 'actuators',
+      image : '/images/products/MCS01584R.jpg'
+    },
+
+    */
+    ///// 
+    {
+      id: 47,
       title:'Dual Channel H-Bridge Motor Shield (8A 22V)',
       model: 'ACS70028DH',
       price: 1124,
@@ -419,7 +488,7 @@ Product.reopenClass({
       image : '/images/products/ACS70028DH.jpg'
     },
     {
-      id: 36,
+      id: 48,
       title:'Proto Shield For Arduino',
       model: 'MCS01004S',
       price: 333,
@@ -429,7 +498,7 @@ Product.reopenClass({
       image : '/images/products/MCS01004S.jpg'
     },
     {
-      id: 37,
+      id: 49,
       title:'LCD Keypad Shield (Arduino Compatible)',
       model: 'MCS01602M',
       price: 432,
@@ -439,7 +508,7 @@ Product.reopenClass({
       image : '/images/products/MCS01602M.jpg'
     },
     {
-      id: 38,
+      id: 50,
       title:'Screw Shield',
       model: 'MCS01110',
       price: 412,
@@ -449,7 +518,7 @@ Product.reopenClass({
       image : '/images/products/MCS01110.jpg'
     },
     {
-      id: 39,
+      id: 51,
       title:'Dust Sensor GP2Y1010AU0F',
       model: 'SGP2Y1010AU',
       price: 658,
@@ -459,7 +528,7 @@ Product.reopenClass({
       image : '/images/products/SGP2Y1010AU.jpg'
     },
     {
-      id: 40,
+      id: 52,
       title:'Water Proof Integrated Ultrasonic Ranging Module- JSN-SR04T',
       model: 'SP0433JSN',
       price: 1080,
@@ -469,7 +538,7 @@ Product.reopenClass({
       image : '/images/products/SP0433JSN.jpg'
     },
      {
-      id: 41,
+      id: 53,
       title:'HC-SR04 Ultrasonic Ranging Sensor',
       model: 'SOD00201S',
       price: 158,
@@ -479,7 +548,7 @@ Product.reopenClass({
       image : '/images/products/SOD00201S.jpg'
     },
      {
-      id: 42,
+      id: 54,
       title:'Sound Sensor',
       model: 'SPM22101S',
       price: 160,
@@ -489,7 +558,7 @@ Product.reopenClass({
       image : '/images/products/SPM22101S.jpg'
     },
      {
-      id: 43,
+      id: 55,
       title:'Adjustable Infrared Sensor Switch 3 - 80cm',
       model: 'SOD00380S',
       price: 461,
@@ -499,7 +568,7 @@ Product.reopenClass({
       image : '/images/products/SOD00380S.jpg'
     },
      {
-      id: 44,
+      id: 56,
       title:'Opto Interrupter - ITR8104',
       model: 'SPS81041S',
       price: 250,
@@ -509,7 +578,7 @@ Product.reopenClass({
       image : '/images/products/SPS81041S.jpg'
     },
      {
-      id: 45,
+      id: 57,
       title:'Reed Switch Module',
       model: 'SMT07350R',
       price: 130,
@@ -519,7 +588,7 @@ Product.reopenClass({
       image : '/images/products/SMT07350R.jpg'
     },
      {
-      id: 46,
+      id: 58,
       title:'2-Channel Velocity Measurement Kit',
       model: 'SPM6097VM',
       price: 539,
@@ -529,7 +598,7 @@ Product.reopenClass({
       image : '/images/products/SPM6097VM.jpg'
     },
      {
-      id: 47,
+      id: 59,
       title:'Light Controlled Relay Module',
       model: 'SPM22001S',
       price: 375,
@@ -539,7 +608,7 @@ Product.reopenClass({
       image : '/images/products/SPM22001S.jpg'
     },
     {
-      id: 48,
+      id: 60,
       title:'Finger Clip Heart Rate Sensor',
       model: 'SOT00100F',
       price: 160,
@@ -549,7 +618,7 @@ Product.reopenClass({
       image : '/images/products/SOT00100F.jpg'
     },
     {
-      id: 49,
+      id: 61,
       title:'G1/4" Water Flow Sensor',
       model: 'SOT80014WF',
       price: 321,
@@ -559,7 +628,7 @@ Product.reopenClass({
       image : '/images/products/SOT80014WF.jpg'
     },
     {
-      id: 50,
+      id: 62,
       title:'G1/2" Water Flow Sensor',
       model: 'SOT80012WF',
       price: 246,
@@ -569,7 +638,7 @@ Product.reopenClass({
       image : '/images/products/SOT80012WF.jpg'
     },
     {
-      id: 51,
+      id: 63,
       title:'Eccentric motor(2x2mm)',
       model: 'RMS04281R',
       price: 138,
@@ -579,7 +648,7 @@ Product.reopenClass({
       image : '/images/products/RMS04281R.jpg'
     },
     {
-      id: 52,
+      id: 64,
       title:'28BYJ-48 High quality Stepper motor 12V',
       model: 'RMS02812M',
       price: 130,
@@ -589,7 +658,7 @@ Product.reopenClass({
       image : '/images/products/RMS02812M.jpg'
     },
     {
-      id: 53,
+      id: 65,
       title:'28BYJ-48 High Quality Stepper Motor 5V',
       model: 'RMS02805M',
       price: 181,
@@ -599,7 +668,7 @@ Product.reopenClass({
       image : '/images/products/RMS02805M.jpg'
     },
     {
-      id: 54,
+      id: 66,
       title:'Audio Amplifier PAM8403 with Colume Control',
       model: 'ASAA8403P',
       price: 130,
@@ -609,7 +678,7 @@ Product.reopenClass({
       image : '/images/products/ASAA8403P.jpg'
     },
     {
-      id: 55,
+      id: 67,
       title:'Plastic Water Solenoid Valve- 12V- 1/2" Nominal',
       model: 'ASO1212GSV',
       price: 355,
@@ -619,7 +688,7 @@ Product.reopenClass({
       image : '/images/products/ASO1212GSV.jpg'
     },
     {
-      id: 56,
+      id: 68,
       title:'Tower Pro 9g SG-90 Mini Servo',
       model: 'RMS09001S',
       price: 297,
@@ -629,7 +698,7 @@ Product.reopenClass({
       image : '/images/products/RMS09001S.jpg'
     },
     {
-      id: 57,
+      id: 69,
       title:'1-Channel Solid State Relay Module',
       model: 'ARE00201SL',
       price: 355,
@@ -639,7 +708,7 @@ Product.reopenClass({
       image : '/images/products/ARE00201SL.jpg'
     },
     {
-      id: 58,
+      id: 70,
       title:'Mini Water Pump',
       model: 'AMS36001A',
       price: 254,
@@ -649,7 +718,7 @@ Product.reopenClass({
       image : '/images/products/AMS36001A.jpg'
     },
     {
-      id: 59,
+      id: 71,
       title:'L9110 Dual-Channel H-Bridge Motor Driver Module - 12V 800mA',
       model: 'AML9110DM',
       price: 160,
@@ -659,7 +728,7 @@ Product.reopenClass({
       image : '/images/products/AML9110DM.jpg'
     },
       {
-      id: 60,
+      id: 72,
       title:'2WD Mobile platform Kit',
       model: 'RKT00100M',
       price: 949,
@@ -669,7 +738,7 @@ Product.reopenClass({
       image : '/images/products/RKT00100M.jpg'
     },
       {
-      id: 61,
+      id: 73,
       title:'Dorado- 4WD Utility Mobile Platform',
       model: 'RPL11304WD',
       price: 1748,
@@ -679,7 +748,7 @@ Product.reopenClass({
       image : '/images/products/RPL11304WD.jpg'
     },
       {
-      id: 62,
+      id: 74,
       title:'Line Laser Emitter',
       model: 'TEL2563L',
       price: 170,
@@ -689,7 +758,7 @@ Product.reopenClass({
       image : '/images/products/TEL2563L.jpg'
     },
       {
-      id: 63,
+      id: 75,
       title:'Ardumoto- Motor Driver Shield',
       model: 'AMS00298SP',
       price: 880,
@@ -699,7 +768,7 @@ Product.reopenClass({
       image : '/images/products/AMS00298SP.jpg'
     },
       {
-      id: 64,
+      id: 76,
       title:'Adjustable DC-DC Booster- LM2577',
       model: 'PCH2577S',
       price: 343,
@@ -709,7 +778,7 @@ Product.reopenClass({
       image : '/images/products/PCH2577S.jpg'
     },
       {
-      id: 65,
+      id: 77,
       title:'Vibration Sensor Module - SW-420',
       model: 'SMS10221S',
       price: 134,
@@ -719,7 +788,7 @@ Product.reopenClass({
       image : '/images/products/SMS10221S.jpg'
     },
       {
-      id: 66,
+      id: 78,
       title:'EB - Infrared Receiver',
       model: 'EBR00058I',
       price: 263,
@@ -729,7 +798,7 @@ Product.reopenClass({
       image : '/images/products/EBR00058I.jpg'
     },
       {
-      id: 67,
+      id: 79,
       title:'315Mhz RF Transmitting Module',
       model: 'WRF31501R',
       price: 123,
@@ -739,27 +808,27 @@ Product.reopenClass({
       image : '/images/products/WRF31501R.jpg'
     },
       {
-      id: 68,
-      title:'433Mhz Serial RF Module HC-12 (1000M)',
-      model: 'WHC0012RF',
+      id: 80,
+      title:'433Mhz RF Transmitting Module',
+      model: 'WRF43301R',
       price: 112,
-      description: "HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels. The maximum transmitting power of module is 100mW (20dBm), the receiving sensitivity is -117dBm at baud rate of 5,000bps in the air, and the communication distance is 1,000m in open space.",
-      html: '<ul><li><div><br/><div>HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels. The maximum transmitting power of module is 100mW (20dBm), the receiving sensitivity is -117dBm at baud rate of 5,000bps in the air, and the communication distance is 1,000m in open space.<div> </div>    There is MCU inside the module, and user don’t need to program the module separately, and all transparent transmission mode is only responsible for receiving and sending serial port data, so it is convenient to use. The module adopts multiple serial port transparent transmission modes, and user could select them by AT command according to use requirements. The average working current of three modes FU1, FU2 and FU3 in idle state is 80μa, 3.6mA an 16mA respectively, and the maximum working current is 100mA (in transmitting state).     This module can not work individually, at least 2 pcs would be needed to create the communication. Please also note that this module do not work with the <a href="http://www.elecrow.com/communication-c-78/rfism-c-78_122/434mhz-serial-rf-module-hc11-140m-p-873.html">434Mhz Serial RF Module HC-11.</a><div> </div>     Please solder the Antenna as below:<div><br/>    <img src="http://www.elecrow.com/images/Products/HC12%20ata.jpg" alt=""/></div></div><div><h3>Features</h3></div><div><ul><li>Long-distance wireless transm',
+      description: "The 433MHz RF link kit is consisted of transmitter and receiver, popular used for remote control. We suggest you use the Arduino VirtualWire library to use this kit.Please refer to the wiki for more details.",
+      html: '<div>The 433MHz RF link kit is consisted of transmitter and receiver, popular used for remote control. We suggest you use the Arduino VirtualWire library to use this kit.Please refer to the wiki for more details.</div><div><br/>    <img src="http://www.elecrow.com/images/Products/315433RF.jpg" alt=""/></div><div><h3>Specification</h3></div><div><ul><li>Frequency: 433Mhz</li><li>Modulation: ASK</li><li>Receiver Data Output: High - 1/2 Vcc, Low - 0.7v</li><li>Transmitor Input Voltage: 3-12V (high voltage=more transmitting power)</li></ul></div><div><h3>Package list</h3></div><div><ul><li>433MHz RF Transmitter x1</li><li>433MHz RF Receiver x1</li></ul></div><div><h3>Wiki &amp; External links</h3></div><div><ul><li><a href="http://www.elecrow.com/wiki/index.php?title=315/433Mhz_RF_Transmitting_Module&amp;action=edit&amp;redlink=1">Manual &amp; Wiki link</a></li></ul></div>',
       type  : 'communications',
-      image : '/images/products/WHC0012RF.jpg'
+      image : '/images/products/WRF43301R.jpg'
     },
       {
-      id: 69,
+      id: 81,
       title:'NRF24L01+PA+LNA Wireless Module - 1100 Meters',
       model: 'WRW24015R',
       price: 761,
       description: "NRF24L01P + PA + LNA wireless module operates in Free license 2.4G ISM band, you can do point to point application and can also be composed of star network. The Data transmission chip NRF24L01+, and match with the department's professional design, Add the the chip of power PA and LNA, RF switch, band pass filter composed of a professional full two-way RF power amplifier,",
-      html: '<ul><li><br/><div>NRF24L01P + PA + LNA wireless module operates in Free license 2.4G ISM band, you can do point to point application and can also be composed of star network. The Data transmission chip NRF24L01+, and match with the departments professional design, Add the the chip of power PA and LNA, RF switch, band pass filter composed of a professional full two-way RF power amplifier, making the effective communication distance has been greatly expanded. Small size: 45.54mm x 16.46mm, easy to embed in any space-constrained products, customers can use the SPI port of Arduino or any other MCU to control NRF24L01P + PA + LNA, Wireless module to complete long distance wireless data transmission system desige.</div><div><h3>Features</h3></div><div><ul><li>It uses 2.4G global open ISM band, with license free.</li><li>Transmit power is greater than +20 dbm.Support six-channel data reception. 2Mbit/s speed makes high-quality VoIP possible Low</li><li>operating voltage: 2.7 to 3.6V</li><li>Multi-frequency points: 125 frequency points meet the needs of multi-point communications and frequency hopping.</li><li>Low cost: integrated with high-speed signal processing parts associated with RF protocol, such as: automatically re-send lost packets and generate acknowledge signal; SPI interface facilitates the communication with MCU I/O port.</li><li>Facilitate the development for customers, without development RF part.</li><li>Software programming is fully compatible with NRF24L01 modules.Size: 37.4mm * 16.6mm</li><li>Applications: remote control, telemetry, wireless meter reading, access control systems, residential paging, industrial data acquisition systems, wireless tags, identification, contactless RF smart card, small wireless data terminal, fire safety systems, wireless remote control systems, bio-signal acquisition, wireless 232, wireless 422/485 data communications.</li></ul></div><div><h3>Pin Definition</h3></div><br/><div><table border="1"><tbody><tr><td>PIN</td><td> </td><td>Function</td><td>Direction</td></tr><tr><td>Pin1</td><td>GND</td><td>Ground</td><td> </td></tr><tr><td>Pin2</td><td>VCC</td><td>VCC, 1.9~3.6V</td><td> </td></tr><tr><td>Pin3</td><td>CE</td><td>Operating Mode,RX/TX</td><td>In</td></tr><tr><td>Pin4</td><td>CSN</td><td>SPI chip select</td><td>In</td></tr><tr><td>Pin5</td><td>SCK</td><td>SPI clock</td><td>In</td></tr><tr><td>Pin6</td><td>MOSI</td><td>SPI Input</td><td>In</td></tr><tr><td>Pin7</td><td>MISO</td><td>SPI Output</td><td>Out</td></tr><tr><td>Pin8</td><td>IROAM</td><td>Interrupt Output</td><td>Out</td></tr></tbody></table></div><br/><div><h3>Specification</h3></div><div><ul><li>Operating Frequency: 2400MHz ~ 2524MHz</li><li>Modulation: GMSK</li><li>Transmit power: more than +20 dbm, 50Ω</li><li>Receiver sensitivity:-95dbm</li><li>Operating voltage: 2.7V ~ 3.6V</li><li>Max Emission current: 115mA</li><li>Max Receive current: 45mA</li><li>Operating temperature: -45 degrees to +85 degrees</li><li>Storage temperature: -45 degrees to +125 degrees</li><li>Gain Of PA: 20 dB</li><li>Gain Of LNA: 10 dB</li></ul></div><br/><br/></li></ul><p>Document edited with <a href="http://www.html-cleaner.com" target="_blank">HTML-Cleaner.com</a></p>',
+      html: '<ul><li><br/><div>NRF24L01P + PA + LNA wireless module operates in Free license 2.4G ISM band, you can do point to point application and can also be composed of star network. The Data transmission chip NRF24L01+, and match with the departments professional design, Add the the chip of power PA and LNA, RF switch, band pass filter composed of a professional full two-way RF power amplifier, making the effective communication distance has been greatly expanded. Small size: 45.54mm x 16.46mm, easy to embed in any space-constrained products, customers can use the SPI port of Arduino or any other MCU to control NRF24L01P + PA + LNA, Wireless module to complete long distance wireless data transmission system desige.</div><div><h3>Features</h3></div><div><ul><li>It uses 2.4G global open ISM band, with license free.</li><li>Transmit power is greater than +20 dbm.Support six-channel data reception. 2Mbit/s speed makes high-quality VoIP possible Low</li><li>operating voltage: 2.7 to 3.6V</li><li>Multi-frequency points: 125 frequency points meet the needs of multi-point communications and frequency hopping.</li><li>Low cost: integrated with high-speed signal processing parts associated with RF protocol, such as: automatically re-send lost packets and generate acknowledge signal; SPI interface facilitates the communication with MCU I/O port.</li><li>Facilitate the development for customers, without development RF part.</li><li>Software programming is fully compatible with NRF24L01 modules.Size: 37.4mm * 16.6mm</li><li>Applications: remote control, telemetry, wireless meter reading, access control systems, residential paging, industrial data acquisition systems, wireless tags, identification, contactless RF smart card, small wireless data terminal, fire safety systems, wireless remote control systems, bio-signal acquisition, wireless 232, wireless 422/485 data communications.</li></ul></div><div><h3>Pin Definition</h3></div><br/><div><table border="1"><tbody><tr><td>PIN</td><td> </td><td>Function</td><td>Direction</td></tr><tr><td>Pin1</td><td>GND</td><td>Ground</td><td> </td></tr><tr><td>Pin2</td><td>VCC</td><td>VCC, 1.9~3.6V</td><td> </td></tr><tr><td>Pin3</td><td>CE</td><td>Operating Mode,RX/TX</td><td>In</td></tr><tr><td>Pin4</td><td>CSN</td><td>SPI chip select</td><td>In</td></tr><tr><td>Pin5</td><td>SCK</td><td>SPI clock</td><td>In</td></tr><tr><td>Pin6</td><td>MOSI</td><td>SPI Input</td><td>In</td></tr><tr><td>Pin7</td><td>MISO</td><td>SPI Output</td><td>Out</td></tr><tr><td>Pin8</td><td>IROAM</td><td>Interrupt Output</td><td>Out</td></tr></tbody></table></div><br/><div><h3>Specification</h3></div><div><ul><li>Operating Frequency: 2400MHz ~ 2524MHz</li><li>Modulation: GMSK</li><li>Transmit power: more than +20 dbm, 50Ω</li><li>Receiver sensitivity:-95dbm</li><li>Operating voltage: 2.7V ~ 3.6V</li><li>Max Emission current: 115mA</li><li>Max Receive current: 45mA</li><li>Operating temperature: -45 degrees to +85 degrees</li><li>Storage temperature: -45 degrees to +125 degrees</li><li>Gain Of PA: 20 dB</li><li>Gain Of LNA: 10 dB</li></ul></div><br/><br/></li></ul>',
       type  : 'communications',
       image : '/images/products/WRW24015R.jpg'
     },
       {
-      id: 70,
+      id: 82,
       title:'Arduino FM Receiver- TEA5767',
       model: 'CI5767TEA',
       price: 683,
@@ -769,7 +838,7 @@ Product.reopenClass({
       image : '/images/products/CI5767TEA.jpg'
     },
       {
-      id: 71,
+      id: 83,
       title:'315M RF Controller Kit',
       model: 'WRF315KIT',
       price: 333,
@@ -779,7 +848,7 @@ Product.reopenClass({
       image : '/images/products/WRF315KIT.jpg'
     },
       {
-      id: 72,
+      id: 84,
       title:'Pulse Sensor',
       model: 'SO00837PS',
       price: 706,

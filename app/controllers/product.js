@@ -12,6 +12,7 @@ export default Ember.ObjectController.extend({
  }.property('title'),
  mouseX: null,
  mouseY: null,
+
 	actions:{
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));

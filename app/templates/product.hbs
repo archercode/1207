@@ -8,7 +8,10 @@
 			<div class="row">
 
 				<div class="col s12">
-			    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
+			    <!-- <img {{bind-attr src='image'}} id='' class='img-thumbnail'/> -->
+			    {{image-preview class='img-thumbnail' src=image mouseX=mouseX mouseY=mouseY}}
+			    
+  				{{image-zoom src=image mouseX=mouseX mouseY=mouseY}}
 			    </div>
 			</div>
 			<div class="row">

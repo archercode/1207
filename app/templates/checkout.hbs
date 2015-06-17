@@ -1,4 +1,4 @@
-<div class="container whole">
+<div class="container whole"> 
 <div class="row checkout">
 <div class="col m12 l6">
 <div class="thumbnail checkout_info">
@@ -145,10 +145,10 @@
 
 </div>
 </div> 
-    <div class="col l6 m12">
+    <div class="col l6 m12 checkout_order thumbnail fixed_component">
     {{#if sub}}
 
-        <div class="row checkout_order thumbnail fixed_component"> 
+        <div class="row "> 
 
             
             <div class="row checkout_title checkout_input">
@@ -178,7 +178,7 @@
                 </li> 
             {{/each}}
             </ul>
-            <div class="row col s12 checkout_total">
+            <div class="  col s12 checkout_total">
                 <div class="col s6 left-align">
                     <label>Sub Total</label>
                 </div>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             {{#if isShipping}}
-            <div class="row col s12 checkout_total">
+            <div class="  col s12 checkout_total">
                 <div class="col s6 left-align">
                     <label>Shipping Fee</label>
                 </div>
@@ -200,7 +200,7 @@
                 </div>
             </div>
             {{/if}}
-            <div class="row col s12 checkout_total">
+            <div class="  col s12 checkout_total">
                 <div class="col s6 left-align">
                     <label>Grand Total</label>
                 </div>
@@ -217,8 +217,8 @@
        
     </div>
 </div>
-<div class="row">
-    <div class=" footer col m6">
+<div class="row footer checkout">
+    <div class="  col m12 l6">
         {{#if isItemPresent}}
         <button type="submit" class="btn btn-primary btn-whole" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
         {{/if}}

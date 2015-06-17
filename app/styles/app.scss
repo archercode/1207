@@ -47,9 +47,9 @@ body {
   }
 
   @media screen and (max-width: $break-medium) {
-    padding: 7px 0 0 0 ;
-    right: 2%;
-    left: auto;
+    
+    padding-left: 20px;
+    z-index: 1;
   }
 
 }
@@ -74,6 +74,10 @@ li.navbar_border:after{
   display:block;
   content:"";
   margin:auto 6px;
+}
+
+#nav-mobile > li.navbar_border.social_links_icon {
+  display: none;
 }
 
 .row.contact_us_links > a.page_title {
@@ -169,7 +173,7 @@ a.contact_us.active, a.contact_us:hover{
 .cart{
   padding: 0 10px;
   position: absolute;
-  right: 3%;
+  right: 3%;top: 20%;
 }
 
 .page_title.no_bottom_border.about {
@@ -392,7 +396,9 @@ li.navbar_border.start {
   height: 260px;
   fill: $primary-color-dark;
 }
-
+ul.checkout_order_list.checkout_input, .checkout_title.checkout_input {
+  margin: 0px !important;
+}
 
 .checkout_input{
  /* padding-left: 30px !important;
@@ -401,6 +407,8 @@ li.navbar_border.start {
 
   border-bottom: 1px #ddd solid;
   padding: 10px 20px;
+
+  
   margin: 0px -5px !important
 
 }
@@ -436,10 +444,31 @@ footer.hidden-md.hidden-lg {
 }
 
 .checkout_order{
-    margin-left: 20px !important;
+    //margin-left: 20px !important;
     background-color: #eeeeee;
 }
 
+div.checkout > div.col.m12.l6 {
+  width: 45%;
+  margin-left: 5%;
+  @media #{$medium-and-down} { 
+    width: 90%;
+  }
+}
+
+div.checkout > div.col.m12.l6.checkout_order {
+  width: 45%;
+  right: 5%;
+
+  @media #{$medium-and-down} { 
+    width: 90%;
+    position: inherit !important;
+  }
+
+}
+.footer.row.checkout {
+  margin-top: 10px;
+}
 .checkout_order.fixed_component {
 
   @media screen and (max-width: $break-medium) {
@@ -455,10 +484,9 @@ footer.hidden-md.hidden-lg {
 
 .checkout{
   margin-top: 80px;
-  margin-bottom: 0px;
-  margin-left: 20px;
-
-  margin-right: 20px;
+  margin-bottom: 0px; 
+  margin-left: 20px !important;
+  margin-right: 20px !important; 
 }
 .no_bottom_border{
   border-bottom: none !important;
@@ -723,6 +751,10 @@ footer{
 
   &.col{
     position:relative;
+  }
+
+  &.thumbnail{
+    position: fixed !important;
   }
 }
 
@@ -1374,3 +1406,39 @@ p.speech:after
   border: 15px solid;
   border-color: #fff transparent transparent #fff;
 }
+
+.image-preview-img {
+  width: 480px;
+  height: 305px;
+  float: left;
+}
+
+.image-zoom-component {
+  position: relative;
+  float: left;
+  height: 316px;
+  width: 246px;
+  background-repeat: no-repeat;
+  background-size: 960px 610px;
+}
+
+
+.horizontal-crosshair,
+.vertical-crosshair {
+  position: absolute;
+}
+
+.horizontal-crosshair {
+  top: 158px;
+  left: 83px;
+  width: 80px;
+  border-bottom: 1px solid #fff;
+}
+
+.vertical-crosshair {
+  top: 118px;
+  left: 123px;
+  height: 80px;
+  border-left: 1px solid #fff;
+}
+

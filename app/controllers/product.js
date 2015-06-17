@@ -5,6 +5,8 @@ export default Ember.ObjectController.extend({
  //  sample: function(){
  //    return this.get('itemCount').get('length');
  //  }.property('itemCount','length'),
+ mouseX: null,
+  mouseY: null,
 	actions:{
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));

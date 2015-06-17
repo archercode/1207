@@ -6,27 +6,58 @@
     Rockin' Circuits
   </b>
     {{/link-to}}
+    
     {{#md-navbar class='navbar_custom'}}
       <li class="navbar_border start">{{#link-to 'products'}} SHOP {{/link-to}}</li>
       <li class="navbar_border">{{#link-to 'solutions'}} SOLUTIONS {{/link-to}}</li>
       <li class="navbar_border">{{#link-to 'contact'}} CONTACT {{/link-to}}</li>
       <li class="navbar_border">{{#link-to 'search'}} SEARCH {{/link-to}}</li>
-      <li class="navbar_border hide-on-med-and-up">{{#link-to 'checkout'}} CHECKOUT 
-          <div class="badge orange prod_count"> {{count}}</div>{{/link-to}}</li>
+      <li class="navbar_border hide-on-large-only">{{#link-to 'checkout'}} CHECKOUT{{/link-to}}</li>
 
-      <li class="navbar_border social_links_icon" >
+      <li class="navbar_border social_links_icon " >
         {{social-apps}}
       </li>        
       
+      <li class="navbar_border hide-on-large-only">
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#facebook1"></use>
+          </svg> 
+        </div>
 
-      <li class="navbar_border cart start">
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#twitter1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#google-plus1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use>
+          </svg>
+        </div>
+
+        <div class="iconmelon footer_icon" >
+          <svg class="" viewBox="0 0 32 32">
+            <use xlink:href="/icons.svg#youtube1"></use>
+          </svg>
+        </div>
+      </li>
+
+    {{/md-navbar}}
+     
+      <div class="navbar_border cart start">
         <div class=" shopping-cart" {{action "showCartSummary" this}}>
           <img src="/ic_cart.png"  class="nav_icon" height="40" width="40">
           <div class="badge orange prod_count"> {{count}}</div>
         </div>
-      </li>
-    {{/md-navbar}}
-     
+      </div>
 
     <div class="hover checkout_summary" >
       {{#if hasQuantity}}

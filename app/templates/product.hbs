@@ -1,4 +1,10 @@
-{{#document-title}}{{title}}{{/document-title}}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+{{#document-title}}{{isTitlePH}}{{/document-title}}
+<link rel="canonical" href="http://www.circuit.rocks">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" {{bind-attr content = type}} >
+<meta name="description" {{bind-attr content = description}}>
+
 <div class="row" id="product_specific_container">
 
 	<div class="col l4 fixed_component"> 
@@ -8,7 +14,10 @@
 			<div class="row">
 
 				<div class="col s12">
-			    <img {{bind-attr src='image'}} id='' class='img-thumbnail'/>
+			    <!-- <img {{bind-attr src='image'}} id='' class='img-thumbnail'/> -->
+			    {{image-preview class='img-thumbnail' src=image alt=title mouseX=mouseX mouseY=mouseY}}
+			    
+  				{{image-zoom src=image alt=title mouseX=mouseX mouseY=mouseY}}
 			    </div>
 			</div>
 			<div class="row">
@@ -90,7 +99,7 @@
 		    {{outlet 'sidebar'}}
 		</div>  
 	</div>
-
+{{disqus-comments identifier=title}}
 
 
 </div>

@@ -1378,4 +1378,38 @@ p.speech:after
   border-color: #fff transparent transparent #fff;
 }
 
+.image-preview-img {
+  width: 480px;
+  height: 305px;
+  float: left;
+}
+
+.image-zoom-component {
+  position: relative;
+  float: left;
+  height: 316px;
+  width: 246px;
+  background-repeat: no-repeat;
+  background-size: 960px 610px;
+}
+
+
+.horizontal-crosshair,
+.vertical-crosshair {
+  position: absolute;
+}
+
+.horizontal-crosshair {
+  top: 158px;
+  left: 83px;
+  width: 80px;
+  border-bottom: 1px solid #fff;
+}
+
+.vertical-crosshair {
+  top: 118px;
+  left: 123px;
+  height: 80px;
+  border-left: 1px solid #fff;
+}
 

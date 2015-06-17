@@ -170,7 +170,7 @@ Product.reopenClass({
     },
     {
     	id: 14,
-      title: 'Bluno ­Bluetooth 4.0 Micro­controller Compatible with Arduino Uno',
+      title: 'Bluetooth 4.0 Micro­controller Arduino Compatible',
       price: 1300,
       model: 'DFR0267',
       description: 'Its time to get Bluetooth 4.0 into your project and sync it up with your phone! For aficionados of smart devices and wearables with this new tech (BT4.0 BLE), now you can go further than hacking things apart to start prototyping with your Arduino. Bluno is first of its kind in intergrating BT 4.0(BLE) module into Arduino Uno, making it an ideal prototyping platform for both software and hardware developers to go BLE. You will be able to develop your own smart bracelet , smart pedometer and more. Through the low-power Bluetooth 4.0 technology, real-time low energy communication can be made really easy.',
@@ -353,7 +353,7 @@ Product.reopenClass({
     },
     {
     	id: 30,
-      title:'DFPlayer ­ A Mini MP3 Player',
+      title:'DFPlayer A Mini MP3 Player',
       price: 320,
       model: 'DFR0299',
       description: "Sing for the moment! The DFPlayer Mini is a small and low cost MP3 module with an simplified output directly to the speaker. The module can be used as a stand alone module with attached battery, speaker and push buttons or used in combination with an Arduino UNO or any other with RX/TX capabilities. ",

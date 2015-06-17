@@ -5,8 +5,14 @@ export default Ember.ObjectController.extend({
  //  sample: function(){
  //    return this.get('itemCount').get('length');
  //  }.property('itemCount','length'),
+ isTitlePH: function(){
+      var model = this.get('model');
+      var title = model.get('title');
+    return title.concat(' Philippines');
+ }.property('title'),
  mouseX: null,
-  mouseY: null,
+ mouseY: null,
+
 	actions:{
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));

@@ -14,8 +14,8 @@ export default Ember.View.extend({
       var imgtodrag = this.$('<img id="dynamic">'); 
       imgtodrag.attr('src', product.get('image'));
     
-      imgtodrag = this.$(imgtodrag);
-      if (imgtodrag) { 
+      imgtodrag = this.$(imgtodrag); 
+      if (imgtodrag) {  
           var imgclone = imgtodrag.clone()
               .offset({
               top: event.pageY,//screenY,//offsetTop,

@@ -12,7 +12,8 @@ Router.map(function() {
 	    this.route('robotics');
 	    this.route('communications');
 	    this.route('actuators');
-	    this.route('shields');
+	    //this.route('shields');
+	    this.route('power_supply');
 		this.resource('product', { path: '/:product_slug' });
   	});
   	

@@ -23,13 +23,11 @@ export default Ember.Component.extend({
     }
   },
   mouseEnter:function(){
-     console.log('mouseEnter');
     var view = Ember.$('#zoomed_img ');
         //if(view.get(''))  
         view.toggle();
   },
    mouseLeave: function(){
-    console.log('mouseLeave');
     var view = Ember.$('#zoomed_img');
         //if(view.get(''))  
         view.toggle();

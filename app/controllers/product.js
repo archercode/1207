@@ -1,10 +1,6 @@
 import Ember from 'ember';
-export default Ember.ObjectController.extend({
-	//itemCount: Ember.computed.oneWay('title.length'),
-	// activeButton: true,
- //  sample: function(){
- //    return this.get('itemCount').get('length');
- //  }.property('itemCount','length'),
+import MixinUrl from '../mixins/mixin-url';
+export default Ember.ObjectController.extend(MixinUrl, {
  isTitlePH: function(){
       var model = this.get('model');
       var title = model.get('title');
@@ -14,24 +10,18 @@ export default Ember.ObjectController.extend({
  mouseY: null,
 
 	actions:{
-    fbClick: function(){
-      console.log("fb clikc");
-
-      //http://www.facebook.com/share.php?u=[URL]&title=[TITLE]
-var page = "http://www.facebook.com/share.php?u=www.google.com&title='Rockin' Circuits"; 
-//onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
- 
-window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
-/*var dialog = Ember.$('#modal-overlays')//<div></div>')
-               .html('<iframe style="border: 0px; " src="' + page + '" width="100%" height="100%"></iframe>')
-               .dialog({
-                   autoOpen: false,
-                   modal: true,
-                   height: 625,
-                   width: 500,
-                   title: "Some title"
-               });
-dialog.dialog('open');*/
+    fbClick: function(link){
+    console.log('fbClick'); 
+    var page = "http://www.facebook.com/share.php?u=link&title='Rockin' Circuits";   
+window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
+    },
+    twitterClick: function(link){ 
+var page = "http://twitter.com/home?status='Rockin Circuits'+link";   
+window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
+    },
+    gplusClick: function(link){ 
+var page = "https://plus.google.com/share?url=link";   
+window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
     },
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));

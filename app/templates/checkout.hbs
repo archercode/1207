@@ -1,9 +1,10 @@
 <div class="container whole"> 
 <div class="row checkout">
 <div class="col m12 l6">
+
 <div class="thumbnail checkout_info">
 
-            <div class="row checkout_title checkout_input">
+            <div class="row checkout_title checkout_input main">
                 Customer Information
 {{#link-to 'success'}}link to success{{/link-to}}
             </div>
@@ -109,6 +110,7 @@
     </div>
 
      <div class="row checkout_payment_method">
+        <div class="col s5">
             <div class="row checkout_title col s12">
                 Payment Method
             </div>
@@ -119,7 +121,8 @@
             content=radioSelection
             optionValuePath='value'
             optionLabelPath='label'}}
-
+        </div>
+        <div class="col s7">
             <div class="row col s12 checkout_payment_data" >
               {{#if optionBank }}
                 <div class="alert alert-info" role="alert"> 
@@ -140,12 +143,21 @@
                 </div>
                 {{/if}}
             </div>
+        </div>
     </div>
 
-
+    <div class=" row col right checkout_btn">
+        {{#if isItemPresent}}
+        <button type="submit" class="btn btn-primary btn-whole" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
+        {{/if}}
+    </div>
 </div>
+
+
 </div> 
-    <div class="col l6 m12 checkout_order thumbnail fixed_component">
+    <div class="col l6 m12 ">
+
+        <div class="checkout_order thumbnail fixed_component">
     {{#if sub}}
 
         <div class="row "> 
@@ -171,9 +183,9 @@
 
                 <div class="col s6">{{item.title}}</div>
                 <div class="col s2">{{item.price}}</div>
-                <div class="col s1">{{item.quantity}}</div>
+                <div class="col s2">{{item.quantity}}</div>
                 <div class="col s2">{{item.subtotal}}</div>
-                <button class="col s1 close" {{action 'removeItem'}}>&times;</button>
+           <!--      <button class="col s1 close" {{action 'removeItem'}}>&times;</button> -->
 
                 </li> 
             {{/each}}
@@ -214,15 +226,16 @@
 
 
 {{/if}}
+</div>
        
     </div>
 </div>
 <div class="row footer checkout">
-    <div class="  col m12 l6">
+<!--     <div class="  col m12 l6">
         {{#if isItemPresent}}
         <button type="submit" class="btn btn-primary btn-whole" {{bind-attr disabled='isInvalid'}}{{action 'processOrder'}}>PLACE ORDER</button>
         {{/if}}
-    </div>
+    </div> -->
 </div>
 
 {{outlet}}

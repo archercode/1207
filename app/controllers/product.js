@@ -14,6 +14,25 @@ export default Ember.ObjectController.extend({
  mouseY: null,
 
 	actions:{
+    fbClick: function(){
+      console.log("fb clikc");
+
+      //http://www.facebook.com/share.php?u=[URL]&title=[TITLE]
+var page = "http://www.facebook.com/share.php?u=www.google.com&title='Rockin' Circuits"; 
+//onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+ 
+window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+/*var dialog = Ember.$('#modal-overlays')//<div></div>')
+               .html('<iframe style="border: 0px; " src="' + page + '" width="100%" height="100%"></iframe>')
+               .dialog({
+                   autoOpen: false,
+                   modal: true,
+                   height: 625,
+                   width: 500,
+                   title: "Some title"
+               });
+dialog.dialog('open');*/
+    },
 		addItem: function(product){
 			//this.notify.info(this.get('model').get('title'));
       

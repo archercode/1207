@@ -10,7 +10,7 @@ module.exports = function(environment) {
       'connect-src': "'self' https://api.mixpanel.com http://custom-api.local",
       'img-src': "'self' www.facebook.com p.typekit.net data:",
       'style-src': "'self' 'unsafe-inline' use.typekit.net http://fonts.googleapis.com",
-      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com platform.twitter.com apis.google.com accounts.google.com", 
+      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com platform.twitter.com apis.google.com accounts.google.com www.disqus.com/ data:", 
       'media-src': "'self'",
 
     },

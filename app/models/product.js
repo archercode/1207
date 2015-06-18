@@ -789,7 +789,7 @@ Product.reopenClass({
     },
       {
       id: 78,
-      title:'EB - Infrared Receiver',
+      title:'EB Infrared Receiver',
       model: 'EBR00058I',
       price: 263,
       description: "TThe 315MHz RF link kit is consisted of transmitter and receiver, popular used for remote control. We suggest you use the Arduino VirtualWire library to use this kit.Please refer to the wiki for more details.",

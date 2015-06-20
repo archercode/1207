@@ -237,7 +237,15 @@ div.hover.checkout_summary > div ul {
   max-height: 200px;
 }
 
+.about{
+  margin-top: 80px;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
 
+div.about > div.col.s4 {
+  border-right: 1px #333 solid;
+}
 
 .hover{
 	width: auto;

@@ -11,7 +11,7 @@ export default Ember.ObjectController.extend(MixinUrl, {
 
 	actions:{
     fbClick: function(link){
-    var page = "http://www.facebook.com/share.php?u=" + link+  "&title=Rockin Circuits";   
+    var page = "http://www.facebook.com/share.php?u=" + link +  "&title=Rockin Circuits";   
 window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
     },
     twitterClick: function(link){ 

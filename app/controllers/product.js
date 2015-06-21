@@ -11,16 +11,15 @@ export default Ember.ObjectController.extend(MixinUrl, {
 
 	actions:{
     fbClick: function(link){
-    console.log('fbClick'); 
-    var page = "http://www.facebook.com/share.php?u=link&title='Rockin' Circuits";   
+    var page = "http://www.facebook.com/share.php?u=" + link+  "&title=Rockin Circuits";   
 window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
     },
     twitterClick: function(link){ 
-var page = "http://twitter.com/home?status='Rockin Circuits'+link";   
+var page = "http://twitter.com/home?status=Rockin Circuits"+link;   
 window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
     },
     gplusClick: function(link){ 
-var page = "https://plus.google.com/share?url=link";   
+var page = "https://plus.google.com/share?url="+link;   
 window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'); 
     },
 		addItem: function(product){
@@ -38,7 +37,7 @@ window.open(page,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=
 	          		item.incrementProperty('quantity');
                 item.save();
         		} else {
-        			console.log('first iteration');
+
            			var newitem = store.createRecord('item', {
 		                title: product.get('title'),
 						        // image: product.get('image'),

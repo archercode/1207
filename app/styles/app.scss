@@ -1050,8 +1050,7 @@ canvas {
   z-index: 4;
 
 &.about{
-  
-        transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 }
@@ -1078,9 +1077,18 @@ canvas {
   height: 100vh;
   transform-style: preserve-3d;
 
-  &.filler{
+  _::-webkit-full-page-media, _:future, :root &.filler{ //for safari only
+    -webkit-transform:translateZ(4px);
+        -moz-transform:translateZ(4px);
+        -o-transform:translateZ(4px);
+        transform:translateZ(4px);
+  }
+
+
+    &.filler{
     //height: 500px;
-    z-index: 10;
+    z-index: 4; 
+
     background-color: #fff;
 
     &.intro{

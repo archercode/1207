@@ -1,17 +1,50 @@
 {{#document-title}}{{isTitlePH}}{{/document-title}}
-<link rel="canonical" href="http://www.circuit.rocks">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- common -->
 <meta name="keywords" {{bind-attr content = type}} >
-<meta name="description" {{bind-attr content = description}}>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" {{ bind-attr content = description}}>
+<link rel = "canonical" {{ bind-attr href= currentBaseUrl}}>
+
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" {{ bind-attr content=title }}>
+<meta itemprop="description" {{ bind-attr content = description }}>
+<!-- <meta itemprop="image" content="http://www.example.com/image.jpg"> -->
+
+<!-- Twitter Card data -->
+
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@rockincircuits">
+<meta name="twitter:title" {{ bind-attr content=title }}>
+<meta name="twitter:description" {{ bind-attr content = description }}>
+<meta name="twitter:creator" content="rockincircuits">
+<!-- <meta name="twitter:image" content="http://www.example.com/image.html"> -->
+<meta name="twitter:data1" {{ bind-attr content=price }}>
+<meta name="twitter:label1" content="Price">
+<meta name="twitter:data2" content="Black">
+<meta name="twitter:label2" content="Color">
+
+<!-- Open Graph data -->
+<meta property='og:name' {{ bind-attr content = title }} >
+<meta property='og:type' content = 'product' >
+<meta property='og:description' {{ bind-attr content = description }} >
+<meta property='fb:app_id' content= '837097049714800'>
+<meta property="og:title" {{ bind-attr content=title }} />
+<meta property="og:url" {{ bind-attr content=currentBaseUrl }} />
+<!-- <meta property="og:image" content="http://example.com/image.jpg" /> -->
+<meta property="og:description" {{ bind-attr content = descrition }} />
+<meta property="og:site_name" content="www.circuit.rocks" />
+<meta property="og:price:amount" {{ bind-attr content = price }} />
+<meta property="og:price:currency" content="PHP" />
 
 <div class="row" id="product_specific_container">
-
 	<div class="col l4 fixed_component "> 
 		<div class=" space_on_top">
-
-			
 			<div class="row">
-
 				<div class="col s12">
 			    {{image-preview class='img-thumbnail' src=image alt=title mouseX=mouseX mouseY=mouseY}}
 			    <div id="zoomed_img">
@@ -101,6 +134,4 @@
 		    {{outlet 'sidebar'}}
 		</div>  
 	</div>
-
-
 </div>

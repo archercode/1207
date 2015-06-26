@@ -944,12 +944,17 @@ p > div.materialize-selectable-item {
 }
 
 .btn-intro{
-  background-color: transparent;
+   background-color: transparent;
   border: 5px #fff solid;
   border-radius: 5px;
   padding: 20px 30px;
-  width: 200px;
+  width: 100%;
   font-weight: 800;
+  margin-top: 30px;
+
+  @media #{$small-and-down} { 
+    width: 200px !important;
+  }
 }
 
 #product_specific_container{

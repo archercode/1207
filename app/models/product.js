@@ -790,6 +790,7 @@ Product.reopenClass({
       type  : 'actuators',
       image : '/images/products/AMS36001A.jpg'
     },
+    /*
     {
       id: 71,
       title:'L9110 Dual-Channel H-Bridge Motor Driver Module - 12V 800mA',
@@ -800,6 +801,7 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/AML9110DM.jpg'
     },
+    */
       {
       id: 72,
       title:'2WD Mobile platform Kit',
@@ -932,7 +934,8 @@ Product.reopenClass({
       html: '<ul><li><div>The Pulse Sensor is a plug-and-play heart-rate sensor for Arduino. It can be used by students, artists, athletes, makers, and game &amp; mobile developers who want to easily incorporate live heart-rate data into their projects.Essence it is an integrated optical amplifying circuit and noise eliminating circuit sensor. Clip the Pulse Sensor to your earlobe or finger tip and plug it into your Arduino ,you can ready to read heart rate. Also it have an Arduino demo code that make it easy to use.</div><div><br/>    <img src="http://www.elecrow.com/download/SO00837PS_pro1.jpg" alt=""/> <img src="http://www.elecrow.com/download/SO00837PS_pro2.jpg" alt=""/></div><div><h3>Features</h3></div><div><ul><li>Working voltage: 5V</li><li>Working current: 4mA</li></ul></div><div><h3>Wiki &amp; External links</h3></div><ul><li><a href="http://v.youku.com/v_show/id_XNjM2ODI0NTg4.html">Demo</a></li><li><a href="http://www.elecrow.com/download/PulseSensorAmpd%20-%20Schematic.pdf">Schmatic</a></li><li><a href="http://www.elecrow.com/download/PulseSensorAmpedHardware.zip">Design Files</a></li><li><a href="http://pulsesensor.com/pages/pulse-sensor-amped-arduino-v1dot1">Arduino Code Walkthrough</a></li><li><a href="http://pulse-sensor.googlecode.com/files/PulseSensorAmpd_Processing_1dot1.zip">Processing Demo file</a></li></ul></li></ul>',
       type  : 'sensors',
       image : '/images/products/SO00837PS.jpg'
-    },    
+    }, 
+    /*   
   	{
       id: 85,
       title:'Crowduino Nano 328 (Arduino Nano 3.0)',
@@ -943,6 +946,7 @@ Product.reopenClass({
       type  : 'boards',
       image : '/images/products/MCA03328A.jpg'
     },
+    */
     {
       id: 86,
       title:'ESP8266 based WiFi module with FCC/CE',
@@ -1113,6 +1117,7 @@ Product.reopenClass({
   type  : 'communications',
   image : '/images/products/WRN13566N.jpg'
 },
+/*
 {
   id: 103,
   title:'PIR Motion Sensor Module (Digital)',
@@ -1123,6 +1128,7 @@ Product.reopenClass({
   type  : 'sensors',
   image : '/images/products/SOD00101S.jpg'
 },
+*/
 // {
 //   id: 104,
 //   title:'Relay Module 10A - Dual Channel',

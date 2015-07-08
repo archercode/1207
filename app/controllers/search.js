@@ -11,7 +11,7 @@ export default Ember.ObjectController.extend({
   actions: {
     search: function() {
       var trim = this.get('queryField');
-        trim = trim.substring(0, trim.length - 1);
+       // trim = trim.substring(0, trim.length - 1);
       this.set('query', trim);
       this.set('noResultField', this.get('queryField'));
       //this.set('queryField', '');

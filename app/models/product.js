@@ -224,7 +224,7 @@ Product.reopenClass({
       image : '/images/products/DFR0108.png'
     },
     */
-    
+    /*
     {
     	id: 19,
       title:'DFRduino UNO R3',
@@ -235,7 +235,7 @@ Product.reopenClass({
       type  : 'boards',
       image : '/images/products/DFR0216.jpg'
     },
-    
+    */
     {
     	id: 20,
       title:'DFRobot Mega 2560 V3.0',
@@ -321,6 +321,7 @@ Product.reopenClass({
       type  : 'sensors',
       image : '/images/products/SEN0131.jpg'
     },
+    /*
     {
     	id: 27,
       title:'DC­ to DC boost converter',
@@ -331,6 +332,7 @@ Product.reopenClass({
       type  : 'power_supply',
       image : '/images/products/DFR0123.jpg'
     },
+    */
     {
     	id: 28,
       title:'GPS/GPRS/GSM Shield V3.0',
@@ -843,6 +845,7 @@ Product.reopenClass({
       type  : 'boards',
       image : '/images/products/AMS00298SP.jpg'
     },
+    /*
       {
       id: 76,
       title:'Adjustable DC-DC Booster- LM2577',
@@ -853,6 +856,7 @@ Product.reopenClass({
       type  : 'power_supply',
       image : '/images/products/PCH2577S.jpg'
     },
+    */
       {
       id: 77,
       title:'Vibration Sensor Module - SW-420',

@@ -27,6 +27,7 @@ var Product = DS.Model.extend({
 
 Product.reopenClass({
 	FIXTURES:[
+  /*
 	{
 	  id: 1,	
       title: 'URM37 V4.0 Ultrasonic Sensor',
@@ -37,6 +38,7 @@ Product.reopenClass({
       type  : 'sensors',
       image : '/images/products/SEN0001.jpg'
     },
+    */
     /*
     {
       id: 2,
@@ -168,6 +170,7 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/FIT0188.jpg'
     },
+    /*
     {
     	id: 14,
       title: 'Bluetooth 4.0 Micro­controller Arduino Compatible',
@@ -178,6 +181,7 @@ Product.reopenClass({
       type: 'boards',
       image: "/images/products/DFR0267.jpg",
     },
+    */
     /*
     {
     	id: 15,
@@ -740,6 +744,7 @@ Product.reopenClass({
       type  : 'actuators',
       image : '/images/products/RMS02805M.jpg'
     },
+    /*
     {
       id: 66,
       title:'Audio Amplifier PAM8403 with Colume Control',
@@ -750,6 +755,7 @@ Product.reopenClass({
       type  : 'robotics',
       image : '/images/products/ASAA8403P.jpg'
     },
+    */
     /*
     {
       id: 67,
